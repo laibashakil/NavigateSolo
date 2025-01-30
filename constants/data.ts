@@ -1,6 +1,29 @@
 import icons from "./icons";
 import images from "./images";
 
+export const grid = [
+  [2, 2, 2, 1, 0, 1, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 0, 1, 0, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [1, 1, 1, 1, 1, 1, 1, 1, 1], // Corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 0, 1, 0, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [1, 1, 1, 1, 1, 1, 1, 1, 1], // Corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 0, 1, 0, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [1, 1, 1, 1, 1, 1, 1, 1, 1], // Corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 0, 1, 0, 2, 2, 2], // Classrooms & corridor
+  [2, 2, 2, 1, 1, 1, 2, 2, 2], // Classrooms & corridor
+  [1, 1, 1, 1, 1, 1, 1, 1, 1], // Corridor
+  [3, 3, 3, 1, 1, 1, 3, 3, 3], // Washrooms
+  [3, 3, 3, 0, 1, 0, 3, 3, 3], // Washrooms
+  [3, 3, 3, 1, 1, 1, 3, 3, 3], // Washrooms
+
+];
+
 export const cards = [
   {
     title: "Card 1",
