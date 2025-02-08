@@ -4,7 +4,7 @@ import React from 'react'
 const Explore = () => {
   return (
     <View>
-      <Text>Explore RR</Text>
+      <Text>OUTDOOR</Text>
     </View>
   )
 }
