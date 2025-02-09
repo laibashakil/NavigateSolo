@@ -13,7 +13,9 @@ export default function NavigationApp() {
   const [suggestions, setSuggestions] = useState([]);
   const [instructions, setInstructions] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const [navigationActive, setNavigationActive] = useState(false);
   const mapRef = useRef(null);
+  const locationSubscription = useRef(null);
 
   useEffect(() => {
     (async () => {
@@ -77,9 +79,6 @@ export default function NavigationApp() {
       return;
     }
   
-    console.log("User Location:", userLocation);
-    console.log("Destination Coordinates:", destLatLng);
-  
     const travelMode = "foot-walking";
     const routeResponse = await fetch(
       `https://api.openrouteservice.org/v2/directions/${travelMode}?api_key=${OPENROUTESERVICE_API_KEY}&start=${userLocation.longitude},${userLocation.latitude}&end=${destLatLng.longitude},${destLatLng.latitude}`
@@ -106,6 +105,7 @@ export default function NavigationApp() {
     setRouteCoords(coordinates);
     setInstructions(steps);
     setCurrentStepIndex(0);
+    setNavigationActive(true);
   
     if (steps.length > 0) {
       startNavigation(steps);  
@@ -122,26 +122,36 @@ export default function NavigationApp() {
     if (!routeSteps.length) return;
     Speech.speak(routeSteps[0]);
 
-    await Location.watchPositionAsync(
+    locationSubscription.current = await Location.watchPositionAsync(
       { accuracy: Location.Accuracy.High, distanceInterval: 3 },
       (location) => {
-        console.log("Updated Location:", location.coords);
-        checkNextStep(location.coords, routeSteps);
+        if (navigationActive) {
+          checkNextStep(location.coords, routeSteps);
+        }
       }
     );
+  };
+
+  const stopNavigation = () => {
+    Speech.stop();
+    if (locationSubscription.current) {
+      locationSubscription.current.remove();
+      locationSubscription.current = null;
+    }
+    setNavigationActive(false);
+    Alert.alert("Navigation Stopped", "You have stopped navigation.");
   };
   
   const checkNextStep = (userCoords, routeSteps) => {
     if (currentStepIndex >= routeSteps.length) {
       Speech.speak("You have arrived at your destination.");
+      setNavigationActive(false);
       return;
     }
 
     const nextStep = routeSteps[currentStepIndex];
     const match = nextStep.match(/\d+/);
     const nextStepDistance = match ? parseInt(match[0]) : 0;
-
-    console.log(`Remaining distance: ${nextStepDistance}m`);
 
     if (nextStepDistance <= 5) {
       const newIndex = currentStepIndex + 1;
@@ -151,6 +161,7 @@ export default function NavigationApp() {
         Speech.speak(routeSteps[newIndex]);
       } else {
         Speech.speak("You have arrived at your destination.");
+        setNavigationActive(false);
       }
     }
   };
@@ -184,6 +195,7 @@ export default function NavigationApp() {
       )}
 
       <Button title="Get Directions" onPress={fetchRoute} />
+      {navigationActive && <Button title="Stop Navigation" onPress={stopNavigation} color="red" />}
 
       <MapView
         ref={mapRef}
@@ -202,6 +214,7 @@ export default function NavigationApp() {
     </View>
   );
 }
+
 
 
 
