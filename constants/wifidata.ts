@@ -63,6 +63,63 @@ const wifiData = [
       { ssid: "HUAWEI-sPvz", signalStrength: -70 },
     ],
   },
+  {
+    location: "Room A1",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -54.5 },
+      { ssid: "FTTH-1084", signalStrength: -75 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "FTTH-1080", signalStrength: -82 },
+    ],
+  },
+  {
+    location: "Room A2",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -50.5 },
+      { ssid: "FTTH-1084", signalStrength: -75 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "Ahsan-5G", signalStrength: -86 },
+      { ssid: "FTTH-1080", signalStrength: -82 },
+    ],
+  },
+  {
+    location: "Lounge A",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -50.5 },
+      { ssid: "FTTH-1084", signalStrength: -62 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "Ahsan-5G", signalStrength: -86 },
+      { ssid: "Abdul Aziz", signalStrength: -80 },
+    ],
+  },
+  {
+    location: "DrawingRoom A",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -50.5 },
+      { ssid: "FTTH-1084", signalStrength: -62 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "Ahsan-5G", signalStrength: -86 },
+      { ssid: "Abdul Aziz", signalStrength: -80 },
+    ],
+  },
+  {
+    location: "Kitchen A",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -50.5 },
+      { ssid: "FTTH-1084", signalStrength: -75 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "FTTH-1080", signalStrength: -82 },
+    ],
+  },
+  {
+    location: "Balcony A",
+    signals: [
+      { ssid: "FTTH-1081-2", signalStrength: -62.5 },
+      { ssid: "FTTH-1084", signalStrength: -75 },
+      { ssid: "TENDA(5G)", signalStrength: -62 },
+      { ssid: "FTTH-1080", signalStrength: -82 },
+    ],
+  },
 ];
 
 export default wifiData;
