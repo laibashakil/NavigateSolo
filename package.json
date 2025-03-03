@@ -34,6 +34,7 @@
     "expo-symbols": "~0.2.1",
     "expo-system-ui": "~4.0.7",
     "expo-web-browser": "~14.0.2",
+    "fs": "^0.0.1-security",
     "nativewind": "^4.1.23",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -48,8 +49,11 @@
     "react-native-url-polyfill": "^2.0.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
+    "react-native-wifi-reborn": "^4.13.4",
     "tailwindcss": "^3.4.17",
-    "use-debounce": "^10.0.4"
+    "use-debounce": "^10.0.4",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "expo-dev-client": "~5.0.12"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
