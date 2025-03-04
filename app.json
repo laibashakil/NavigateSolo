@@ -2,6 +2,10 @@
   "expo": {
     "name": "NavigateSolo",
     "slug": "NavigateSolo",
+    "permissions": [
+      "LOCATION_FOREGROUND",
+      "LOCATION_BACKGROUND"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +19,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+
     },
     "web": {
       "bundler": "metro",
