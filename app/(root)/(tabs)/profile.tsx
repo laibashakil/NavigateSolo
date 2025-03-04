@@ -1,22 +1,22 @@
 import {
   Alert,
-  Image,
-  ImageSourcePropType,
   SafeAreaView,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
+import { useRouter } from "expo-router"; // Import router
 
 import { logout } from "@/lib/appwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 
 import icons from "@/constants/icons";
 import { settings } from "@/constants/data";
+import { Image } from "react-native";
 
 interface SettingsItemProp {
-  icon: ImageSourcePropType;
+  icon: any;
   title: string;
   onPress?: () => void;
   textStyle?: string;
@@ -47,6 +47,7 @@ const SettingsItem = ({
 
 const Profile = () => {
   const { user, refetch } = useGlobalContext();
+  const router = useRouter(); // Initialize router
 
   const handleLogout = async () => {
     const result = await logout();
@@ -69,31 +70,40 @@ const Profile = () => {
           <Image source={icons.bell} className="size-5" />
         </View>
 
+        {/* Avatar and User Info */}
         <View className="flex flex-row justify-center mt-5">
           <View className="flex flex-col items-center relative mt-5">
-            <Image
-              source={{ uri: user?.avatar }}
-              className="size-44 relative rounded-full"
-            />
-            <TouchableOpacity className="absolute bottom-11 right-2">
-              <Image source={icons.edit} className="size-9" />
-            </TouchableOpacity>
+            {/* Show Initials Instead of Avatar */}
+            <View className="size-44 rounded-full bg-gray-300 flex items-center justify-center">
+              <Text className="text-5xl font-rubik-bold text-white">
+                {user?.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
+              </Text>
+            </View>
 
             <Text className="text-2xl font-rubik-bold mt-2">{user?.name}</Text>
+            <Text className="text-sm font-rubik">{user?.email}</Text>
           </View>
         </View>
 
-        <View className="flex flex-col mt-10">
-          <SettingsItem icon={icons.map} title="My Destinations" />
-          <SettingsItem icon={icons.people} title="Emergency Contacts" />
-        </View>
-
+        {/* Settings Items */}
         <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
-          {settings.slice(2).map((item, index) => (
-            <SettingsItem key={index} {...item} />
+          {settings.map((item, index) => (
+            <SettingsItem
+              key={index}
+              {...item}
+              onPress={() => {
+                if (item.title === "Edit Profile") {
+                  router.push("/EditProfileScreen"); // Navigate to Edit Profile
+                }
+              }}
+            />
           ))}
         </View>
 
+        {/* Logout Button */}
         <View className="flex flex-col border-t mt-5 pt-5 border-primary-200">
           <SettingsItem
             icon={icons.logout}
