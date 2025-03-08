@@ -8,12 +8,24 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+               "com.googleusercontent.apps.46058743249-qh06cp7e1oeiidvca0qcdp6dac45anbo"
+            ]
+          }
+        ]
+      },
+      "bundleIdentifier": "com.navigate.solo"
     },
+    
     "android": {
+      "package": "com.navigate.solo",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       },
       "permissions": [
@@ -22,8 +34,7 @@
         "android.permission.ACCESS_WIFI_STATE",
         "android.permission.CHANGE_WIFI_STATE",
         "android.permission.ACCESS_NETWORK_STATE"
-      ],
-      "package": "com.laibashakil.NavigateSolo"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -60,7 +71,8 @@
             "./assets/fonts/Rubik-SemiBold.ttf"
           ]
         }
-      ]
+      ],
+        "@react-native-google-signin/google-signin"
     ],
     "experiments": {
       "typedRoutes": true
