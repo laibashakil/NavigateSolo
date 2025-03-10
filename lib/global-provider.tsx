@@ -13,7 +13,7 @@ interface User {
   id: string;
   name: string;
   email: string;
-  avatar: string;
+  photo: string;
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);
@@ -39,7 +39,7 @@ export const GlobalProvider = ({ children }: GlobalProviderProps) => {
             id: googleUser.user.id,
             name: googleUser.user.name || "No Name",
             email: googleUser.user.email,
-            avatar: googleUser.user.photo || "",
+            photo: googleUser.user.photo || "",
           });
 
           console.log("✅ User is logged in, redirecting to home...");

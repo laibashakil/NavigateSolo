@@ -111,13 +111,20 @@ const Profile = () => {
         {/* Avatar and User Info */}
         <View className="flex flex-row justify-center mt-5">
           <View className="flex flex-col items-center relative mt-5">
-            <View className="size-44 rounded-full bg-gray-300 flex items-center justify-center">
-              <Text className="text-5xl font-rubik-bold text-white">
-                {user?.name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
-              </Text>
+            <View className="w-44 h-44 rounded-full bg-gray-300 flex items-center justify-center">
+              {user?.photo ? (
+                <Image
+                  source={{ uri: user?.photo }}
+                  className="rounded-full w-44 h-44"
+                />
+              ) : (
+                <Text className="text-5xl font-rubik-bold text-white">
+                  {user?.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </Text>
+              )}
             </View>
 
             <Text className="text-2xl font-rubik-bold mt-2">{user?.name}</Text>
