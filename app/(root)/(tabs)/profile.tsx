@@ -5,15 +5,17 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Image,
+  ActivityIndicator,
 } from "react-native";
-import { useRouter } from "expo-router"; // Import router
+import { useRouter } from "expo-router";
+import { useEffect } from "react";
 
-import { logout } from "@/lib/appwrite";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useGlobalContext } from "@/lib/global-provider";
 
 import icons from "@/constants/icons";
 import { settings } from "@/constants/data";
-import { Image } from "react-native";
 
 interface SettingsItemProp {
   icon: any;
@@ -46,18 +48,54 @@ const SettingsItem = ({
 );
 
 const Profile = () => {
-  const { user, refetch } = useGlobalContext();
-  const router = useRouter(); // Initialize router
+  const { user, refetch, loading } = useGlobalContext();
+  const router = useRouter();
+
+  // Ensure we fetch the user data again if it becomes null
+  useEffect(() => {
+    if (!user) {
+      console.warn("⚠️ User is null. Refetching...");
+      refetch();
+    }
+  }, [user]);
 
   const handleLogout = async () => {
-    const result = await logout();
-    if (result) {
+    try {
+      await GoogleSignin.revokeAccess(); // Revoke access token
+      await GoogleSignin.signOut(); // Sign out from Google
+      refetch(); // Refresh global state
       Alert.alert("Success", "Logged out successfully");
-      refetch();
-    } else {
+    } catch (error) {
       Alert.alert("Error", "Failed to logout");
+      console.error("Logout Error:", error);
     }
   };
+
+  // Show a loading spinner until user data is fully loaded
+  if (loading) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+    );
+  }
+
+  // If user is still null after loading, force a logout (avoiding broken state)
+  if (!user) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <Text className="text-lg font-rubik text-center">
+          Something went wrong. Please log in again.
+        </Text>
+        <TouchableOpacity
+          className="mt-4 px-6 py-2 bg-red-500 rounded-lg"
+          onPress={handleLogout}
+        >
+          <Text className="text-white font-rubik">Log In Again</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView className="h-full bg-white">
@@ -73,7 +111,6 @@ const Profile = () => {
         {/* Avatar and User Info */}
         <View className="flex flex-row justify-center mt-5">
           <View className="flex flex-col items-center relative mt-5">
-            {/* Show Initials Instead of Avatar */}
             <View className="size-44 rounded-full bg-gray-300 flex items-center justify-center">
               <Text className="text-5xl font-rubik-bold text-white">
                 {user?.name
