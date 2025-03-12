@@ -4,6 +4,7 @@ import MapView, { Marker, Polyline } from "react-native-maps";
 import * as Location from "expo-location";
 import * as Speech from 'expo-speech';
 import { Picker } from '@react-native-picker/picker';
+import haversine from "haversine";  // Install via: npm install haversine
 
 const OPENROUTESERVICE_API_KEY = "5b3ce3597851110001cf6248b834120f36cb44e0b8faf95d5ef770ec";
 
@@ -15,7 +16,7 @@ const destinations = [
   { label: "EXIT GATE", coordinates: [67.115675, 24.930042] },
   { label: "CSIT CLASSROOMS", coordinates: [67.114358, 24.931009] },
   { label: "STAFF BUILDING", coordinates: [67.113578, 24.931156]},
-  { label: "EXAMPLE", coordinates: [67.073900, 24.847959]},
+  { label: "EXAMPLE", coordinates: [67.003900, 24.807959]},
   { label: "DMS CAFETERIA", coordinates: [67.114286, 24.932456] } 
 ]; 
 
@@ -143,23 +144,32 @@ export default function NavigationApp() {
             setNavigationActive(false);
             return;
         }
-
+    
         const nextStep = routeSteps[currentStepIndex];
-        const match = nextStep.match(/\d+/);
-        const nextStepDistance = match ? parseInt(match[0]) : 0;
-
-        if (nextStepDistance <= 5) {
+    
+        // Get the next waypoint coordinates
+        const nextCoords = routeCoords[currentStepIndex];
+    
+        // Calculate distance using haversine formula
+        const distanceToNext = haversine(userCoords, nextCoords, { unit: "meter" });
+    
+        console.log(`Distance to next step: ${distanceToNext} meters`);
+    
+        // Move to next step if within 10 meters
+        if (distanceToNext <= 10) {
             const newIndex = currentStepIndex + 1;
             setCurrentStepIndex(newIndex);
-
+    
             if (newIndex < routeSteps.length) {
-                Speech.speak(routeSteps[newIndex]);
+                Speech.speak(routeSteps[newIndex]); // Announce next step
             } else {
                 Speech.speak("You have arrived at your destination.");
                 setNavigationActive(false);
             }
         }
     };
+    
+
 
     return (
         <View className="flex-1 bg-gray-100 p-1">
