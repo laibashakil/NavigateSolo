@@ -4,8 +4,8 @@ import {
   ID,
   Databases,
   OAuthProvider,
-  Avatars,
   Query,
+  Avatars,  // Keep this for generating initials avatar
   Storage,
 } from "react-native-appwrite";
 import * as Linking from "expo-linking";
@@ -16,25 +16,25 @@ export const config = {
   endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
   databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID,
-  galleriesCollectionId:
-    process.env.EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID,
-  reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID,
-  agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID,
-  propertiesCollectionId:
-    process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID,
+  usersCollectionId: process.env.EXPO_PUBLIC_APPWRITE_USERS_COLLECTION_ID,
   bucketId: process.env.EXPO_PUBLIC_APPWRITE_BUCKET_ID,
 };
 
+// Initialize Appwrite Client
 export const client = new Client();
 client
   .setEndpoint(config.endpoint!)
   .setProject(config.projectId!)
   .setPlatform(config.platform!);
 
-export const avatar = new Avatars(client);
+// Initialize Appwrite Services
+export const avatar = new Avatars(client);  // Used for generating initials avatar
 export const account = new Account(client);
 export const databases = new Databases(client);
 export const storage = new Storage(client);
+
+// Debugging: Check if databaseId is properly set
+console.log("Database ID:", config.databaseId);
 
 export async function login() {
   try {
@@ -61,6 +61,9 @@ export async function login() {
     const session = await account.createSession(userId, secret);
     if (!session) throw new Error("Failed to create session");
 
+    // Store user in DB immediately after login
+    await saveUserToDatabase();
+
     return true;
   } catch (error) {
     console.error(error);
@@ -82,14 +85,18 @@ export async function getCurrentUser() {
   try {
     const result = await account.get();
     if (result.$id) {
-      const userAvatar = avatar.getInitials(result.name);
+      console.log("Authenticated User:", result); // Debugging
+
+      // Generate temporary initials avatar for UI display
+      const userAvatar = avatar.getInitials(result.name).toString();
 
       return {
-        ...result,
-        avatar: userAvatar.toString(),
+        id: result.$id,
+        name: result.name,
+        email: result.email,
+        avatar: userAvatar, // Only for UI (not stored in DB)
       };
     }
-
     return null;
   } catch (error) {
     console.log(error);
@@ -97,71 +104,80 @@ export async function getCurrentUser() {
   }
 }
 
-export async function getLatestProperties() {
+// Function to save only name and email to the database
+export async function saveUserToDatabase() {
   try {
-    const result = await databases.listDocuments(
+    // Ensure the user is authenticated
+    const currentUser = await account.get();
+    if (!currentUser) {
+      throw new Error("User not authenticated");
+    }
+
+    console.log("Authenticated user:", currentUser); // Debugging
+
+    const userData = {
+      name: currentUser.name,
+      email: currentUser.email,
+    };
+
+    // Check if user already exists in the database
+    const existingUsers = await databases.listDocuments(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      [Query.orderAsc("$createdAt"), Query.limit(5)]
+      config.usersCollectionId!,
+      [Query.equal("email", userData.email)]
     );
 
-    return result.documents;
+    if (existingUsers.documents.length > 0) {
+      console.log("User already exists in the database.");
+      return;
+    }
+
+    // Create new user document with only name and email
+    await databases.createDocument(
+      config.databaseId!,
+      config.usersCollectionId!,
+      ID.unique(),
+      userData
+    );
+
+    console.log("User saved to database successfully.");
   } catch (error) {
-    console.error(error);
-    return [];
+    console.error("Error saving user to database:", error);
   }
 }
-
-export async function getProperties({
-  filter,
-  query,
-  limit,
-}: {
-  filter: string;
-  query: string;
-  limit?: number;
-}) {
+export async function updateUserData(updatedData: { name?: string; email?: string; bio?: string; phone?: string }) {
   try {
-    const buildQuery = [Query.orderDesc("$createdAt")];
+    // Ensure user is authenticated
+    const currentUser = await account.get();
+    if (!currentUser) {
+      throw new Error("User not authenticated");
+    }
 
-    if (filter && filter !== "All")
-      buildQuery.push(Query.equal("type", filter));
-
-    if (query)
-      buildQuery.push(
-        Query.or([
-          Query.search("name", query),
-          Query.search("address", query),
-          Query.search("type", query),
-        ])
-      );
-
-    if (limit) buildQuery.push(Query.limit(limit));
-
-    const result = await databases.listDocuments(
+    // Get user's existing record from database
+    const existingUsers = await databases.listDocuments(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      buildQuery
+      config.usersCollectionId!,
+      [Query.equal("email", [currentUser.email])] // Fix syntax issue
     );
 
-    return result.documents;
-  } catch (error) {
-    console.error(error);
-    return [];
-  }
-}
+    if (existingUsers.documents.length === 0) {
+      throw new Error("User record not found in database.");
+    }
 
-// write function to get property by id
-export async function getPropertyById({ id }: { id: string }) {
-  try {
-    const result = await databases.getDocument(
+    const userDocId = existingUsers.documents[0].$id; // Get user's document ID
+
+    // Update the user data
+    const response = await databases.updateDocument(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      id
+      config.usersCollectionId!,
+      userDocId,
+      updatedData
     );
-    return result;
+
+    console.log("User updated successfully:", response);
+    return response;
   } catch (error) {
-    console.error(error);
+    console.error("Error updating user data:", error);
     return null;
   }
 }

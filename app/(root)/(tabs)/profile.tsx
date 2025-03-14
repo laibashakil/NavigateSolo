@@ -1,22 +1,24 @@
 import {
   Alert,
-  Image,
-  ImageSourcePropType,
   SafeAreaView,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
+  Image,
+  ActivityIndicator,
 } from "react-native";
+import { useRouter } from "expo-router";
+import { useEffect } from "react";
 
-import { logout } from "@/lib/appwrite";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useGlobalContext } from "@/lib/global-provider";
 
 import icons from "@/constants/icons";
 import { settings } from "@/constants/data";
 
 interface SettingsItemProp {
-  icon: ImageSourcePropType;
+  icon: any;
   title: string;
   onPress?: () => void;
   textStyle?: string;
@@ -46,17 +48,61 @@ const SettingsItem = ({
 );
 
 const Profile = () => {
-  const { user, refetch } = useGlobalContext();
+  const { user, refetch, loading } = useGlobalContext();
+  const router = useRouter();
+
+  // Ensure we fetch the user data again if it becomes null
+  useEffect(() => {
+    if (!user) {
+      console.warn("⚠️ User is null. Refetching...");
+      refetch();
+    }
+  }, [user]);
 
   const handleLogout = async () => {
-    const result = await logout();
-    if (result) {
-      Alert.alert("Success", "Logged out successfully");
+    console.log("🔄 Configuring GoogleSignin before logout...");
+
+    GoogleSignin.configure({
+      ExpoClientId: "46058743249-0ktas23ef71609utpb8s34154toafocs.apps.googleusercontent.com",
+      iosClientId: "46058743249-qh06cp7e1oeiidvca0qcdp6dac45anbo.apps.googleusercontent.com",
+    });
+  
+    try {
+      await GoogleSignin.signOut();
+      console.log("✅ Signed out successfully");
+  
+      // Refresh user state to remove logged-in user
       refetch();
-    } else {
-      Alert.alert("Error", "Failed to logout");
+    } catch (error) {
+      console.log("❌ Logout Error:", error.message);
     }
   };
+
+  // Show a loading spinner until user data is fully loaded
+  if (loading) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+    );
+  }
+
+  // If user is still null after loading, force a logout (avoiding broken state)
+  if (!user) {
+    return (
+      <View className="flex-1 justify-center items-center bg-white">
+        <Text className="text-lg font-rubik text-center">
+          Something went wrong. Please log in again.
+        </Text>
+        <TouchableOpacity
+          className="mt-4 px-6 py-2 bg-red-500 rounded-lg"
+          onPress={handleLogout}
+        >
+          <Text className="text-white font-rubik">Log In Again</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView className="h-full bg-white">
@@ -69,31 +115,46 @@ const Profile = () => {
           <Image source={icons.bell} className="size-5" />
         </View>
 
+        {/* Avatar and User Info */}
         <View className="flex flex-row justify-center mt-5">
           <View className="flex flex-col items-center relative mt-5">
-            <Image
-              source={{ uri: user?.avatar }}
-              className="size-44 relative rounded-full"
-            />
-            <TouchableOpacity className="absolute bottom-11 right-2">
-              <Image source={icons.edit} className="size-9" />
-            </TouchableOpacity>
+            <View className="w-44 h-44 rounded-full bg-gray-300 flex items-center justify-center">
+              {user?.photo ? (
+                <Image
+                  source={{ uri: user?.photo }}
+                  className="rounded-full w-44 h-44"
+                />
+              ) : (
+                <Text className="text-5xl font-rubik-bold text-white">
+                  {user?.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </Text>
+              )}
+            </View>
 
             <Text className="text-2xl font-rubik-bold mt-2">{user?.name}</Text>
+            <Text className="text-sm font-rubik">{user?.email}</Text>
           </View>
         </View>
 
-        <View className="flex flex-col mt-10">
-          <SettingsItem icon={icons.map} title="My Destinations" />
-          <SettingsItem icon={icons.people} title="Emergency Contacts" />
-        </View>
-
+        {/* Settings Items */}
         <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
-          {settings.slice(2).map((item, index) => (
-            <SettingsItem key={index} {...item} />
+          {settings.map((item, index) => (
+            <SettingsItem
+              key={index}
+              {...item}
+              onPress={() => {
+                if (item.title === "Edit Profile") {
+                  router.push("/EditProfileScreen"); // Navigate to Edit Profile
+                }
+              }}
+            />
           ))}
         </View>
 
+        {/* Logout Button */}
         <View className="flex flex-col border-t mt-5 pt-5 border-primary-200">
           <SettingsItem
             icon={icons.logout}

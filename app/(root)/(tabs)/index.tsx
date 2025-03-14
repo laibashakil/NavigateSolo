@@ -213,4 +213,7 @@ export default function NavigationApp() {
             </MapView>
         </View>
     );
+
 }
+
+export default Index

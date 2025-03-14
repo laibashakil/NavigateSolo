@@ -1,12 +1,29 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { View, Text, ActivityIndicator } from "react-native";
+import useWiFiScanner from "../../../hooks/useWiFiScanner";
 
-const Explore = () => {
+import predictLocation from "../../utils/predictLocation";
+
+const WiFiLocation = () => {
+  const wifiSignals = useWiFiScanner();
+  const [location, setLocation] = useState("Scanning...");
+
+  useEffect(() => {
+    if (wifiSignals && wifiSignals.length > 0) {
+      const predictedLocation = predictLocation(wifiSignals);
+      setLocation(predictedLocation);
+    }
+  }, [wifiSignals]);
+
   return (
-    <View>
-      <Text>Explore RR</Text>
+    <View style={{ padding: 20, alignItems: "center" }}>
+      <Text style={{ fontSize: 18, fontWeight: "bold" }}>
+        Current Location:
+      </Text>
+      <Text style={{ fontSize: 24, color: "blue" }}>{location}</Text>
+      {location === "Scanning..." && <ActivityIndicator size="large" />}
     </View>
-  )
-}
+  );
+};
 
-export default Explore
+export default WiFiLocation;
