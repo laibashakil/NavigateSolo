@@ -60,14 +60,21 @@ const Profile = () => {
   }, [user]);
 
   const handleLogout = async () => {
+    console.log("🔄 Configuring GoogleSignin before logout...");
+
+    GoogleSignin.configure({
+      ExpoClientId: "46058743249-0ktas23ef71609utpb8s34154toafocs.apps.googleusercontent.com",
+      iosClientId: "46058743249-qh06cp7e1oeiidvca0qcdp6dac45anbo.apps.googleusercontent.com",
+    });
+  
     try {
-      await GoogleSignin.revokeAccess(); // Revoke access token
-      await GoogleSignin.signOut(); // Sign out from Google
-      refetch(); // Refresh global state
-      Alert.alert("Success", "Logged out successfully");
+      await GoogleSignin.signOut();
+      console.log("✅ Signed out successfully");
+  
+      // Refresh user state to remove logged-in user
+      refetch();
     } catch (error) {
-      Alert.alert("Error", "Failed to logout");
-      console.error("Logout Error:", error);
+      console.log("❌ Logout Error:", error.message);
     }
   };
 
