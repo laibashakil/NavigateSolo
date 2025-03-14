@@ -2,6 +2,10 @@
   "expo": {
     "name": "NavigateSolo",
     "slug": "NavigateSolo",
+    "permissions": [
+      "LOCATION_FOREGROUND",
+      "LOCATION_BACKGROUND"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -30,6 +34,8 @@
       },
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION", 
+        "ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION",
         "android.permission.ACCESS_WIFI_STATE",
         "android.permission.CHANGE_WIFI_STATE",
