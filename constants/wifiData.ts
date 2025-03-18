@@ -1,126 +1,109 @@
 const wifiData = [
-    {
-      location: "Room 1",
-      signals: [
-        { ssid: "PTCL-GPON", signalStrength: -70 },
-      ],
-    },
-    {
-      location: "Room 2",
-      signals: [
-        { ssid: "PTCL-GPON", signalStrength: -63 },
-        { ssid: "FLASH FIBER", signalStrength: -54 },
-        { ssid: "PTCL G-Pon 383", signalStrength: -75 },
-        { ssid: "Genone Tech B/M", signalStrength: -81 },
-        { ssid: "FAHAD", signalStrength: -83 },
-        { ssid: "Home Sweet Home", signalStrength: -75 },
-        { ssid: "No Network", signalStrength: -76 },
-        { ssid: "HUAWEI-sPvz", signalStrength: -68 },
-      ],
-    },
-    {
-      location: "Lounge",
-      signals: [
-        { ssid: "PTCL-GPON", signalStrength: -50 },
-        { ssid: "FLASH FIBER", signalStrength: -54 },
-        { ssid: "PTCL G-Pon 383", signalStrength: -75 },
-        { ssid: "Genone Tech B/M", signalStrength: -81 },
-        { ssid: "FAHAD", signalStrength: -83 },
-        { ssid: "Home Sweet Home", signalStrength: -75 },
-        { ssid: "No Network", signalStrength: -76 },
-        { ssid: "HUAWEI-sPvz", signalStrength: -68 },
-      ],
-    },
-    {
-      location: "Drawing Room",
-      signals: [
-        { ssid: "PTCL-GPON", signalStrength: -71 },
-        { ssid: "FLASH FIBER", signalStrength: -54 },
-        { ssid: "PTCL G-Pon 383", signalStrength: -75 },
-        { ssid: "Genone Tech B/M", signalStrength: -81 },
-        { ssid: "FAHAD", signalStrength: -83 },
-        { ssid: "Home Sweet Home", signalStrength: -75 },
-        { ssid: "No Network", signalStrength: -76 },
-        { ssid: "HUAWEI-sPvz", signalStrength: -68 },
-      ],
-    },
-    {
-      location: "Kitchen",
-      signals: [
-        { ssid: "PTCL-GPON", signalStrength: -79 },
-      ],
-    },
-    {
-      location: "Garage",
-      signals: [
-        { ssid: "Imran", signalStrength: -82 },
-        { ssid: "Genone Tech B/M", signalStrength: -75 },
-        { ssid: "Tenda_192820", signalStrength: -68 },
-        { ssid: "PTCL-GPON", signalStrength: -56 },
-        { ssid: "MURAD", signalStrength: -86 },
-        { ssid: "Mohib", signalStrength: -73 },
-        { ssid: "GPON- PTCL", signalStrength: -80 },
-        { ssid: "HUAWEI-sPvz", signalStrength: -70 },
-      ],
-    },
-    {
-      location: "Room A1",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -54.5 },
-        { ssid: "FTTH-1084", signalStrength: -75 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "FTTH-1080", signalStrength: -82 },
-      ],
-    },
-    {
-      location: "Room A2",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -50.5 },
-        { ssid: "FTTH-1084", signalStrength: -75 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "Ahsan-5G", signalStrength: -86 },
-        { ssid: "FTTH-1080", signalStrength: -82 },
-      ],
-    },
-    {
-      location: "Lounge A",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -50.5 },
-        { ssid: "FTTH-1084", signalStrength: -62 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "Ahsan-5G", signalStrength: -86 },
-        { ssid: "Abdul Aziz", signalStrength: -80 },
-      ],
-    },
-    {
-      location: "DrawingRoom A",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -50.5 },
-        { ssid: "FTTH-1084", signalStrength: -62 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "Ahsan-5G", signalStrength: -86 },
-        { ssid: "Abdul Aziz", signalStrength: -80 },
-      ],
-    },
-    {
-      location: "Kitchen A",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -50.5 },
-        { ssid: "FTTH-1084", signalStrength: -75 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "FTTH-1080", signalStrength: -82 },
-      ],
-    },
-    {
-      location: "Balcony A",
-      signals: [
-        { ssid: "FTTH-1081-2", signalStrength: -62.5 },
-        { ssid: "FTTH-1084", signalStrength: -75 },
-        { ssid: "TENDA(5G)", signalStrength: -62 },
-        { ssid: "FTTH-1080", signalStrength: -82 },
-      ],
-    },
-  ];
-  
-  export default wifiData;
-  
+  {
+    "location": "Laiba's room",
+    "signals": [
+      {
+        "ssid": "FLASH FIBER",
+        "mac": "6c:e8:74:be:f0:6c",
+        "signalStrength": "-67.0"
+      },
+      {
+        "ssid": "FLASH FIBER 5G",
+        "mac": "6c:e8:74:be:f0:70",
+        "signalStrength": "-81.0"
+      },
+      {
+        "ssid": "PTCL-GPON",
+        "mac": "d0:c6:5b:0d:9b:64",
+        "signalStrength": "-83.0"
+      },
+      {
+        "ssid": "Mohib",
+        "mac": "04:d4:c4:11:8a:00",
+        "signalStrength": "-94.0"
+      }
+    ]
+  },
+  {
+    "location": "Laiba's room 2",
+    "signals": [
+      {
+        "ssid": "HUAWEI-sPvz",
+        "mac": "74:5a:aa:73:66:60",
+        "signalStrength": "-72.0"
+      },
+      {
+        "ssid": "FLASH FIBER 5G",
+        "mac": "6c:e8:74:be:f0:70",
+        "signalStrength": "-79.0"
+      },
+      {
+        "ssid": "Home Sweet Home",
+        "mac": "28:a6:db:79:39:d4",
+        "signalStrength": "-94.0"
+      },
+      {
+        "ssid": "PTCL-GPON",
+        "mac": "d0:c6:5b:0d:9b:64",
+        "signalStrength": "-79.0"
+      }
+    ]
+  },
+  {
+    "location": "Laiba's Lounge",
+    "signals": [
+      {
+        "ssid": "FLASH FIBER",
+        "mac": "6c:e8:74:be:f0:6c",
+        "signalStrength": "-71.0"
+      },
+      {
+        "ssid": "HUAWEI-sPvz",
+        "mac": "74:5a:aa:73:66:60",
+        "signalStrength": "-82.0"
+      },
+      {
+        "ssid": "FLASH FIBER 5G",
+        "mac": "6c:e8:74:be:f0:70",
+        "signalStrength": "-86.0"
+      },
+      {
+        "ssid": "PTCL-GPON",
+        "mac": "d0:c6:5b:0d:9b:64",
+        "signalStrength": "-72.0"
+      }
+    ]
+  },
+  {
+    "location": "Laiba's kitchen",
+    "signals": [
+      {
+        "ssid": "FLASH FIBER",
+        "mac": "6c:e8:74:be:f0:6c",
+        "signalStrength": "-88.0"
+      },
+      {
+        "ssid": "Abdul Wahid",
+        "mac": "c0:c9:e3:b5:90:38",
+        "signalStrength": "-96.0"
+      },
+      {
+        "ssid": "Home Sweet Home",
+        "mac": "28:a6:db:79:39:d4",
+        "signalStrength": "-96.0"
+      },
+      {
+        "ssid": "PTCL-GPON",
+        "mac": "d0:c6:5b:0d:9b:64",
+        "signalStrength": "-79.0"
+      },
+      {
+        "ssid": "PTCL G-Pon 383 ",
+        "mac": "98:1a:35:7f:37:10",
+        "signalStrength": "-91.0"
+      }
+    ]
+  }
+];
+
+export default wifiData;
