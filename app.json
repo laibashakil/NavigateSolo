@@ -8,21 +8,19 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
         "CFBundleURLTypes": [
           {
             "CFBundleURLSchemes": [
-               "com.googleusercontent.apps.46058743249-qh06cp7e1oeiidvca0qcdp6dac45anbo"
+              "com.googleusercontent.apps.46058743249-qh06cp7e1oeiidvca0qcdp6dac45anbo"
             ]
           }
         ]
       },
       "bundleIdentifier": "com.navigate.solo"
     },
-    
     "android": {
       "package": "com.navigate.solo",
       "adaptiveIcon": {
@@ -72,7 +70,8 @@
           ]
         }
       ],
-        "@react-native-google-signin/google-signin"
+      "@react-native-google-signin/google-signin",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true
