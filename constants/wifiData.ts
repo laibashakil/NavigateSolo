@@ -260,7 +260,7 @@ const wifiData = [
     ]
   },
   {
-    "location": "Alishba's lounge ",
+    "location": "Alishba's lounge",
     "signals": [
       {
         "ssid": "🇱🇾 ",
