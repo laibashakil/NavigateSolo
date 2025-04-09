@@ -378,19 +378,7 @@ const IndoorScreen = () => {
           <View className="w-full flex-row justify-between items-center mb-6">
             <View className="flex-row items-center space-x-2">
               <Text className="text-2xl font-bold">Indoor Navigation</Text>
-              {/* <TouchableOpacity 
-                className="bg-red-100 px-2 py-0.5 rounded-full"
-                onPress={clearWiFiData}
-              >
-                <Text className="text-red-800 text-xs">Clear Cache</Text>
-              </TouchableOpacity> */}
             </View>
-            <TouchableOpacity 
-              className="bg-gray-200 px-3 py-1 rounded-lg"
-              onPress={() => router.push("../collect")}
-            >
-              <Text className="text-gray-700 text-sm">Collect Data</Text>
-            </TouchableOpacity>
           </View>
 
           {/* Current Location Display */}

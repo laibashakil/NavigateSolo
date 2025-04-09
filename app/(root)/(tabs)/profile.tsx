@@ -139,8 +139,22 @@ const Profile = () => {
               key={index}
               {...item}
               onPress={() => {
-                if (item.title === "Edit Profile") {
-                  router.push("/EditProfileScreen"); // Navigate to Edit Profile
+                switch (item.title) {
+                  case "Account Settings":
+                    router.replace("/(root)/EditProfileScreen");
+                    break;
+                  case "About":
+                    router.replace("/(root)/AboutScreen");
+                    break;
+                  case "FAQ":
+                    router.replace("/(root)/FAQScreen");
+                    break;
+                  case "Privacy Policy":
+                    router.replace("/(root)/PrivacyPolicyScreen");
+                    break;
+                  case "Developer Mode":
+                    router.replace("/(root)/collect");
+                    break;
                 }
               }}
             />
