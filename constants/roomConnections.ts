@@ -11,7 +11,7 @@ const roomConnections: RoomConnection[] = [
   { 
     from: "Laiba's room", 
     to: "Laiba's Lounge", 
-    direction: "Go straight out of the room and you're there!", 
+    direction: "Go straight out of the room into the lounge.", 
     steps: 5,
     timeSeconds: 8
   },
@@ -50,14 +50,29 @@ const roomConnections: RoomConnection[] = [
     steps: 10,
     timeSeconds: 15
   },
+  { 
+    from: "Laiba's Lounge", 
+    to: "Laiba's Drawing Room", 
+    direction: "Walk straight to the end of the lounge near the exit and find the doors to your left", 
+    steps: 7,
+    timeSeconds: 10
+  },
+  { 
+    from: "Laiba's Drawing Room", 
+    to: "Laiba's Lounge", 
+    direction: "Exit the drawing room and turn right to enter the lounge area", 
+    steps: 7,
+    timeSeconds: 10
+  },
 ];
 
 // Map of which rooms are directly connected to each other
 const roomAdjacencyMap: Record<string, string[]> = {
   "Laiba's room": ["Laiba's Lounge", "Laiba's room 2"],
-  "Laiba's Lounge": ["Laiba's room", "Laiba's kitchen"],
+  "Laiba's Lounge": ["Laiba's room", "Laiba's kitchen", "Laiba's Drawing Room"],
   "Laiba's kitchen": ["Laiba's Lounge"],
-  "Laiba's room 2": ["Laiba's room"]
+  "Laiba's room 2": ["Laiba's room"],
+  "Laiba's Drawing Room": ["Laiba's Lounge"]
 };
 
 /**

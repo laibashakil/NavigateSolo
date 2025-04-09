@@ -39,34 +39,31 @@ const IndoorScreen = () => {
   useEffect(() => {
     const loadLocations = async () => {
       try {
-        // Only load from WiFi data with validation
-        const storedData = await AsyncStorage.getItem('wifiData');
-        if (storedData) {
-          const parsedData = JSON.parse(storedData);
-          
-          // Filter and clean up locations to remove invalid entries
-          const locations = parsedData
-            .filter((item: any) => 
-              // Ensure item has a location property that's a non-empty string
-              item && 
-              typeof item.location === 'string' && 
-              item.location.trim().length > 0
-            )
-            .map((item: any) => item.location.trim());
-            
-          // Remove duplicates
-          const uniqueLocations = [...new Set(locations)] as string[];
-          
-          console.log("Loaded locations from WiFi data:", uniqueLocations);
-          setAvailableLocations(uniqueLocations);
-        } else {
-          // Fallback to the constants (for demo/testing)
-          const hardcodedLocations = ["Laiba's room", "Laiba's room 2", "Laiba's Lounge", "Laiba's kitchen"];
-          setAvailableLocations(hardcodedLocations);
-        }
+        // Always use hardcoded locations instead of loading from AsyncStorage
+        const hardcodedLocations = [
+          "Laiba's room", 
+          "Laiba's room 2", 
+          "Laiba's Lounge", 
+          "Laiba's kitchen",
+          "Laiba's Drawing Room",
+          "Alishba's room",
+          "Alishba Room2",
+          "Alishba's lounge"
+        ];
+        setAvailableLocations(hardcodedLocations);
+        console.log("Using hardcoded locations:", hardcodedLocations);
       } catch (error) {
         console.error("Failed to load locations:", error);
-        const hardcodedLocations = ["Laiba's room", "Laiba's room 2", "Laiba's Lounge", "Laiba's kitchen"];
+        const hardcodedLocations = [
+          "Laiba's room", 
+          "Laiba's room 2", 
+          "Laiba's Lounge", 
+          "Laiba's kitchen",
+          "Laiba's Drawing Room",
+          "Alishba's room",
+          "Alishba Room2",
+          "Alishba's lounge"
+        ];
         setAvailableLocations(hardcodedLocations);
       }
     };
@@ -336,13 +333,23 @@ const IndoorScreen = () => {
   const isScanDisabled = scanStatus !== "idle";
 
   // Clear WiFi data from storage
+  /*
   const clearWiFiData = async () => {
     try {
       await AsyncStorage.removeItem('wifiData');
       console.log("Cleared WiFi data from storage");
       
-      // Reset to hardcoded locations
-      const hardcodedLocations = ["Laiba's room", "Laiba's room 2", "Laiba's Lounge", "Laiba's kitchen"];
+      // Keep using the same hardcoded locations
+      const hardcodedLocations = [
+        "Laiba's room", 
+        "Laiba's room 2", 
+        "Laiba's Lounge", 
+        "Laiba's kitchen",
+        "Laiba's Drawing Room",
+        "Alishba's room",
+        "Alishba Room2",
+        "Alishba's lounge"
+      ];
       setAvailableLocations(hardcodedLocations);
       
       // Show confirmation
@@ -361,6 +368,7 @@ const IndoorScreen = () => {
       }
     }
   };
+  */
 
   return (
     <SafeAreaView className="flex-1 bg-white">
@@ -370,12 +378,12 @@ const IndoorScreen = () => {
           <View className="w-full flex-row justify-between items-center mb-6">
             <View className="flex-row items-center space-x-2">
               <Text className="text-2xl font-bold">Indoor Navigation</Text>
-              <TouchableOpacity 
+              {/* <TouchableOpacity 
                 className="bg-red-100 px-2 py-0.5 rounded-full"
                 onPress={clearWiFiData}
               >
                 <Text className="text-red-800 text-xs">Clear Cache</Text>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
             </View>
             <TouchableOpacity 
               className="bg-gray-200 px-3 py-1 rounded-lg"
@@ -422,8 +430,10 @@ const IndoorScreen = () => {
                 </TouchableOpacity>
               </View>
               
+              <Text className="text-xs text-gray-600 mb-1">Follow these direction instructions:</Text>
+              
               <ScrollView 
-                className="bg-white rounded p-3 mb-2 max-h-32"
+                className="bg-white rounded p-3 mb-2 max-h-64"
                 contentContainerStyle={{ paddingBottom: 8 }}
               >
                 {navigationSteps.map((step, index) => (

@@ -177,3 +177,72 @@ The system stores location data in the following format:
 3. Multi-floor support
 4. Integration with other sensors
 5. Offline map support
+
+## Adding New Locations to the Navigation System
+
+### Step-by-Step Guide
+
+1. **Collect WiFi Data for the New Location**
+   - Open the app and tap on the "Collect Data" button
+   - Enter the name of the new location
+   - Follow the data collection process (standing still for 3 readings)
+   - Save the collected data
+
+2. **Update the wifiData.ts File**
+   - Copy the data output from the terminal/console
+   - Open the `constants/wifiData.ts` file
+   - Add the new location data in the proper format:
+   ```typescript
+   {
+     "location": "New Location Name",
+     "signals": [
+       {
+         "ssid": "WiFi Network Name",
+         "mac": "XX:XX:XX:XX:XX:XX",
+         "signalStrength": "-XX.X"
+       },
+       // Other networks...
+     ]
+   }
+   ```
+
+3. **Add the Location to the Hardcoded Locations List**
+   - Open the `app/(root)/(tabs)/indoor.tsx` file
+   - Find the `hardcodedLocations` array
+   - Add your new location name to the array:
+   ```typescript
+   const hardcodedLocations = [
+     // Existing locations...
+     "New Location Name" 
+   ];
+   ```
+
+4. **Define Room Connections**
+   - Open the `constants/roomConnections.ts` file
+   - Add new entries to the `roomConnections` array for both directions:
+   ```typescript
+   { 
+     from: "Existing Location", 
+     to: "New Location", 
+     direction: "Instructions on how to get there", 
+     steps: 8,
+     timeSeconds: 12
+   },
+   { 
+     from: "New Location", 
+     to: "Existing Location", 
+     direction: "Instructions for returning", 
+     steps: 8,
+     timeSeconds: 12
+   },
+   ```
+   - Update the `roomAdjacencyMap` object to include connections:
+   ```typescript
+   "New Location": ["Connected Location 1", "Connected Location 2"],
+   "Connected Location 1": ["Existing Connections", "New Location"]
+   ```
+
+5. **Test the Navigation**
+   - Restart the app to apply all changes
+   - Use the "Detect Location" button to verify detection works
+   - Test navigation to and from the new location

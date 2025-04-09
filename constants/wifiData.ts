@@ -105,6 +105,31 @@ const wifiData = [
     ]
   },
   {
+    "location": "Laiba's Drawing Room",
+    "signals": [
+      {
+        "ssid": "FLASH FIBER",
+        "mac": "6c:e8:74:be:f0:6c",
+        "signalStrength": "-67.0"
+      },
+      {
+        "ssid": "FLASH FIBER 5G",
+        "mac": "6c:e8:74:be:f0:70",
+        "signalStrength": "-80.0"
+      },
+      {
+        "ssid": "PTCL-GPON",
+        "mac": "d0:c6:5b:0d:9b:64",
+        "signalStrength": "-73.0"
+      },
+      {
+        "ssid": "Mohib",
+        "mac": "04:d4:c4:11:8a:00",
+        "signalStrength": "-87.0"
+      }
+    ]
+  },
+  {
     "location": "Alishba's room",
     "signals": [
       {
