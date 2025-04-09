@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import wifiData from "../../constants/wifiData";
+import wifiData from "@/constants/wifiData";
 import { applyKalmanFilter } from "./kalmanFilter";
 
 interface WifiSignal {

@@ -34,6 +34,8 @@ import edit from "@/assets/icons/edit.png";
 import map from "@/assets/icons/map.png";
 import mic from "@/assets/icons/mic.png";
 import micActive from "@/assets/icons/mic-active.png";
+import doorClosed from "@/assets/icons/door-closed.png";
+import doorOpen from "@/assets/icons/door-open.png";
 
 
 export default {
@@ -73,4 +75,6 @@ export default {
   map,
   mic,
   micActive,
+  doorClosed,
+  doorOpen,
 };

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, ActivityIndicator, TouchableOpacity, ScrollView, Modal, Vibration, Alert, ToastAndroid, Platform, SafeAreaView } from "react-native";
 import { Picker } from "@react-native-picker/picker";
-import { scanWiFi } from "../../utils/scanWiFi";
-import { applyKalmanFilter } from "../../utils/kalmanFilter";
-import { findBestLocation } from "../../utils/locationFinder";
+import { scanWiFi } from "@/utils/scanWiFi";
+import { applyKalmanFilter } from "@/utils/kalmanFilter";
+import { findBestLocation } from "@/utils/locationFinder";
 import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { playTone } from "../../utils/audioFallback";
-import { findShortestPath, pathToDirections } from "../../../constants/roomConnections";
+import { playTone } from "@/utils/audioFallback";
+import { findShortestPath, pathToDirections } from "@/constants/roomConnections";
 
 interface WifiNetwork {
   ssid: string;
@@ -19,7 +19,7 @@ const SCAN_COOLDOWN = 30; // 30 seconds cooldown between scans
 const AUTO_NAVIGATION_INTERVAL = 20000; // 20 seconds between navigation instructions (increased from 10)
 const ARRIVAL_CHECK_INTERVAL = 15000; // Check for arrival every 15 seconds
 
-const ExploreScreen = () => {
+const IndoorScreen = () => {
   const router = useRouter();
   const [currentLocation, setCurrentLocation] = useState<string | null>(null);
   const [destinationLocation, setDestinationLocation] = useState<string>("");
@@ -449,35 +449,8 @@ const ExploreScreen = () => {
             </View>
           )}
 
-          {/* Status Section */}
-          <View className="bg-gray-50 rounded-lg p-4 w-full max-w-sm mb-6">
-            <View className="flex-row items-center justify-between mb-4">
-              <Text className="text-sm text-gray-500">Status</Text>
-              <View className="flex-row items-center">
-                {(scanStatus !== "idle") && (
-                  <ActivityIndicator size="small" className="mr-2" />
-                )}
-                <Text className={`text-sm ${getStatusColor()}`}>
-                  {getStatusText()}
-                </Text>
-              </View>
-            </View>
-
-            {/* Scan Info */}
-            <View className="space-y-2">
-              <View className="flex-row justify-between">
-                <Text className="text-sm text-gray-500">Last Scan</Text>
-                <Text className="text-sm text-gray-700">{lastScanTime}</Text>
-              </View>
-              <View className="flex-row justify-between">
-                <Text className="text-sm text-gray-500">Networks Found</Text>
-                <Text className="text-sm text-gray-700">{networkCount}</Text>
-              </View>
-            </View>
-          </View>
-
           {/* Action Buttons */}
-          <View className="w-full max-w-sm space-y-4 mb-8">
+          <View className="w-full max-w-sm">
             {/* Detect Location Button */}
             <TouchableOpacity
               className={`p-4 rounded-lg ${
@@ -497,7 +470,7 @@ const ExploreScreen = () => {
             {/* Start Navigation Button */}
             {!navigationActive && currentLocation && destinationLocation && (
               <TouchableOpacity
-                className="bg-green-500 p-4 rounded-lg"
+                className="bg-green-500 p-4 rounded-lg mt-6"
                 onPress={startNavigation}
               >
                 <Text className="text-white text-center text-lg font-semibold">
@@ -517,7 +490,7 @@ const ExploreScreen = () => {
         onRequestClose={() => setShowDestinationModal(false)}
       >
         <View className="flex-1 justify-center items-center bg-black/50">
-          <View className="bg-white rounded-lg p-6 w-80 max-w-sm">
+          <View className="bg-white rounded-lg p-6 w-11/12 max-w-md">
             <Text className="text-xl font-bold mb-4">Select Destination</Text>
             
             <View className="bg-gray-50 rounded border border-gray-200 mb-4">
@@ -525,29 +498,29 @@ const ExploreScreen = () => {
                 selectedValue={destinationLocation}
                 onValueChange={(itemValue) => setDestinationLocation(itemValue)}
               >
-                <Picker.Item label="-- Select a destination --" value="" />
+                <Picker.Item label="Choose your destination here" value="" />
                 {availableLocations.map((location) => (
                   <Picker.Item key={location} label={location} value={location} />
                 ))}
               </Picker>
             </View>
             
-            <View className="flex-row justify-end space-x-2">
+            <View className="flex-row justify-between mt-4">
               <TouchableOpacity 
-                className="bg-gray-300 px-4 py-2 rounded"
+                className="bg-gray-300 px-8 py-3 rounded-lg w-5/12"
                 onPress={() => setShowDestinationModal(false)}
               >
-                <Text>Cancel</Text>
+                <Text className="text-center">Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity 
-                className="bg-blue-500 px-4 py-2 rounded"
+                className="bg-blue-500 px-8 py-3 rounded-lg w-5/12"
                 onPress={() => {
                   if (destinationLocation) {
                     setShowDestinationModal(false);
                   }
                 }}
               >
-                <Text className="text-white">Confirm</Text>
+                <Text className="text-white text-center">Confirm</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -557,4 +530,4 @@ const ExploreScreen = () => {
   );
 };
 
-export default ExploreScreen;
+export default IndoorScreen;
