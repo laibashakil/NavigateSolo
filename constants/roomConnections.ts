@@ -9,70 +9,97 @@ interface RoomConnection {
 // Room connection map defining how rooms are connected
 const roomConnections: RoomConnection[] = [
   { 
-    from: "Laiba's room", 
-    to: "Laiba's Lounge", 
-    direction: "Go straight out of the room into the lounge.", 
+    from: "CSIT Room 1", 
+    to: "CSIT Room 2", 
+    direction: "Exit Room 1 through either door and turn right. Enter Room 2 through its first door.", 
     steps: 5,
     timeSeconds: 8
   },
   { 
-    from: "Laiba's Lounge", 
-    to: "Laiba's room", 
-    direction: "Walk straight to the room by choosing the door to your right", 
+    from: "CSIT Room 2", 
+    to: "CSIT Room 1", 
+    direction: "Exit Room 2 through either door and turn left. Enter Room 1 through either of its doors.", 
     steps: 5,
     timeSeconds: 8
   },
   { 
-    from: "Laiba's Lounge", 
-    to: "Laiba's kitchen", 
-    direction: "Walk straight from the lounge to the short hallway to your left and walk straight to the kitchen", 
+    from: "CSIT Room 2", 
+    to: "CSIT Room 3", 
+    direction: "Exit Room 2 through either door and turn right. Pass both doors of Room 2 to reach Room 3's first door.", 
     steps: 8,
     timeSeconds: 12
   },
   { 
-    from: "Laiba's kitchen", 
-    to: "Laiba's Lounge", 
-    direction: "Walk straight from the kitchen back to the lounge through the short hallway", 
+    from: "CSIT Room 3", 
+    to: "CSIT Room 2", 
+    direction: "Exit Room 3 through either door and turn left. Enter Room 2 through either of its doors.", 
     steps: 8,
     timeSeconds: 12
   },
   { 
-    from: "Laiba's room", 
-    to: "Laiba's room 2", 
-    direction: "Go straight to the door and the door on the right leads to room 2", 
-    steps: 10,
-    timeSeconds: 15
+    from: "CSIT Room 3", 
+    to: "CSIT Room 4", 
+    direction: "Exit Room 3 through either door and turn right. Enter Room 4 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
   },
   { 
-    from: "Laiba's room 2", 
-    to: "Laiba's room", 
-    direction: "Walk straight to the room by choosing the door to your left", 
-    steps: 10,
-    timeSeconds: 15
+    from: "CSIT Room 4", 
+    to: "CSIT Room 3", 
+    direction: "Exit Room 4 through either door and turn left. Enter Room 3 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
   },
   { 
-    from: "Laiba's Lounge", 
-    to: "Laiba's Drawing Room", 
-    direction: "Walk straight to the end of the lounge near the exit and find the doors to your left", 
-    steps: 7,
-    timeSeconds: 10
+    from: "CSIT Room 1", 
+    to: "CSIT Room 3", 
+    direction: "Exit Room 1 through either door and turn right. Walk past both doors of Room 2 to reach Room 3's first door.", 
+    steps: 12,
+    timeSeconds: 18
   },
   { 
-    from: "Laiba's Drawing Room", 
-    to: "Laiba's Lounge", 
-    direction: "Exit the drawing room and turn right to enter the lounge area", 
-    steps: 7,
-    timeSeconds: 10
+    from: "CSIT Room 3", 
+    to: "CSIT Room 1", 
+    direction: "Exit Room 3 through either door and turn left. Walk past both doors of Room 2 to reach Room 1's doors.", 
+    steps: 12,
+    timeSeconds: 18
   },
+  { 
+    from: "CSIT Room 2", 
+    to: "CSIT Room 4", 
+    direction: "Exit Room 2 through either door and turn right. Walk past both doors of Room 3 to reach Room 4's first door.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 4", 
+    to: "CSIT Room 2", 
+    direction: "Exit Room 4 through either door and turn left. Walk past both doors of Room 3 to reach Room 2's doors.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 1", 
+    to: "CSIT Room 4", 
+    direction: "Exit Room 1 through either door and turn right. Walk past both doors of Room 2 and Room 3 to reach Room 4's first door.", 
+    steps: 16,
+    timeSeconds: 24
+  },
+  { 
+    from: "CSIT Room 4", 
+    to: "CSIT Room 1", 
+    direction: "Exit Room 4 through either door and turn left. Walk past both doors of Room 3 and Room 2 to reach Room 1's doors.", 
+    steps: 16,
+    timeSeconds: 24
+  }
 ];
 
 // Map of which rooms are directly connected to each other
 const roomAdjacencyMap: Record<string, string[]> = {
-  "Laiba's room": ["Laiba's Lounge", "Laiba's room 2"],
-  "Laiba's Lounge": ["Laiba's room", "Laiba's kitchen", "Laiba's Drawing Room"],
-  "Laiba's kitchen": ["Laiba's Lounge"],
-  "Laiba's room 2": ["Laiba's room"],
-  "Laiba's Drawing Room": ["Laiba's Lounge"]
+  "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4"],
+  "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4"],
+  "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4"],
+  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3"]
 };
 
 /**

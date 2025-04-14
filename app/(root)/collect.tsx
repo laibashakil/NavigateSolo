@@ -181,7 +181,7 @@ const CollectScreen = () => {
   const goBack = () => {
     setCollectedData(null);
     setLocationName('');
-    router.back();
+    router.replace("/(root)/(tabs)/profile");
   };
 
   // Format the collected data as JSON string for display

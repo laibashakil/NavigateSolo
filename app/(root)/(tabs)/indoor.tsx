@@ -41,28 +41,28 @@ const IndoorScreen = () => {
       try {
         // Always use hardcoded locations instead of loading from AsyncStorage
         const hardcodedLocations = [
-          "Laiba's room", 
-          "Laiba's room 2", 
-          "Laiba's Lounge", 
-          "Laiba's kitchen",
-          "Laiba's Drawing Room",
-          "Alishba's room",
-          "Alishba Room2",
-          "Alishba's lounge"
+          // "Laiba's room", 
+          // "Laiba's room 2", 
+          // "Laiba's Lounge", 
+          // "Laiba's kitchen",
+          // "Laiba's Drawing Room",
+          // "Alishba's room",
+          // "Alishba Room2",
+          // "Alishba's lounge"
+          "CSIT Room 1",
+          "CSIT Room 2",
+          "CSIT Room 3",
+          "CSIT Room 4"
         ];
         setAvailableLocations(hardcodedLocations);
         console.log("Using hardcoded locations:", hardcodedLocations);
       } catch (error) {
         console.error("Failed to load locations:", error);
         const hardcodedLocations = [
-          "Laiba's room", 
-          "Laiba's room 2", 
-          "Laiba's Lounge", 
-          "Laiba's kitchen",
-          "Laiba's Drawing Room",
-          "Alishba's room",
-          "Alishba Room2",
-          "Alishba's lounge"
+          "CSIT Class 1",
+          "CSIT Room 2",
+          "CSIT Room 3",
+          "CSIT Room 4"
         ];
         setAvailableLocations(hardcodedLocations);
       }
