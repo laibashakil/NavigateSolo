@@ -25,6 +25,31 @@ const wifiData = [
     ]
   },
   {
+    "location": "Dr Shariq's office",
+    "signals": [
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:cb:60",
+        "signalStrength": "-49.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:c6:00",
+        "signalStrength": "-71.0"
+      },
+      {
+        "ssid": "NEDUET-WiFi Network",
+        "mac": "14:d6:4d:a6:f7:33",
+        "signalStrength": "-80.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:ca:c0",
+        "signalStrength": "-89.0"
+      }
+    ]
+  },
+  {
     "location": "Laiba's room 2",
     "signals": [
       {
@@ -638,7 +663,373 @@ const wifiData = [
         "signalStrength": "-89.0"
       }
     ]
+  },
+  {
+    "location": "CSIT Room 6",
+    "signals": [
+      {
+        "ssid": "OPPO F17 Pro",
+        "mac": "ba:6f:42:ec:94:2f",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "TECNO SPARK 20",
+        "mac": "f6:92:cc:88:43:ed",
+        "signalStrength": "-96.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:30",
+        "signalStrength": "-69.0"
+      },
+      {
+        "ssid": "TECNO SPARK Go 2024",
+        "mac": "32:de:8f:2a:44:6a",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "Ftktyt",
+        "mac": "b6:79:4e:0b:b2:89",
+        "signalStrength": "-80.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:f6:10",
+        "signalStrength": "-88.0"
+      },
+      {
+        "ssid": "realme C35",
+        "mac": "6e:e3:dd:87:b3:17",
+        "signalStrength": "-63.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:78:b0",
+        "signalStrength": "-93.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:78:f0",
+        "signalStrength": "-94.0"
+      },
+      {
+        "ssid": "Muhammad's Galaxy S10+",
+        "mac": "fa:a2:9b:c5:d8:03",
+        "signalStrength": "-95.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:01:c0",
+        "signalStrength": "-71.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:01:d0",
+        "signalStrength": "-77.0"
+      },
+      {
+        "ssid": "Pixel_6498",
+        "mac": "1e:57:2c:34:2c:34",
+        "signalStrength": "-62.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:30",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "Jazz-LTE-767F",
+        "mac": "7c:45:d0:41:76:7f",
+        "signalStrength": "-64.0"
+      }
+    ]
+  },
+  {
+    "location": "CSIT Room 7",
+    "signals": [
+      {
+        "ssid": "OPPO F17 Pro",
+        "mac": "ba:6f:42:ec:94:2f",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "TECNO SPARK 20",
+        "mac": "f6:92:cc:88:43:ed",
+        "signalStrength": "-96.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:30",
+        "signalStrength": "-69.0"
+      },
+      {
+        "ssid": "TECNO SPARK Go 2024",
+        "mac": "32:de:8f:2a:44:6a",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:20",
+        "signalStrength": "-58.0"
+      },
+      {
+        "ssid": "Ftktyt",
+        "mac": "b6:79:4e:0b:b2:89",
+        "signalStrength": "-80.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:f6:10",
+        "signalStrength": "-88.0"
+      },
+      {
+        "ssid": "realme C35",
+        "mac": "6e:e3:dd:87:b3:17",
+        "signalStrength": "-63.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:78:b0",
+        "signalStrength": "-93.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:78:f0",
+        "signalStrength": "-94.0"
+      },
+      {
+        "ssid": "Muhammad's Galaxy S10+",
+        "mac": "fa:a2:9b:c5:d8:03",
+        "signalStrength": "-95.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:01:c0",
+        "signalStrength": "-71.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:01:d0",
+        "signalStrength": "-77.0"
+      },
+      {
+        "ssid": "Pixel_6498",
+        "mac": "1e:57:2c:34:2c:34",
+        "signalStrength": "-62.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:30",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "Jazz-LTE-767F",
+        "mac": "7c:45:d0:41:76:7f",
+        "signalStrength": "-64.0"
+      }
+    ]
+  },
+  {
+    "location": "CSIT Room 8",
+    "signals": [
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:30",
+        "signalStrength": "-86.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:20",
+        "signalStrength": "-78.0"
+      },
+      {
+        "ssid": "HUAWEI Y6s",
+        "mac": "b2:73:5d:b6:9f:ca",
+        "signalStrength": "-86.0"
+      },
+      {
+        "ssid": "j7",
+        "mac": "32:6a:85:2d:72:84",
+        "signalStrength": "-75.0"
+      },
+      {
+        "ssid": "Techni",
+        "mac": "e6:cb:49:6c:86:7f",
+        "signalStrength": "-89.0"
+      },
+      {
+        "ssid": "Nuh uh >:(",
+        "mac": "16:40:34:a3:2d:b4",
+        "signalStrength": "-62.0"
+      },
+      {
+        "ssid": "Redmi Note 11",
+        "mac": "c6:24:0a:0b:78:d1",
+        "signalStrength": "-64.0"
+      },
+      {
+        "ssid": "V2043_21",
+        "mac": "7e:8b:9c:ea:86:43",
+        "signalStrength": "-63.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:25:a0",
+        "signalStrength": "-65.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:25:b0",
+        "signalStrength": "-85.0"
+      },
+      {
+        "ssid": "TECNO SPARK 5 Pro",
+        "mac": "72:f8:22:7f:3a:9a",
+        "signalStrength": "-74.0"
+      },
+      {
+        "ssid": "Huawei ",
+        "mac": "8a:29:c5:1f:8a:72",
+        "signalStrength": "-56.0"
+      },
+      {
+        "ssid": "Hassan's 4A5G",
+        "mac": "6a:cd:f2:18:01:d6",
+        "signalStrength": "-83.0"
+      },
+      {
+        "ssid": "Infinix NOTE 7",
+        "mac": "f2:34:27:15:b5:7c",
+        "signalStrength": "-73.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:30",
+        "signalStrength": "-65.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:20",
+        "signalStrength": "-67.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:4b:90",
+        "signalStrength": "-95.0"
+      },
+      {
+        "ssid": "realme C25Y1",
+        "mac": "32:da:7c:18:0d:ef",
+        "signalStrength": "-85.0"
+      }
+    ]
+  },
+  {
+    "location": "CSIT Room 5",
+    "signals": [
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:30",
+        "signalStrength": "-59.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:00:20",
+        "signalStrength": "-78.0"
+      },
+      {
+        "ssid": "HUAWEI Y6s",
+        "mac": "b2:73:5d:b6:9f:ca",
+        "signalStrength": "-86.0"
+      },
+      {
+        "ssid": "j7",
+        "mac": "32:6a:85:2d:72:84",
+        "signalStrength": "-75.0"
+      },
+      {
+        "ssid": "Techni",
+        "mac": "e6:cb:49:6c:86:7f",
+        "signalStrength": "-89.0"
+      },
+      {
+        "ssid": "Nuh uh >:(",
+        "mac": "16:40:34:a3:2d:b4",
+        "signalStrength": "-62.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "84:a9:c4:8c:78:f0",
+        "signalStrength": "-87.0"
+      },
+      {
+        "ssid": "Redmi Note 11",
+        "mac": "c6:24:0a:0b:78:d1",
+        "signalStrength": "-64.0"
+      },
+      {
+        "ssid": "V2043_21",
+        "mac": "7e:8b:9c:ea:86:43",
+        "signalStrength": "-63.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:25:a0",
+        "signalStrength": "-65.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:25:b0",
+        "signalStrength": "-85.0"
+      },
+      {
+        "ssid": "TECNO SPARK 5 Pro",
+        "mac": "72:f8:22:7f:3a:9a",
+        "signalStrength": "-74.0"
+      },
+      {
+        "ssid": "Huawei ",
+        "mac": "8a:29:c5:1f:8a:72",
+        "signalStrength": "-56.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:01:d0",
+        "signalStrength": "-60.0"
+      },
+      {
+        "ssid": "Hassan's 4A5G",
+        "mac": "6a:cd:f2:18:01:d6",
+        "signalStrength": "-83.0"
+      },
+      {
+        "ssid": "Infinix NOTE 7",
+        "mac": "f2:34:27:15:b5:7c",
+        "signalStrength": "-73.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:30",
+        "signalStrength": "-65.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c5:c8:20",
+        "signalStrength": "-67.0"
+      },
+      {
+        "ssid": "eduroam",
+        "mac": "04:b0:e7:c6:4b:90",
+        "signalStrength": "-95.0"
+      },
+      {
+        "ssid": "realme C25Y1",
+        "mac": "32:da:7c:18:0d:ef",
+        "signalStrength": "-85.0"
+      }
+    ]
   }
+
 ];
 
 export default wifiData;
