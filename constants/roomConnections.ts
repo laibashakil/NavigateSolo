@@ -252,26 +252,93 @@ const roomConnections: RoomConnection[] = [
     direction: "Exit Lab 2, turn right and walk to CSIT Lab Exit", 
     steps: 10,
     timeSeconds: 15
+  },
+  // Add CSIT Entrance connections (one-way only)
+  { 
+    from: "CSIT Entrance", 
+    to: "CSIT Room 1", 
+    direction: "From CSIT Entrance, walk straight through the corridor and CSIT Room 1 will be the fourth room (seventh door) on your right", 
+    steps: 25,
+    timeSeconds: 30
+  },
+  { 
+    from: "CSIT Entrance", 
+    to: "CSIT Room 2", 
+    direction: "From CSIT Entrance, walk straight through the corridor and CSIT Room 2 will be the third room (fifth door) on your right", 
+    steps: 20,
+    timeSeconds: 25
+  },
+  { 
+    from: "CSIT Entrance", 
+    to: "CSIT Room 3", 
+    direction: "From CSIT Entrance, walk straight through the corridor and CSIT Room 3 will be the second room (third door) on your right", 
+    steps: 15,
+    timeSeconds: 20
+  },
+  { 
+    from: "CSIT Entrance", 
+    to: "CSIT Room 4", 
+    direction: "From CSIT Entrance, walk straight and CSIT Room 4 will be the first room on your right", 
+    steps: 10,
+    timeSeconds: 15
+  },
+  { 
+    from: "CSIT Entrance", 
+    to: "CSIT Exit", 
+    direction: "From CSIT Entrance, walk straight through the entire corridor to reach CSIT Exit", 
+    steps: 30,
+    timeSeconds: 45
+  },
+  // Add CSIT Lab Entrance connections (one-way only)
+  { 
+    from: "CSIT Lab Entrance", 
+    to: "CSIT Lab Exit", 
+    direction: "From CSIT Lab Entrance, walk straight through the entire corridor to reach CSIT Lab Exit", 
+    steps: 30,
+    timeSeconds: 45
+  },
+  { 
+    from: "CSIT Lab Entrance", 
+    to: "CSIT Lab 4", 
+    direction: "From CSIT Lab Entrance, turn right then climb the stairs to first floor, turn right and CSIT Lab 4 will be the third lab room on your right", 
+    steps: 40,
+    timeSeconds: 65
+  },
+  { 
+    from: "CSIT Lab Entrance", 
+    to: "CSIT Lab 5", 
+    direction: "From CSIT Lab Entrance, turn right then climb the stairs to first floor, turn right and CSIT Lab 5 will be the sixth room on your right", 
+    steps: 45,
+    timeSeconds: 70
+  },
+  { 
+    from: "CSIT Lab Entrance", 
+    to: "CSIT Project Lab", 
+    direction: "From CSIT Lab Entrance, turn right then climb the stairs to first floor, turn right and CSIT Project Lab will be the fifth lab room on your right", 
+    steps: 50,
+    timeSeconds: 75
   }
 ];
 
 // Map of which rooms are directly connected to each other
 const roomAdjacencyMap: Record<string, string[]> = {
   "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
-  "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4"],
-  "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4"],
-  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3"],
-  "CSIT Room 5": ["CSIT Room 6", "CSIT Room 7", "CSIT Room 8"],
-  "CSIT Room 6": ["CSIT Room 5", "CSIT Room 7", "CSIT Room 8"],
-  "CSIT Room 7": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 8"],
-  "CSIT Room 8": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 7"],
-  "CSIT Lab 3": ["CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"],
-  "CSIT Lab 4": ["CSIT Lab 3", "CSIT Lab 5", "CSIT Project Lab"],
-  "CSIT Lab 5": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Project Lab"],
-  "CSIT Project Lab": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5"],
-  "CSIT Exit": ["CSIT Room 1", "CSIT Lab Exit"],
+  "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
+  "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4", "CSIT Exit"],
+  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Exit"],
+  "CSIT Room 5": ["CSIT Room 6", "CSIT Room 7", "CSIT Room 8", "CSIT Exit"],
+  "CSIT Room 6": ["CSIT Room 5", "CSIT Room 7", "CSIT Room 8", "CSIT Exit"],
+  "CSIT Room 7": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 8", "CSIT Exit"],
+  "CSIT Room 8": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 7", "CSIT Exit"],
+  "CSIT Lab 3": ["CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit"],
+  "CSIT Lab 4": ["CSIT Lab 3", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit"],
+  "CSIT Lab 5": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Project Lab", "CSIT Lab Exit"],
+  "CSIT Project Lab": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Lab Exit"],
+  "CSIT Exit": ["CSIT Room 1","CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Lab Exit"],
   "CSIT Lab Exit": ["CSIT Exit", "CSIT Lab 2"],
-  "CSIT Lab 2": ["CSIT Lab Exit"]
+  "CSIT Lab 2": ["CSIT Lab Exit"],
+  "CSIT Entrance": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
+  "CSIT Lab Entrance": ["CSIT Lab Exit","CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"]
 };
 
 /**
