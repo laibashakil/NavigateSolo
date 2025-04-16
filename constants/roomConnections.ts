@@ -91,15 +91,187 @@ const roomConnections: RoomConnection[] = [
     direction: "Exit Room 4 through either door and turn left. Walk past both doors of Room 3 and Room 2 to reach Room 1's doors.", 
     steps: 16,
     timeSeconds: 24
+  },
+  { 
+    from: "CSIT Room 5", 
+    to: "CSIT Room 6", 
+    direction: "Exit Room 5 through either door and turn right. Enter Room 6 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 6", 
+    to: "CSIT Room 5", 
+    direction: "Exit Room 6 through either door and turn left. Enter Room 5 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 6", 
+    to: "CSIT Room 7", 
+    direction: "Exit Room 6 through either door and turn right. Enter Room 7 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 7", 
+    to: "CSIT Room 6", 
+    direction: "Exit Room 7 through either door and turn left. Enter Room 6 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 7", 
+    to: "CSIT Room 8", 
+    direction: "Exit Room 7 through either door and turn right. Enter Room 8 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 8", 
+    to: "CSIT Room 7", 
+    direction: "Exit Room 8 through either door and turn left. Enter Room 7 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 5", 
+    to: "CSIT Room 7", 
+    direction: "Exit Room 5 through either door and turn right. Walk past both doors of Room 6 to reach Room 7's first door.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 7", 
+    to: "CSIT Room 5", 
+    direction: "Exit Room 7 through either door and turn left. Walk past both doors of Room 6 to reach Room 5's doors.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 6", 
+    to: "CSIT Room 8", 
+    direction: "Exit Room 6 through either door and turn right. Walk past both doors of Room 7 to reach Room 8's first door.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 8", 
+    to: "CSIT Room 6", 
+    direction: "Exit Room 8 through either door and turn left. Walk past both doors of Room 7 to reach Room 6's doors.", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  { 
+    from: "CSIT Room 5", 
+    to: "CSIT Room 8", 
+    direction: "Exit Room 5 through either door and turn right. Walk past both doors of Room 6 and Room 7 to reach Room 8's first door.", 
+    steps: 16,
+    timeSeconds: 24
+  },
+  { 
+    from: "CSIT Room 8", 
+    to: "CSIT Room 5", 
+    direction: "Exit Room 8 through either door and turn left. Walk past both doors of Room 7 and Room 6 to reach Room 5's doors.", 
+    steps: 16,
+    timeSeconds: 24
+  },
+  { 
+    from: "CSIT Lab 3", 
+    to: "CSIT Lab 4", 
+    direction: "Exit Lab 3 through either door and turn right. Enter Lab 4 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Lab 4", 
+    to: "CSIT Lab 3", 
+    direction: "Exit Lab 4 through either door and turn left. Enter Lab 3 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Lab 4", 
+    to: "CSIT Lab 5", 
+    direction: "Exit Lab 4 through either door and turn right. Enter Lab 5 through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Lab 5", 
+    to: "CSIT Lab 4", 
+    direction: "Exit Lab 5 through either door and turn left. Enter Lab 4 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Lab 5", 
+    to: "CSIT Project Lab", 
+    direction: "Exit Lab 5 through either door and turn right. Enter Project Lab through its first door.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Project Lab", 
+    to: "CSIT Lab 5", 
+    direction: "Exit Project Lab through either door and turn left. Enter Lab 5 through either of its doors.", 
+    steps: 5,
+    timeSeconds: 8
+  },
+  { 
+    from: "CSIT Room 1", 
+    to: "CSIT Exit", 
+    direction: "Exit Room 1, turn right and walk to CSIT Exit", 
+    steps: 5,
+    timeSeconds: 15
+  },
+  { 
+    from: "CSIT Exit", 
+    to: "CSIT Lab Exit", 
+    direction: "From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit", 
+    steps: 25,
+    timeSeconds: 35
+  },
+  { 
+    from: "CSIT Lab Exit", 
+    to: "CSIT Exit", 
+    direction: "From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit", 
+    steps: 25,
+    timeSeconds: 35
+  },
+  { 
+    from: "CSIT Lab Exit", 
+    to: "CSIT Lab 2", 
+    direction: "From Lab Exit, walk straight and CSIT Lab 2 will be the third door on your left", 
+    steps: 10,
+    timeSeconds: 15
+  },
+  { 
+    from: "CSIT Lab 2", 
+    to: "CSIT Lab Exit", 
+    direction: "Exit Lab 2, turn right and walk to CSIT Lab Exit", 
+    steps: 10,
+    timeSeconds: 15
   }
 ];
 
 // Map of which rooms are directly connected to each other
 const roomAdjacencyMap: Record<string, string[]> = {
-  "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4"],
+  "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
   "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4"],
   "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4"],
-  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3"]
+  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3"],
+  "CSIT Room 5": ["CSIT Room 6", "CSIT Room 7", "CSIT Room 8"],
+  "CSIT Room 6": ["CSIT Room 5", "CSIT Room 7", "CSIT Room 8"],
+  "CSIT Room 7": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 8"],
+  "CSIT Room 8": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 7"],
+  "CSIT Lab 3": ["CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"],
+  "CSIT Lab 4": ["CSIT Lab 3", "CSIT Lab 5", "CSIT Project Lab"],
+  "CSIT Lab 5": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Project Lab"],
+  "CSIT Project Lab": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5"],
+  "CSIT Exit": ["CSIT Room 1", "CSIT Lab Exit"],
+  "CSIT Lab Exit": ["CSIT Exit", "CSIT Lab 2"],
+  "CSIT Lab 2": ["CSIT Lab Exit"]
 };
 
 /**
