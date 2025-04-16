@@ -105,7 +105,6 @@ const Profile = () => {
       >
         <View className="flex flex-row items-center justify-between mt-5">
           <Text className="text-xl font-rubik-bold">Profile</Text>
-          <Image source={icons.bell} className="size-5" />
         </View>
 
         {/* Avatar and User Info */}
@@ -139,8 +138,22 @@ const Profile = () => {
               key={index}
               {...item}
               onPress={() => {
-                if (item.title === "Edit Profile") {
-                  router.push("/EditProfileScreen"); // Navigate to Edit Profile
+                switch (item.title) {
+                  case "Account Settings":
+                    router.push("/(root)/EditProfileScreen");
+                    break;
+                  case "About":
+                    router.push("/(root)/AboutScreen");
+                    break;
+                  case "FAQ":
+                    router.push("/(root)/FAQScreen");
+                    break;
+                  case "Privacy Policy":
+                    router.push("/(root)/PrivacyPolicyScreen");
+                    break;
+                  case "Developer Mode":
+                    router.push("/(root)/collect");
+                    break;
                 }
               }}
             />
