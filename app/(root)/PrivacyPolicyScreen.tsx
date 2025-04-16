@@ -44,14 +44,14 @@ const PrivacyPolicyScreen = () => {
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView className="flex-1 p-4">
         {/* Header */}
-        <View className="flex-row items-center mb-6">
+        <View className="flex-row items-center justify-between mb-6">
           <TouchableOpacity 
-            onPress={() => router.back()}
-            className="mr-4"
+            onPress={() => router.push("/(root)/(tabs)/profile")}
+            className="flex-row items-center"
           >
-            <Image source={icons.backArrow} className="w-6 h-6" />
+            <Image source={icons.backArrow} className="w-6 h-6 mr-2" />
+            <Text className="text-2xl font-bold">Privacy Policy</Text>
           </TouchableOpacity>
-          <Text className="text-2xl font-bold">Privacy Policy</Text>
         </View>
 
         {/* Last Updated */}

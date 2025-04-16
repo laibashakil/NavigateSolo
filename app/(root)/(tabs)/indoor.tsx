@@ -57,8 +57,7 @@ const IndoorScreen = () => {
           "CSIT Entrance",
           "CSIT Exit",
           "CSIT Lab Exit",
-          "CSIT Lab Entrance",
-          "Dr Shariq's office"
+          "CSIT Lab Entrance"
         ];
         setAvailableLocations(hardcodedLocations);
         console.log("Using hardcoded locations:", hardcodedLocations);
@@ -81,8 +80,7 @@ const IndoorScreen = () => {
           "CSIT Entrance",
           "CSIT Exit",
           "CSIT Lab Exit",
-          "CSIT Lab Entrance",
-          "Dr Shariq's office"
+          "CSIT Lab Entrance"
         ];
         setAvailableLocations(hardcodedLocations);
       }

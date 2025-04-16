@@ -6,13 +6,17 @@ import {
   TouchableOpacity,
   ScrollView,
   Alert,
+  Image,
 } from "react-native";
 import { useGlobalContext } from "@/lib/global-provider";
 import { databases, config } from "@/lib/appwrite";
 import { Query } from "react-native-appwrite";
+import { useRouter } from "expo-router";
+import icons from "@/constants/icons";
 
 const EditProfileScreen = () => {
   const { user, refetch } = useGlobalContext();
+  const router = useRouter();
 
   // Local state for editable fields
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -103,9 +107,15 @@ const EditProfileScreen = () => {
     <View className="flex-1 justify-between">
       <ScrollView className="flex-1 bg-white p-6">
         {/* Header */}
-        <Text className="text-xl font-rubik-bold text-black-500 mb-4">
-          Edit Profile
-        </Text>
+        <View className="flex-row items-center justify-between mb-6">
+          <TouchableOpacity 
+            onPress={() => router.push("/(root)/(tabs)/profile")}
+            className="flex-row items-center"
+          >
+            <Image source={icons.backArrow} className="w-6 h-6 mr-2" />
+            <Text className="text-2xl font-bold">Edit Profile</Text>
+          </TouchableOpacity>
+        </View>
   
         {/* Unchangeable Fields */}
         <View className="mb-4">
