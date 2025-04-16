@@ -317,6 +317,88 @@ const roomConnections: RoomConnection[] = [
     direction: "From CSIT Lab Entrance, turn right then climb the stairs to first floor, turn right and CSIT Project Lab will be the fifth lab room on your right", 
     steps: 50,
     timeSeconds: 75
+  },
+  // Update Room 5-8 to Exit connections with stairs
+  { 
+    from: "CSIT Room 5", 
+    to: "CSIT Exit", 
+    direction: "Exit Room 5 through either door, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Exit", 
+    steps: 45,
+    timeSeconds: 70
+  },
+  { 
+    from: "CSIT Room 6", 
+    to: "CSIT Exit", 
+    direction: "Exit Room 6 through either door, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Exit", 
+    steps: 50,
+    timeSeconds: 75
+  },
+  { 
+    from: "CSIT Room 7", 
+    to: "CSIT Exit", 
+    direction: "Exit Room 7 through either door, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Exit", 
+    steps: 55,
+    timeSeconds: 80
+  },
+  { 
+    from: "CSIT Room 8", 
+    to: "CSIT Exit", 
+    direction: "Exit Room 8 through either door, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Exit", 
+    steps: 60,
+    timeSeconds: 85
+  },
+  // Update Lab to Lab Exit connections with stairs
+  { 
+    from: "CSIT Lab 3", 
+    to: "CSIT Lab Exit", 
+    direction: "Exit Lab 3, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Lab Exit", 
+    steps: 45,
+    timeSeconds: 70
+  },
+  { 
+    from: "CSIT Lab 4", 
+    to: "CSIT Lab Exit", 
+    direction: "Exit Lab 4, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Lab Exit", 
+    steps: 50,
+    timeSeconds: 75
+  },
+  { 
+    from: "CSIT Lab 5", 
+    to: "CSIT Lab Exit", 
+    direction: "Exit Lab 5, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Lab Exit", 
+    steps: 55,
+    timeSeconds: 80
+  },
+  { 
+    from: "CSIT Project Lab", 
+    to: "CSIT Lab Exit", 
+    direction: "Exit Project Lab, turn left and climb down the stairs, then turn right and walk through the entire corridor to reach CSIT Lab Exit", 
+    steps: 60,
+    timeSeconds: 85
+  },
+  // Add missing connections for Lab 3 to Lab 5
+  { 
+    from: "CSIT Lab 3", 
+    to: "CSIT Lab 5", 
+    direction: "Exit Lab 3 and turn right, walk past four doors to reach Lab 5", 
+    steps: 12,
+    timeSeconds: 18
+  },
+  // Add missing connections for Lab 3 to Project Lab
+  { 
+    from: "CSIT Lab 3", 
+    to: "CSIT Project Lab", 
+    direction: "Exit Lab 3 and turn right, walk past three doors to reach Project Lab", 
+    steps: 16,
+    timeSeconds: 24
+  },
+  // Add missing connection for Lab Entrance to Lab 3
+  { 
+    from: "CSIT Lab Entrance", 
+    to: "CSIT Lab 3", 
+    direction: "From CSIT Lab Entrance, turn right then climb the stairs to first floor, turn right and CSIT Lab 3 will be the first room on your right", 
+    steps: 35,
+    timeSeconds: 60
   }
 ];
 
