@@ -54,7 +54,7 @@ const HomeScreen = () => {
             title="Outdoor Navigation"
             icon={icons.map}
             color="bg-blue-500"
-            onPress={() => router.push("/(root)/(tabs)")}
+            onPress={() => router.push("/(root)/(tabs)/outdoor")}
           />
         </View>
         <View className="flex-row">

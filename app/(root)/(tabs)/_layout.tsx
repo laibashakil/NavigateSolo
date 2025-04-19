@@ -70,6 +70,20 @@ const TabsLayout = () => {
         }}
       />
       <Tabs.Screen
+        name="outdoor"
+        options={{
+          title: "Outdoor",
+          headerShown: false,
+          tabBarIcon: ({ focused }) => (
+            <TabIcon 
+              focused={focused} 
+              icon={focused ? icons.doorClosed : icons.doorOpen} 
+              title="Outdoor" 
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
