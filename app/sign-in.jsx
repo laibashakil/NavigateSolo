@@ -92,13 +92,13 @@ export default function HomeScreen() {
             </>
           ) : (
             <>
-              <Text className="text-lg font-rubik text-black-200 text-center mt-12">
+              <Text className="text-lg font-rubik text-black-200 text-center mt-8">
                 Login to Navigate Solo with Google
               </Text>
 
               <TouchableOpacity
                 onPress={signIn}
-                className="bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5"
+                className="bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-2"
               >
                 <View className="flex flex-row items-center justify-center">
                   <Image source={icons.google} className="w-5 h-5" resizeMode="contain" />

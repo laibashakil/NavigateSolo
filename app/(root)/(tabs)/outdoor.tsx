@@ -164,7 +164,7 @@ export default function NavigationApp() {
   };
 
   return (
-    <View style={{ flex: 1, padding: 10, backgroundColor: "#f2f2f2" }}>
+    <View style={{ flex: 1, padding: 10, backgroundColor: "#ffffff" }}>
       <Text className="text-black text-left text-sl" style={{ fontSize: 20 }}>
         You're facing: {heading !== null ? getDirection(heading) : 'Loading...'}
         {/* You're facing: {heading !== null ? `${getDirection(heading)} (${heading}°)` : 'Loading...'} */}
