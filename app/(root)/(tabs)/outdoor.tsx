@@ -1,7 +1,7 @@
 //OUTDOOR
 
 import React, { useEffect, useState, useRef } from "react";
-import { View, Text, Button, Alert, FlatList } from "react-native";
+import { View, Text, Button, Alert, FlatList, TouchableOpacity } from "react-native";
 import * as Location from "expo-location";
 import * as Speech from 'expo-speech';
 import { Picker } from '@react-native-picker/picker';
@@ -165,25 +165,31 @@ export default function NavigationApp() {
 
   return (
     <View style={{ flex: 1, padding: 10, backgroundColor: "#f2f2f2" }}>
-      <Text style={{ fontSize: 24 }}>
-        You're facing: {heading !== null ? `${getDirection(heading)} (${heading}°)` : 'Loading...'}
+      <Text className="text-black text-left text-sl" style={{ fontSize: 20 }}>
+        You're facing: {heading !== null ? getDirection(heading) : 'Loading...'}
+        {/* You're facing: {heading !== null ? `${getDirection(heading)} (${heading}°)` : 'Loading...'} */}
       </Text>
 
       <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Select Destination</Text>
       <View style={{ borderWidth: 1, borderColor: "#ccc", borderRadius: 10, backgroundColor: "white" }}>
         <Picker selectedValue={selectedDestination} onValueChange={setSelectedDestination}>
+          
           {destinations.map((dest, index) => (
             <Picker.Item key={index} label={dest.label} value={dest} />
           ))}
         </Picker>
+        
       </View>
 
-      <View style={{ marginVertical: 10 }}>
-        <Button title="Get THE Directions" onPress={fetchRoute} />
-      </View>
+      <TouchableOpacity className="p-4 mt-3 rounded-lg bg-blue-500" onPress={fetchRoute}>
+        <Text className="text-white text-center text-lg font-semibold">Get Directions</Text>
+      </TouchableOpacity>
 
       {navigationActive && (
-        <Button title="Stop Navigation" onPress={stopNavigation} color="red" />
+      <TouchableOpacity className="p-4 mt-3 rounded-lg bg-red-500" onPress={stopNavigation}>
+        <Text className="text-white text-center text-lg font-semibold">Stop Navigation</Text>
+      </TouchableOpacity>
+        // <Button title="Stop Navigation" onPress={stopNavigation} color="red" />
       )}
 
       {steps.length > 0 && (
