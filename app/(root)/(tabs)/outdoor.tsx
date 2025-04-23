@@ -120,7 +120,11 @@ export default function NavigationApp() {
     setSteps(stepList);
 
     locationSubscription.current = await Location.watchPositionAsync(
-      { accuracy: Location.Accuracy.High, distanceInterval: 3 },
+      {
+        accuracy: Location.Accuracy.BestForNavigation, // Use highest accuracy
+        distanceInterval: 1, // Update every 1 meter
+        timeInterval: 1000, // Update every 1 second
+      },
       (location) => {
         setUserLocation(location.coords);
         if (navigationActive) {
@@ -136,14 +140,15 @@ export default function NavigationApp() {
       setNavigationActive(false);
       return;
     }
-
+  
     const targetCoords = stepList[currentStepIndex].coords;
     const distance = haversine(currentCoords, targetCoords, { unit: "meter" });
-
-    if (distance <= 10) {
+    console.log(`Step ${currentStepIndex + 1}: Distance to target = ${distance.toFixed(2)} meters`);
+  
+    if (distance <= 15) { // Increased threshold to 15 meters
       const nextIndex = currentStepIndex + 1;
       setCurrentStepIndex(nextIndex);
-
+  
       if (nextIndex < stepList.length) {
         Speech.speak(stepList[nextIndex].instruction);
       } else {
