@@ -249,9 +249,9 @@ const roomConnections: RoomConnection[] = [
   { 
     from: "CSIT Lab 2", 
     to: "CSIT Lab Exit", 
-    direction: "Exit Lab 2, turn right and walk to CSIT Lab Exit", 
-    steps: 10,
-    timeSeconds: 15
+    direction: "Exit Lab 2, turn right and walk to Lab Exit", 
+    steps: 5,
+    timeSeconds: 8
   },
   // Add CSIT Entrance connections (one-way only)
   { 
@@ -404,23 +404,23 @@ const roomConnections: RoomConnection[] = [
 
 // Map of which rooms are directly connected to each other
 const roomAdjacencyMap: Record<string, string[]> = {
-  "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
-  "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
-  "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4", "CSIT Exit"],
-  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Exit"],
+  "CSIT Room 1": ["CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit", "CSIT Entrance"],
+  "CSIT Room 2": ["CSIT Room 1", "CSIT Room 3", "CSIT Room 4", "CSIT Exit", "CSIT Entrance"],
+  "CSIT Room 3": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 4", "CSIT Exit", "CSIT Entrance"],
+  "CSIT Room 4": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Exit", "CSIT Entrance"],
   "CSIT Room 5": ["CSIT Room 6", "CSIT Room 7", "CSIT Room 8", "CSIT Exit"],
   "CSIT Room 6": ["CSIT Room 5", "CSIT Room 7", "CSIT Room 8", "CSIT Exit"],
   "CSIT Room 7": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 8", "CSIT Exit"],
   "CSIT Room 8": ["CSIT Room 5", "CSIT Room 6", "CSIT Room 7", "CSIT Exit"],
-  "CSIT Lab 3": ["CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit"],
-  "CSIT Lab 4": ["CSIT Lab 3", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit"],
-  "CSIT Lab 5": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Project Lab", "CSIT Lab Exit"],
-  "CSIT Project Lab": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Lab Exit"],
-  "CSIT Exit": ["CSIT Room 1","CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Lab Exit"],
-  "CSIT Lab Exit": ["CSIT Exit", "CSIT Lab 2"],
   "CSIT Lab 2": ["CSIT Lab Exit"],
+  "CSIT Lab 3": ["CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit", "CSIT Lab Entrance"],
+  "CSIT Lab 4": ["CSIT Lab 3", "CSIT Lab 5", "CSIT Project Lab", "CSIT Lab Exit", "CSIT Lab Entrance"],
+  "CSIT Lab 5": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Project Lab", "CSIT Lab Exit", "CSIT Lab Entrance"],
+  "CSIT Project Lab": ["CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Lab Exit", "CSIT Lab Entrance"],
+  "CSIT Exit": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Lab Exit", "CSIT Entrance"],
+  "CSIT Lab Exit": ["CSIT Exit", "CSIT Lab 2", "CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"],
   "CSIT Entrance": ["CSIT Room 1", "CSIT Room 2", "CSIT Room 3", "CSIT Room 4", "CSIT Exit"],
-  "CSIT Lab Entrance": ["CSIT Lab Exit","CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"]
+  "CSIT Lab Entrance": ["CSIT Lab Exit", "CSIT Lab 3", "CSIT Lab 4", "CSIT Lab 5", "CSIT Project Lab"]
 };
 
 /**
