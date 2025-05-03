@@ -1,73 +1,72 @@
-import { View, Text, TouchableOpacity, Image, SafeAreaView, Dimensions } from "react-native";
+import { View, Text, TouchableOpacity, SafeAreaView, Dimensions } from "react-native";
 import { useRouter } from "expo-router";
-import icons from "@/constants/icons";
+import { MaterialIcons } from "@expo/vector-icons";
 
 const HomeScreen = () => {
   const router = useRouter();
-  const { width, height } = Dimensions.get('window');
-  const buttonSize = (Math.min(width, height) - 48) / 2; // Screen size minus margins, divided by 2
+  const { width } = Dimensions.get('window');
+  const buttonSize = (width - 44) / 2;
 
-  const QuadrantButton = ({ 
-    title, 
-    icon, 
-    color, 
-    onPress 
-  }: { 
-    title: string; 
-    icon: any; 
-    color: string; 
-    onPress: () => void 
+  const QuadrantButton = ({
+    title,
+    iconName, // Changed from icon to iconName for MaterialIcons
+    color,
+    onPress,
+  }: {
+    title: string;
+    iconName: string; // Use string for MaterialIcons name
+    color: string;
+    onPress: () => void;
   }) => (
     <TouchableOpacity
       onPress={onPress}
-      className={`${color} justify-center items-center rounded-2xl shadow-lg`}
-      style={{ 
+      className={`${color} justify-center items-center rounded-xl border border-gray-200`}
+      style={{
         width: buttonSize,
-        height: buttonSize,
+        height: buttonSize * 1.7,
         margin: 8,
-        elevation: 5, // For Android shadow
-        shadowColor: "#000", // For iOS shadow
-        shadowOffset: {
-          width: 0,
-          height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
       }}
     >
-      <Image source={icon} className="w-16 h-16 mb-4" resizeMode="contain" />
-      <Text className="text-white text-xl font-rubik-bold text-center">{title}</Text>
+      <MaterialIcons
+        name={iconName}
+        size={48} // Match the size-12 (48px) from original Image
+        color="white" // Match the tintColor="white" from original Image
+        style={{ marginBottom: 12 }} // Increased from mb-3 (12px) to match TabIcon spacing
+      />
+      <Text className="text-2xl font-rubik-medium text-white text-center px-2">
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-gray-100">
+    <SafeAreaView className="h-full bg-white">
       <View className="flex-1 justify-center items-center p-4">
         <View className="flex-row">
           <QuadrantButton
             title="Indoor Navigation"
-            icon={icons.doorClosed}
-            color="bg-primary-300"
+            iconName="door-front" // MaterialIcons equivalent
+            color="bg-blue-700"
             onPress={() => router.push("/(root)/(tabs)/indoor")}
           />
           <QuadrantButton
             title="Outdoor Navigation"
-            icon={icons.map}
-            color="bg-blue-500"
-            onPress={() => router.push("/(root)/(tabs)")}
+            iconName="park" // MaterialIcons equivalent
+            color="bg-orange-600"
+            onPress={() => router.push("/(root)/(tabs)/outdoor")}
           />
         </View>
         <View className="flex-row">
           <QuadrantButton
             title="Seat Detection"
-            icon={icons.location}
-            color="bg-green-500"
-            onPress={() => router.push("/(root)/(tabs)")}
+            iconName="event-seat" // MaterialIcons equivalent
+            color="bg-green-700"
+            onPress={() => router.push("/(root)/(tabs)/seatDetection")}
           />
           <QuadrantButton
             title="Profile"
-            icon={icons.person}
-            color="bg-purple-500"
+            iconName="person" // MaterialIcons equivalent
+            color="bg-purple-800"
             onPress={() => router.push("/(root)/(tabs)/profile")}
           />
         </View>
