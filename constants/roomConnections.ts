@@ -487,7 +487,8 @@ const findShortestPath = (start: string, end: string): string[] => {
  * @returns Array of direction strings
  */
 const pathToDirections = (path: string[]): string[] => {
-  if (path.length < 2) return ["You are already at your destination"];
+  if (path.length === 0) return ["No known route to destination"];
+  if (path.length === 1) return ["You are already at your destination"];
   
   const directions: string[] = [];
   for (let i = 0; i < path.length - 1; i++) {
@@ -499,13 +500,7 @@ const pathToDirections = (path: string[]): string[] => {
     );
     
     if (connection) {
-      if (path.length <= 3) {
-        // For short paths, we don't need step numbers
-        directions.push(connection.direction);
-      } else {
-        // For longer paths, add step numbers
-        directions.push(`${i + 1}. ${connection.direction}`);
-      }
+      directions.push(connection.direction);
     }
   }
   
