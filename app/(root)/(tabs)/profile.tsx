@@ -16,7 +16,6 @@ import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useGlobalContext } from "@/lib/global-provider";
 
 import icons from "@/constants/icons";
-import { settings } from "@/constants/data";
 
 type MaterialIconName = React.ComponentProps<typeof MaterialIcons>['name'];
 
