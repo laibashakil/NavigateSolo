@@ -9,8 +9,7 @@ import {
   Image,
 } from "react-native";
 import { useGlobalContext } from "@/lib/global-provider";
-import { databases, config } from "@/lib/appwrite";
-import { Query } from "react-native-appwrite";
+import { updateUserData, getUserData } from "@/lib/appwrite";
 import { useRouter } from "expo-router";
 import icons from "@/constants/icons";
 
@@ -22,25 +21,23 @@ const EditProfileScreen = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [homeLocation, setHomeLocation] = useState("");
   const [emergencyContacts, setEmergencyContacts] = useState<string[]>([""]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Fetch existing user data from the database
     const fetchUserData = async () => {
       try {
-        const response = await databases.listDocuments(
-          config.databaseId!,
-          config.usersCollectionId!,
-          [user?.email ? Query.equal("email", user.email) : Query.equal("email", "")]
-        );
-
-        if (response.documents.length > 0) {
-          const userData = response.documents[0];
-          setPhoneNumber(userData.phoneNumber || "");
-          setHomeLocation(userData.homeLocation || "");
-          setEmergencyContacts(userData.emergencyContacts || [""]);
-        }
+        setIsLoading(true);
+        const userData = await getUserData();
+        
+        setPhoneNumber(userData.phoneNumber || "");
+        setHomeLocation(userData.homeLocation || "");
+        setEmergencyContacts(userData.emergencyContacts || [""]);
       } catch (error) {
         console.error("Error fetching user data:", error);
+        Alert.alert("Error", "Failed to load profile data. Please try again.");
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -52,35 +49,17 @@ const EditProfileScreen = () => {
   // Function to update user data
   const handleUpdateProfile = async () => {
     try {
-      const response = await databases.listDocuments(
-        config.databaseId!,
-        config.usersCollectionId!,
-        [user?.email ? Query.equal("email", user.email) : Query.equal("email", "")]
-      );
-
-      if (response.documents.length === 0) {
-        Alert.alert("Error", "User data not found in database.");
-        return;
-      }
-
-      const userId = response.documents[0].$id;
-
-      await databases.updateDocument(
-        config.databaseId!,
-        config.usersCollectionId!,
-        userId,
-        {
-          phoneNumber,
-          homeLocation,
-          emergencyContacts,
-        }
-      );
+      await updateUserData({
+        phoneNumber,
+        homeLocation,
+        emergencyContacts,
+      });
 
       Alert.alert("Success", "Profile updated successfully.");
       refetch(); // Refresh user data in context
     } catch (error) {
       console.error("Error updating profile:", error);
-      Alert.alert("Error", "Failed to update profile.");
+      Alert.alert("Error", "Failed to update profile. Please try again.");
     }
   };
 
@@ -113,7 +92,7 @@ const EditProfileScreen = () => {
             className="flex-row items-center"
           >
             <Image source={icons.backArrow} className="w-6 h-6 mr-2" />
-            <Text className="text-2xl font-bold">Edit Profile</Text>
+            <Text className="text-2xl font-bold">Account Settings</Text>
           </TouchableOpacity>
         </View>
   
@@ -176,10 +155,10 @@ const EditProfileScreen = () => {
                 />
                 {index > 0 && (
                   <TouchableOpacity
-                    className="ml-2 p-2 bg-red-500 rounded-lg"
+                    className="ml-2 px-3 py-2 bg-red-500 rounded-lg"
                     onPress={() => removeEmergencyContact(index)}
                   >
-                    <Text className="text-white font-bold">X</Text>
+                    <Text className="text-white font-rubik-medium">Cancel</Text>
                   </TouchableOpacity>
                 )}
               </View>
