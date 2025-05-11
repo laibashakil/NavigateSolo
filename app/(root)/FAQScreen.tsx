@@ -6,7 +6,7 @@ const FAQScreen = () => {
   const router = useRouter();
 
   const handleEmailPress = () => {
-    Linking.openURL('mailto:navigatesolo@gmail.com');
+    Linking.openURL('mailto:navigatesoloofficial@gmail.com');
   };
 
   const faqs = [
@@ -28,7 +28,7 @@ const FAQScreen = () => {
     },
     {
       question: "How do I add new locations to the system?",
-      answer: "Only our development team can add new locations to the system. If you'd like a new location to be added, please contact us at navigatesolo@gmail.com with your request. Our team will visit the location, scan the WiFi signals, and add it to the system. The developer mode in the profile section is for our development team only and is not accessible to regular users."
+      answer: "Only our development team can add new locations to the system. If you'd like a new location to be added, please contact us at navigatesoloofficial@gmail.com with your request. Our team will visit the location, scan the WiFi signals, and add it to the system. The developer mode in the profile section is for our development team only and is not accessible to regular users."
     }
   ];
 
@@ -60,7 +60,7 @@ const FAQScreen = () => {
         <View className="mt-8 bg-blue-50 p-4 rounded-lg">
           <Text className="text-lg font-semibold mb-2">Still have questions?</Text>
           <Text className="text-gray-600 mb-4">
-            Our support team is here to help! Contact us at navigatesolo@gmail.com
+            Our support team is here to help! Contact us at navigatesoloofficial@gmail.com
           </Text>
           <TouchableOpacity 
             className="bg-blue-500 py-2 px-4 rounded-lg self-start"

@@ -10,7 +10,7 @@ const AboutScreen = () => {
   };
 
   const handleEmailPress = () => {
-    Linking.openURL('mailto:navigatesolo@gmail.com');
+    Linking.openURL('mailto:navigatesoloofficial@gmail.com');
   };
 
   return (
@@ -67,7 +67,7 @@ const AboutScreen = () => {
           <View className="mt-8 bg-blue-50 p-4 rounded-lg">
             <Text className="text-lg font-semibold mb-2">Want to know more?</Text>
             <Text className="text-gray-600 mb-4">
-              Have questions about our project or want to collaborate? Reach out to us at navigatesolo@gmail.com
+              Have questions about our project or want to collaborate? Reach out to us at navigatesoloofficial@gmail.com
             </Text>
             <TouchableOpacity 
               className="bg-blue-500 py-2 px-4 rounded-lg self-start"

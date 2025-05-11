@@ -6,7 +6,7 @@ const PrivacyPolicyScreen = () => {
   const router = useRouter();
 
   const handleEmailPress = () => {
-    Linking.openURL('mailto:navigatesolo@gmail.com');
+    Linking.openURL('mailto:navigatesoloofficial@gmail.com');
   };
 
   const sections = [
@@ -82,7 +82,7 @@ const PrivacyPolicyScreen = () => {
         <View className="mt-8 bg-blue-50 p-4 rounded-lg">
           <Text className="text-lg font-semibold mb-2">Privacy Concerns?</Text>
           <Text className="text-gray-600 mb-4">
-            If you have any questions about our privacy practices or data handling, please contact us at navigatesolo@gmail.com
+            If you have any questions about our privacy practices or data handling, please contact us at navigatesoloofficial@gmail.com
           </Text>
           <TouchableOpacity 
             className="bg-blue-500 py-2 px-4 rounded-lg self-start"
