@@ -1,167 +1,148 @@
 import {
   Client,
-  Account,
   ID,
   Databases,
-  OAuthProvider,
-  Avatars,
   Query,
+  Avatars,
   Storage,
 } from "react-native-appwrite";
-import * as Linking from "expo-linking";
-import { openAuthSessionAsync } from "expo-web-browser";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 
 export const config = {
   platform: "com.NS.navigatesolo",
   endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
   databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID,
-  galleriesCollectionId:
-    process.env.EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID,
-  reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID,
-  agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID,
-  propertiesCollectionId:
-    process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID,
+  usersCollectionId: process.env.EXPO_PUBLIC_APPWRITE_USERS_COLLECTION_ID,
   bucketId: process.env.EXPO_PUBLIC_APPWRITE_BUCKET_ID,
 };
 
+// Initialize Appwrite Client
 export const client = new Client();
 client
   .setEndpoint(config.endpoint!)
   .setProject(config.projectId!)
   .setPlatform(config.platform!);
 
+// Initialize Appwrite Services
 export const avatar = new Avatars(client);
-export const account = new Account(client);
 export const databases = new Databases(client);
-export const storage = new Storage(client);
 
-export async function login() {
+// Function to save user data to database
+export async function saveUserToDatabase() {
   try {
-    const redirectUri = Linking.createURL("/");
-
-    const response = await account.createOAuth2Token(
-      OAuthProvider.Google,
-      redirectUri
-    );
-    if (!response) throw new Error("Create OAuth2 token failed");
-
-    const browserResult = await openAuthSessionAsync(
-      response.toString(),
-      redirectUri
-    );
-    if (browserResult.type !== "success")
-      throw new Error("Create OAuth2 token failed");
-
-    const url = new URL(browserResult.url);
-    const secret = url.searchParams.get("secret")?.toString();
-    const userId = url.searchParams.get("userId")?.toString();
-    if (!secret || !userId) throw new Error("Create OAuth2 token failed");
-
-    const session = await account.createSession(userId, secret);
-    if (!session) throw new Error("Failed to create session");
-
-    return true;
-  } catch (error) {
-    console.error(error);
-    return false;
-  }
-}
-
-export async function logout() {
-  try {
-    const result = await account.deleteSession("current");
-    return result;
-  } catch (error) {
-    console.error(error);
-    return false;
-  }
-}
-
-export async function getCurrentUser() {
-  try {
-    const result = await account.get();
-    if (result.$id) {
-      const userAvatar = avatar.getInitials(result.name);
-
-      return {
-        ...result,
-        avatar: userAvatar.toString(),
-      };
+    // Get the current Google Sign-In user
+    const googleUser = await GoogleSignin.getCurrentUser();
+    if (!googleUser) {
+      throw new Error("User not authenticated with Google");
     }
 
-    return null;
-  } catch (error) {
-    console.log(error);
-    return null;
-  }
-}
+    const userData = {
+      name: googleUser.user.name,
+      email: googleUser.user.email,
+      phoneNumber: "",
+      homeLocation: "",
+      emergencyContacts: [],
+    };
 
-export async function getLatestProperties() {
-  try {
-    const result = await databases.listDocuments(
+    // Check if user already exists in the database
+    const existingUsers = await databases.listDocuments(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      [Query.orderAsc("$createdAt"), Query.limit(5)]
+      config.usersCollectionId!,
+      [Query.equal("email", userData.email)]
     );
 
-    return result.documents;
+    if (existingUsers.documents.length > 0) {
+      console.log("User already exists in the database.");
+      return existingUsers.documents[0];
+    }
+
+    // Create new user document
+    const response = await databases.createDocument(
+      config.databaseId!,
+      config.usersCollectionId!,
+      ID.unique(),
+      userData
+    );
+
+    console.log("User saved to database successfully:", response);
+    return response;
   } catch (error) {
-    console.error(error);
-    return [];
+    console.error("Error saving user to database:", error);
+    throw error;
   }
 }
 
-export async function getProperties({
-  filter,
-  query,
-  limit,
-}: {
-  filter: string;
-  query: string;
-  limit?: number;
+export async function updateUserData(updatedData: {
+  name?: string;
+  email?: string;
+  bio?: string;
+  phoneNumber?: string;
+  homeLocation?: string;
+  emergencyContacts?: string[];
 }) {
   try {
-    const buildQuery = [Query.orderDesc("$createdAt")];
+    // Get the current Google Sign-In user
+    const googleUser = await GoogleSignin.getCurrentUser();
+    if (!googleUser) {
+      throw new Error("User not authenticated with Google");
+    }
 
-    if (filter && filter !== "All")
-      buildQuery.push(Query.equal("type", filter));
+    const userEmail = googleUser.user.email;
 
-    if (query)
-      buildQuery.push(
-        Query.or([
-          Query.search("name", query),
-          Query.search("address", query),
-          Query.search("type", query),
-        ])
-      );
-
-    if (limit) buildQuery.push(Query.limit(limit));
-
-    const result = await databases.listDocuments(
+    // Get user's existing record from database
+    const existingUsers = await databases.listDocuments(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      buildQuery
+      config.usersCollectionId!,
+      [Query.equal("email", userEmail)]
     );
 
-    return result.documents;
+    if (existingUsers.documents.length === 0) {
+      throw new Error("User record not found in database.");
+    }
+
+    const userDocId = existingUsers.documents[0].$id;
+
+    // Update the user data
+    const response = await databases.updateDocument(
+      config.databaseId!,
+      config.usersCollectionId!,
+      userDocId,
+      updatedData
+    );
+
+    console.log("User updated successfully:", response);
+    return response;
   } catch (error) {
-    console.error(error);
-    return [];
+    console.error("Error updating user data:", error);
+    throw error;
   }
 }
 
-// write function to get property by id
-export async function getPropertyById({ id }: { id: string }) {
+export async function getUserData() {
   try {
-    const result = await databases.getDocument(
+    // Get the current Google Sign-In user
+    const googleUser = await GoogleSignin.getCurrentUser();
+    if (!googleUser) {
+      throw new Error("User not authenticated with Google");
+    }
+
+    const userEmail = googleUser.user.email;
+
+    // Get user's record from database
+    const existingUsers = await databases.listDocuments(
       config.databaseId!,
-      config.propertiesCollectionId!,
-      id
+      config.usersCollectionId!,
+      [Query.equal("email", userEmail)]
     );
-    return result;
+
+    if (existingUsers.documents.length === 0) {
+      throw new Error("User record not found in database.");
+    }
+
+    return existingUsers.documents[0];
   } catch (error) {
-    console.error(error);
-    return null;
+    console.error("Error fetching user data:", error);
+    throw error;
   }
 }

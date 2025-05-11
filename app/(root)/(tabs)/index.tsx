@@ -1,110 +1,78 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Text, View, Button, Dimensions, Image } from "react-native";
-import MapView, { Marker } from "react-native-maps";
-import * as Location from "expo-location";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { View, Text, TouchableOpacity, SafeAreaView, Dimensions } from "react-native";
+import { useRouter } from "expo-router";
+import { MaterialIcons } from "@expo/vector-icons";
 
-import Search from "@/components/Search";
-import icons from "@/constants/icons";
-import { useGlobalContext } from "@/lib/global-provider";
+const HomeScreen = () => {
+  const router = useRouter();
+  const { width } = Dimensions.get('window');
+  const buttonSize = (width - 44) / 2;
 
-export default function App() {
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [userLocation, setUserLocation] = useState<Location.LocationObjectCoords | null>(null);
-  const mapRef = useRef<MapView | null>(null);
-
-  const { user } = useGlobalContext();
-
-  const getUserLocation = async () => {
-    let { status } = await Location.requestForegroundPermissionsAsync();
-    if (status !== "granted") {
-      setErrorMsg("Permission to access location was denied");
-      return;
-    }
-
-    let location = await Location.getCurrentPositionAsync({
-      accuracy: Location.Accuracy.High,
-    });
-
-    setUserLocation(location.coords);
-
-    if (mapRef.current && location.coords) {
-      mapRef.current.animateToRegion({
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
-        latitudeDelta: 0.0922,
-        longitudeDelta: 0.0421,
-      });
-    }
-  };
-
-  useEffect(() => {
-    getUserLocation(); // Get location once on mount
-  }, []);
+  const QuadrantButton = ({
+    title,
+    iconName, // Changed from icon to iconName for MaterialIcons
+    color,
+    onPress,
+  }: {
+    title: string;
+    iconName: string; // Use string for MaterialIcons name
+    color: string;
+    onPress: () => void;
+  }) => (
+    <TouchableOpacity
+      onPress={onPress}
+      className={`${color} justify-center items-center rounded-xl border border-gray-200`}
+      style={{
+        width: buttonSize,
+        height: buttonSize * 1.7,
+        margin: 8,
+      }}
+    >
+      <MaterialIcons
+        name={iconName}
+        size={48} // Match the size-12 (48px) from original Image
+        color="white" // Match the tintColor="white" from original Image
+        style={{ marginBottom: 12 }} // Increased from mb-3 (12px) to match TabIcon spacing
+      />
+      <Text className="text-2xl font-rubik-medium text-white text-center px-2">
+        {title}
+      </Text>
+    </TouchableOpacity>
+  );
 
   return (
     <SafeAreaView className="h-full bg-white">
-      {/* Header Section */}
-      <View className="px-5">
-        <View className="flex flex-row items-center justify-between mt-5">
-          <View className="flex flex-row">
-            <Image
-              source={{ uri: user?.avatar }}
-              className="size-12 rounded-full"
-            />
-            <View className="flex flex-col items-start ml-2 justify-center">
-              <Text className="text-xs font-rubik text-black-100">
-                Good Morning
-              </Text>
-              <Text className="text-base font-rubik-medium text-black-300">
-                {user?.name}
-              </Text>
-            </View>
-          </View>
-          <Image source={icons.bell} className="size-6" />
+      <View className="flex-1 justify-center items-center p-4">
+        <View className="flex-row">
+          <QuadrantButton
+            title="Indoor Navigation"
+            iconName="door-front" // MaterialIcons equivalent
+            color="bg-blue-700"
+            onPress={() => router.push("/(root)/(tabs)/indoor")}
+          />
+          <QuadrantButton
+            title="Outdoor Navigation"
+            iconName="park" // MaterialIcons equivalent
+            color="bg-orange-600"
+            onPress={() => router.push("/(root)/(tabs)/outdoor")}
+          />
         </View>
-
-        {/* Search Bar */}
-        <Search />
-      </View>
-
-      {/* Map Section */}
-      <View style={{ flex: 1 }}>
-        <MapView
-          ref={mapRef}
-          style={{
-            width: Dimensions.get("window").width,
-            height: Dimensions.get("window").height ,
-          }}
-          initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
-          showsUserLocation={true}
-          followsUserLocation={true}
-        >
-          {userLocation && (
-            <Marker coordinate={userLocation} title="Your Location" />
-          )}
-        </MapView>
-
-        <View
-          style={{
-            position: "absolute",
-            bottom: 70,
-            left: 0,
-            right: 0,
-            padding: 5,
-          }}
-        >
-          {/* <Button title="Go To Current Location" onPress={getUserLocation} />
-          {errorMsg && (
-            <Text style={{ textAlign: "center", color: "red" }}>{errorMsg}</Text>
-          )} */}
+        <View className="flex-row">
+          <QuadrantButton
+            title="Seat Detection"
+            iconName="event-seat" // MaterialIcons equivalent
+            color="bg-green-700"
+            onPress={() => router.push("/(root)/(tabs)/seatDetection")}
+          />
+          <QuadrantButton
+            title="Profile"
+            iconName="person" // MaterialIcons equivalent
+            color="bg-purple-800"
+            onPress={() => router.push("/(root)/(tabs)/profile")}
+          />
         </View>
       </View>
     </SafeAreaView>
   );
-}
+};
+
+export default HomeScreen;
