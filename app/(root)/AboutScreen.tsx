@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, SafeAreaView, Image, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, SafeAreaView, Image, TouchableOpacity, Linking } from "react-native";
 import { useRouter } from "expo-router";
 import icons from "@/constants/icons";
 
@@ -7,6 +7,10 @@ const AboutScreen = () => {
 
   const handleBack = () => {
     router.back();
+  };
+
+  const handleEmailPress = () => {
+    Linking.openURL('mailto:navigatesolo@gmail.com');
   };
 
   return (
@@ -39,19 +43,38 @@ const AboutScreen = () => {
             <Text className="text-gray-600">
               • Indoor Navigation using WiFi signals{"\n"}
               • Outdoor Navigation with detailed directions{"\n"}
-              • Seat Detection for public spaces{"\n"}
-              • Voice-guided instructions{"\n"}
-              • Customizable profiles
+              • Voice-guided instructions with haptic feedback{"\n"}
+              • Real-time location updates{"\n"}
+              • Automatic arrival detection{"\n"}
+              • Google Sign-In for secure authentication
             </Text>
           </View>
 
           <View className="bg-gray-50 p-4 rounded-lg">
-            <Text className="text-lg font-semibold mb-2">Contact Us</Text>
+            <Text className="text-lg font-semibold mb-2">About the Developers</Text>
             <Text className="text-gray-600">
-              Have questions or feedback? We'd love to hear from you!{"\n\n"}
-              Email: support@navigatesolo.com{"\n"}
-              Phone: +1 (555) 123-4567
+              NavigateSolo is a final year project developed by students from the Computer Science and Information Technology Department 
+              of NED University of Engineering and Technology, Karachi, Pakistan.{"\n\n"}
+              Development Team (Batch 2021):{"\n"}
+              • Laiba Shakil{"\n"}
+              • Noor Ul Imaan{"\n"}
+              • Alishba Khawer{"\n"}
+              • Aamna Khalid
             </Text>
+          </View>
+
+          {/* Contact Support */}
+          <View className="mt-8 bg-blue-50 p-4 rounded-lg">
+            <Text className="text-lg font-semibold mb-2">Want to know more?</Text>
+            <Text className="text-gray-600 mb-4">
+              Have questions about our project or want to collaborate? Reach out to us at navigatesolo@gmail.com
+            </Text>
+            <TouchableOpacity 
+              className="bg-blue-500 py-2 px-4 rounded-lg self-start"
+              onPress={handleEmailPress}
+            >
+              <Text className="text-white font-semibold">Contact Us</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </ScrollView>

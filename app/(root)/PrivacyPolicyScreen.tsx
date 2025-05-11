@@ -1,42 +1,45 @@
-import { View, Text, ScrollView, SafeAreaView, Image, TouchableOpacity } from "react-native";
+import { View, Text, ScrollView, SafeAreaView, Image, TouchableOpacity, Linking } from "react-native";
 import { useRouter } from "expo-router";
 import icons from "@/constants/icons";
 
 const PrivacyPolicyScreen = () => {
   const router = useRouter();
 
+  const handleEmailPress = () => {
+    Linking.openURL('mailto:navigatesolo@gmail.com');
+  };
+
   const sections = [
     {
       title: "Information We Collect",
-      content: "We collect information necessary to provide our navigation services, including:\n\n" +
+      content: "We collect minimal information necessary to provide our navigation services, including:\n\n" +
               "• Location data for navigation purposes\n" +
-              "• WiFi network information for indoor navigation\n" +
-              "• Device information for app optimization\n" +
-              "• Usage statistics to improve our services"
+              "• WiFi network information for indoor location matching\n" +
+              "• Basic Google account information (email, name, photo) for authentication"
     },
     {
       title: "How We Use Your Information",
       content: "Your information is used to:\n\n" +
               "• Provide accurate navigation services\n" +
-              "• Improve app functionality\n" +
-              "• Personalize your experience\n" +
-              "• Ensure app security and prevent fraud"
+              "• Match your location with indoor spaces\n" +
+              "• Maintain your authentication state\n" +
+              "• Ensure app security"
     },
     {
       title: "Data Security",
-      content: "We implement industry-standard security measures to protect your data, including:\n\n" +
-              "• Encryption of sensitive information\n" +
-              "• Regular security audits\n" +
-              "• Secure data storage\n" +
-              "• Limited access to personal data"
+      content: "We implement security measures to protect your data, including:\n\n" +
+              "• Secure session management\n" +
+              "• Protection against brute force attacks\n" +
+              "• Limited access to personal data\n" +
+              "• No persistent storage of location or WiFi data"
     },
     {
       title: "Your Rights",
       content: "You have the right to:\n\n" +
               "• Access your personal data\n" +
               "• Request data deletion\n" +
-              "• Opt-out of data collection\n" +
-              "• Update your information"
+              "• Manage your Google account permissions\n" +
+              "• Control location and WiFi scanning permissions"
     }
   ];
 
@@ -55,12 +58,14 @@ const PrivacyPolicyScreen = () => {
         </View>
 
         {/* Last Updated */}
-        <Text className="text-gray-500 mb-6">Last Updated: March 15, 2024</Text>
+        <Text className="text-gray-500 mb-6">Last Updated: 11 May 2025</Text>
 
         {/* Introduction */}
         <Text className="text-gray-600 mb-6">
           At NavigateSolo, we take your privacy seriously. This Privacy Policy explains how we collect, 
-          use, and protect your personal information when you use our app.
+          use, and protect your personal information when you use our app. We use Google Sign-In for authentication 
+          and maintain session persistence for a seamless user experience. We do not collect or store any usage statistics 
+          or device information.
         </Text>
 
         {/* Policy Sections */}
@@ -73,15 +78,18 @@ const PrivacyPolicyScreen = () => {
           ))}
         </View>
 
-        {/* Contact Information */}
-        <View className="mt-8 bg-gray-50 p-4 rounded-lg">
-          <Text className="text-lg font-semibold mb-2">Contact Us</Text>
-          <Text className="text-gray-600">
-            If you have any questions about our Privacy Policy, please contact us at:
-            {"\n\n"}
-            Email: privacy@navigatesolo.com{"\n"}
-            Phone: +1 (555) 123-4567
+        {/* Contact Support */}
+        <View className="mt-8 bg-blue-50 p-4 rounded-lg">
+          <Text className="text-lg font-semibold mb-2">Privacy Concerns?</Text>
+          <Text className="text-gray-600 mb-4">
+            If you have any questions about our privacy practices or data handling, please contact us at navigatesolo@gmail.com
           </Text>
+          <TouchableOpacity 
+            className="bg-blue-500 py-2 px-4 rounded-lg self-start"
+            onPress={handleEmailPress}
+          >
+            <Text className="text-white font-semibold">Contact Privacy Team</Text>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </SafeAreaView>
