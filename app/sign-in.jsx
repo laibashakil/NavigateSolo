@@ -5,6 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useRouter } from "expo-router"; // ✅ Import router
 import { useGlobalContext } from "@/lib/global-provider"; // ✅ Import global context
+import { saveUserToDatabase } from "@/lib/appwrite";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
 
@@ -38,6 +39,17 @@ export default function HomeScreen() {
 
       if (email && email.endsWith("@cloud.neduet.edu.pk")) {
         console.log("✅ Email is valid, proceeding with login");
+        
+        // Create user document in Appwrite
+        try {
+          await saveUserToDatabase();
+          console.log("✅ User document created in Appwrite");
+        } catch (dbError) {
+          console.error("❌ Error creating user document:", dbError);
+          // Continue with login even if document creation fails
+          // The document might already exist
+        }
+        
         refetch(); // ✅ Update global state
         setError(null);
         router.replace("/(root)/(tabs)"); // ✅ Redirect to home

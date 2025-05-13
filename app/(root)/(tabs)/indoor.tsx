@@ -4,10 +4,11 @@ import { Picker } from "@react-native-picker/picker";
 import { scanWiFi } from "@/utils/scanWiFi";
 import { applyKalmanFilter } from "@/utils/kalmanFilter";
 import { findBestLocation } from "@/utils/locationFinder";
-import { useRouter } from "expo-router";
+import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { playTone } from "@/utils/audioFallback";
 import { findShortestPath, pathToDirections } from "@/constants/roomConnections";
+import * as Speech from 'expo-speech';
 
 interface WifiNetwork {
   ssid: string;
@@ -32,6 +33,7 @@ const IndoorScreen = () => {
   const [navigationSteps, setNavigationSteps] = useState<string[]>([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [showDestinationModal, setShowDestinationModal] = useState(false);
+  const [showCurrentLocationModal, setShowCurrentLocationModal] = useState(false);
   const [estimatedArrivalTime, setEstimatedArrivalTime] = useState<string | null>(null);
   const [hasArrived, setHasArrived] = useState(false);
 
@@ -327,8 +329,27 @@ const IndoorScreen = () => {
     setCurrentStepIndex(0);
     setEstimatedArrivalTime(null);
     setHasArrived(false);
+    // Stop any ongoing speech
+    Speech.stop();
     console.log("🛑 Navigation stopped");
   };
+
+  // Add focus effect to handle navigation when screen loses focus
+  useFocusEffect(
+    React.useCallback(() => {
+      return () => {
+        // Cleanup when screen loses focus
+        if (navigationActive) {
+          stopNavigation();
+          // Stop any ongoing speech
+          Speech.stop();
+          if (Platform.OS === 'android') {
+            ToastAndroid.show('Navigation stopped', ToastAndroid.SHORT);
+          }
+        }
+      };
+    }, [navigationActive])
+  );
 
   const getStatusColor = () => {
     switch (scanStatus) {
@@ -391,26 +412,32 @@ const IndoorScreen = () => {
   return (
     <SafeAreaView className="flex-1 bg-white">
       <ScrollView className="flex-1">
-        <View className="flex-1 items-center p-4">
-          {/* Header with Collect and Clear Buttons */}
-          <View className="w-full flex-row justify-between items-center mb-6">
-            <View className="flex-row items-center space-x-2">
-              <Text className="text-2xl font-bold">Indoor Navigation</Text>
-            </View>
-          </View>
+        <View className="flex-1 p-4">
+          {/* Header */}
+          <Text className="text-2xl font-bold mb-4">Indoor Navigation</Text>
 
-          {/* Current Location Display */}
-          <View className="bg-gray-50 rounded-lg p-6 w-full max-w-sm shadow-sm mb-4">
-            <Text className="text-sm text-gray-500 mb-2">Current Location</Text>
-            <Text className="text-xl font-semibold text-gray-800">
+          {/* Current Location */}
+          <View className="bg-gray-50 rounded-lg p-3 mb-3">
+            <View className="flex-row justify-between items-center">
+              <Text className="text-base">Current Location</Text>
+              {/* Commenting out the Select button for current location
+              <TouchableOpacity 
+                onPress={() => setShowCurrentLocationModal(true)}
+                className="bg-blue-500 px-3 py-1 rounded"
+              >
+                <Text className="text-white">Select</Text>
+              </TouchableOpacity>
+              */}
+            </View>
+            <Text className="text-lg mt-1">
               {currentLocation || "Not detected yet"}
             </Text>
           </View>
 
-          {/* Destination Selection */}
-          <View className="bg-gray-50 rounded-lg p-4 w-full max-w-sm mb-4">
+          {/* Destination */}
+          <View className="bg-gray-50 rounded-lg p-3 mb-3">
             <View className="flex-row justify-between items-center">
-              <Text className="text-sm text-gray-500">Destination</Text>
+              <Text className="text-base">Destination</Text>
               <TouchableOpacity 
                 onPress={() => setShowDestinationModal(true)}
                 className="bg-blue-500 px-3 py-1 rounded"
@@ -418,64 +445,70 @@ const IndoorScreen = () => {
                 <Text className="text-white">Select</Text>
               </TouchableOpacity>
             </View>
-            <Text className="text-lg font-semibold mt-2">
+            <Text className="text-lg mt-1">
               {destinationLocation || "No destination selected"}
             </Text>
           </View>
 
-          {/* Navigation Section - Only visible when navigation is active */}
+          {/* Navigation Section */}
           {navigationActive && (
-            <View className="bg-blue-50 rounded-lg p-4 w-full max-w-sm mb-4">
-              <View className="flex-row justify-between items-center mb-2">
-                <Text className="text-sm text-blue-800 font-semibold">Navigation Active</Text>
-                <TouchableOpacity 
-                  onPress={stopNavigation}
-                  className="bg-red-500 px-3 py-1 rounded"
-                >
-                  <Text className="text-white">Stop</Text>
-                </TouchableOpacity>
-              </View>
-              
-              <Text className="text-xs text-gray-600 mb-1">Follow these direction instructions:</Text>
+            <View className="bg-blue-50 rounded-lg p-3 mb-3">
+              <Text className="text-base font-medium mb-2">Navigation Active</Text>
               
               <ScrollView 
-                className="bg-white rounded p-3 mb-2 max-h-64"
+                className="bg-white rounded p-2 max-h-48"
                 contentContainerStyle={{ paddingBottom: 8 }}
               >
                 {navigationSteps.map((step, index) => (
-                  <Text 
+                  <View 
                     key={index} 
-                    className={`${index === currentStepIndex ? 'text-blue-600 font-bold' : 'text-gray-600'} mb-2`}
+                    className={`p-2 mb-2 rounded ${
+                      index === currentStepIndex 
+                        ? 'bg-blue-100 border border-blue-500' 
+                        : 'bg-gray-50'
+                    }`}
                   >
-                    {step}
-                  </Text>
+                    <Text 
+                      className={`text-base ${
+                        index === currentStepIndex 
+                          ? 'text-blue-800 font-bold' 
+                          : 'text-gray-700'
+                      }`}
+                    >
+                      {step}
+                    </Text>
+                  </View>
                 ))}
               </ScrollView>
-              
-              <View className="flex-row justify-between">
-                <Text className="text-xs text-blue-700">
-                  Next in {Math.round(AUTO_NAVIGATION_INTERVAL/1000)}s
-                </Text>
-                {estimatedArrivalTime && (
-                  <Text className="text-xs text-blue-700">
-                    ETA: {estimatedArrivalTime}
-                  </Text>
-                )}
-              </View>
             </View>
           )}
 
+          {/* Repeat Instruction Button */}
+          {navigationActive && navigationSteps.length > 0 && (
+            <TouchableOpacity
+              className="bg-purple-500 p-3 rounded-lg mb-3"
+              onPress={() => {
+                const currentInstruction = navigationSteps[currentStepIndex];
+                playNavigationSound(false, currentInstruction);
+              }}
+            >
+              <Text className="text-white text-center text-base font-medium">
+                Repeat Current Instruction
+              </Text>
+            </TouchableOpacity>
+          )}
+
           {/* Action Buttons */}
-          <View className="w-full max-w-sm">
+          <View>
             {/* Detect Location Button */}
             <TouchableOpacity
-              className={`p-4 rounded-lg ${
+              className={`p-3 rounded-lg ${
                 isScanDisabled ? "bg-gray-400" : "bg-blue-500"
               }`}
               onPress={scanWiFiAndUpdate}
               disabled={isScanDisabled}
             >
-              <Text className="text-white text-center text-lg font-semibold">
+              <Text className="text-white text-center text-base font-medium">
                 {scanStatus === "scanning" ? "Scanning..." : 
                  scanStatus === "processing" ? "Processing..." : 
                  scanStatus === "cooldown" ? `Scan in ${cooldownTimer}s` : 
@@ -486,11 +519,23 @@ const IndoorScreen = () => {
             {/* Start Navigation Button */}
             {!navigationActive && currentLocation && destinationLocation && (
               <TouchableOpacity
-                className="bg-green-500 p-4 rounded-lg mt-6"
+                className="bg-green-500 p-3 rounded-lg mt-3"
                 onPress={startNavigation}
               >
-                <Text className="text-white text-center text-lg font-semibold">
+                <Text className="text-white text-center text-base font-medium">
                   Start Navigation
+                </Text>
+              </TouchableOpacity>
+            )}
+
+            {/* Stop Navigation Button */}
+            {navigationActive && (
+              <TouchableOpacity
+                className="bg-red-500 p-3 rounded-lg mt-3"
+                onPress={stopNavigation}
+              >
+                <Text className="text-white text-center text-base font-medium">
+                  Stop Navigation
                 </Text>
               </TouchableOpacity>
             )}
@@ -506,30 +551,30 @@ const IndoorScreen = () => {
         onRequestClose={() => setShowDestinationModal(false)}
       >
         <View className="flex-1 justify-center items-center bg-black/50">
-          <View className="bg-white rounded-lg p-6 w-11/12 max-w-md">
-            <Text className="text-xl font-bold mb-4">Select Destination</Text>
+          <View className="bg-white rounded-lg p-4 w-11/12 max-w-md">
+            <Text className="text-xl font-bold mb-3">Select Destination</Text>
             
-            <View className="bg-gray-50 rounded border border-gray-200 mb-4">
+            <View className="bg-gray-50 rounded border border-gray-200 mb-3">
               <Picker
                 selectedValue={destinationLocation}
                 onValueChange={(itemValue) => setDestinationLocation(itemValue)}
               >
-                <Picker.Item label="Choose your destination here" value="" />
+                <Picker.Item label="Choose your destination" value="" />
                 {availableLocations.map((location) => (
                   <Picker.Item key={location} label={location} value={location} />
                 ))}
               </Picker>
             </View>
             
-            <View className="flex-row justify-between mt-4">
+            <View className="flex-row justify-between">
               <TouchableOpacity 
-                className="bg-gray-300 px-8 py-3 rounded-lg w-5/12"
+                className="bg-gray-300 px-6 py-2 rounded-lg w-5/12"
                 onPress={() => setShowDestinationModal(false)}
               >
                 <Text className="text-center">Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity 
-                className="bg-blue-500 px-8 py-3 rounded-lg w-5/12"
+                className="bg-blue-500 px-6 py-2 rounded-lg w-5/12"
                 onPress={() => {
                   if (destinationLocation) {
                     setShowDestinationModal(false);
@@ -542,6 +587,52 @@ const IndoorScreen = () => {
           </View>
         </View>
       </Modal>
+
+      {/* Commenting out Current Location Selection Modal
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={showCurrentLocationModal}
+        onRequestClose={() => setShowCurrentLocationModal(false)}
+      >
+        <View className="flex-1 justify-center items-center bg-black/50">
+          <View className="bg-white rounded-lg p-4 w-11/12 max-w-md">
+            <Text className="text-xl font-bold mb-3">Select Current Location</Text>
+            
+            <View className="bg-gray-50 rounded border border-gray-200 mb-3">
+              <Picker
+                selectedValue={currentLocation || ""}
+                onValueChange={(itemValue) => setCurrentLocation(itemValue)}
+              >
+                <Picker.Item label="Choose your current location" value="" />
+                {availableLocations.map((location) => (
+                  <Picker.Item key={location} label={location} value={location} />
+                ))}
+              </Picker>
+            </View>
+            
+            <View className="flex-row justify-between">
+              <TouchableOpacity 
+                className="bg-gray-300 px-6 py-2 rounded-lg w-5/12"
+                onPress={() => setShowCurrentLocationModal(false)}
+              >
+                <Text className="text-center">Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity 
+                className="bg-blue-500 px-6 py-2 rounded-lg w-5/12"
+                onPress={() => {
+                  if (currentLocation) {
+                    setShowCurrentLocationModal(false);
+                  }
+                }}
+              >
+                <Text className="text-white text-center">Confirm</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      */}
     </SafeAreaView>
   );
 };

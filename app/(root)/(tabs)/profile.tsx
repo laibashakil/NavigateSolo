@@ -10,19 +10,22 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useEffect } from "react";
+import { MaterialIcons } from "@expo/vector-icons";
 
 import { GoogleSignin } from "@react-native-google-signin/google-signin";
 import { useGlobalContext } from "@/lib/global-provider";
 
 import icons from "@/constants/icons";
-import { settings } from "@/constants/data";
+
+type MaterialIconName = React.ComponentProps<typeof MaterialIcons>['name'];
 
 interface SettingsItemProp {
-  icon: any;
+  icon: MaterialIconName;
   title: string;
   onPress?: () => void;
   textStyle?: string;
   showArrow?: boolean;
+  iconColor?: string;
 }
 
 const SettingsItem = ({
@@ -31,19 +34,20 @@ const SettingsItem = ({
   onPress,
   textStyle,
   showArrow = true,
+  iconColor = "#666876",
 }: SettingsItemProp) => (
   <TouchableOpacity
     onPress={onPress}
     className="flex flex-row items-center justify-between py-3"
   >
     <View className="flex flex-row items-center gap-3">
-      <Image source={icon} className="size-6" />
+      <MaterialIcons name={icon} size={24} color={iconColor} />
       <Text className={`text-lg font-rubik-medium text-black-300 ${textStyle}`}>
         {title}
       </Text>
     </View>
 
-    {showArrow && <Image source={icons.rightArrow} className="size-5" />}
+    {showArrow && <MaterialIcons name="chevron-right" size={24} color="#666876" />}
   </TouchableOpacity>
 );
 
@@ -133,39 +137,40 @@ const Profile = () => {
 
         {/* Settings Items */}
         <View className="flex flex-col mt-5 border-t pt-5 border-primary-200">
-          {settings.map((item, index) => (
-            <SettingsItem
-              key={index}
-              {...item}
-              onPress={() => {
-                switch (item.title) {
-                  case "Account Settings":
-                    router.push("/(root)/EditProfileScreen");
-                    break;
-                  case "About":
-                    router.push("/(root)/AboutScreen");
-                    break;
-                  case "FAQ":
-                    router.push("/(root)/FAQScreen");
-                    break;
-                  case "Privacy Policy":
-                    router.push("/(root)/PrivacyPolicyScreen");
-                    break;
-                  case "Developer Mode":
-                    router.push("/(root)/collect");
-                    break;
-                }
-              }}
-            />
-          ))}
+          <SettingsItem
+            icon="person"
+            title="Account Settings"
+            onPress={() => router.push("/(root)/EditProfileScreen")}
+          />
+          <SettingsItem
+            icon="info"
+            title="About"
+            onPress={() => router.push("/(root)/AboutScreen")}
+          />
+          <SettingsItem
+            icon="help"
+            title="FAQ"
+            onPress={() => router.push("/(root)/FAQScreen")}
+          />
+          <SettingsItem
+            icon="security"
+            title="Privacy Policy"
+            onPress={() => router.push("/(root)/PrivacyPolicyScreen")}
+          />
+          <SettingsItem
+            icon="code"
+            title="Developer Mode"
+            onPress={() => router.push("/(root)/collect")}
+          />
         </View>
 
         {/* Logout Button */}
         <View className="flex flex-col border-t mt-5 pt-5 border-primary-200">
           <SettingsItem
-            icon={icons.logout}
+            icon="logout"
             title="Logout"
             textStyle="text-danger"
+            iconColor="#FF3B30"
             showArrow={false}
             onPress={handleLogout}
           />
