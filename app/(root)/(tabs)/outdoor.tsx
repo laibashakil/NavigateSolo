@@ -113,26 +113,63 @@ export default function NavigationApp() {
     startNavigation(enrichedSteps);
   };
 
-  const startNavigation = async (stepList) => {
-    if (!stepList.length) return;
+const startNavigation = async (stepList) => {
+  if (!stepList.length) return;
 
-    Speech.speak(stepList[0].instruction);
-    setSteps(stepList);
+  Speech.speak(stepList[0].instruction);
+  setSteps(stepList);
 
-    locationSubscription.current = await Location.watchPositionAsync(
-      {
-        accuracy: Location.Accuracy.BestForNavigation, // Use highest accuracy
-        distanceInterval: 1, // Update every 1 meter
-        timeInterval: 1000, // Update every 1 second
-      },
-      (location) => {
-        setUserLocation(location.coords);
-        if (navigationActive) {
-          checkNextStep(location.coords, stepList);
+  let currentStepIndex = 0;
+  let lastSpoken = null;
+
+  locationSubscription.current = await Location.watchPositionAsync(
+    {
+      accuracy: Location.Accuracy.BestForNavigation, // Use highest accuracy
+      distanceInterval: 1, // Update every 1 meter
+      timeInterval: 1000, // Update every 1 second
+    },
+    (location) => {
+      const userCoords = location.coords;
+      setUserLocation(userCoords);
+
+      if (navigationActive && currentStepIndex < stepList.length) {
+        const currentStep = stepList[currentStepIndex];
+const targetLat = currentStep.coords.latitude;
+const targetLon = currentStep.coords.longitude;
+
+
+        const distance = haversine(
+  { latitude: userCoords.latitude, longitude: userCoords.longitude },
+  { latitude: targetLat, longitude: targetLon },
+  { unit: "meter" }
+);
+
+        const stepsRemaining = Math.round(distance / 0.75);
+
+        // Speak remaining steps every 10 seconds (avoid spam)
+        const now = Date.now();
+        if (!lastSpoken || now - lastSpoken > 10000) {
+          Speech.speak(`Keep going, ${stepsRemaining} steps to ${currentStep.instruction}`);
+          lastSpoken = now;
+        }
+
+        // When user reaches the current step's end location
+        if (distance < 5) {
+          currentStepIndex++;
+          if (currentStepIndex < stepList.length) {
+            const nextStep = stepList[currentStepIndex];
+            Speech.speak(`Now ${nextStep.instruction}`);
+          } else {
+            Speech.speak("You have arrived at your destination.");
+            setNavigationActive(false);
+            locationSubscription.current?.remove();
+          }
         }
       }
-    );
-  };
+    }
+  );
+};
+
 
   const checkNextStep = (currentCoords, stepList) => {
     if (currentStepIndex >= stepList.length) {
