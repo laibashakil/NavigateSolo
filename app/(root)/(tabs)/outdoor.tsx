@@ -7,6 +7,10 @@ import * as Speech from 'expo-speech';
 import { Picker } from '@react-native-picker/picker';
 import haversine from "haversine";
 import { Magnetometer } from 'expo-sensors';
+import { useFocusEffect } from '@react-navigation/native';
+
+
+
 
 const OPENROUTESERVICE_API_KEY = "5b3ce3597851110001cf6248b834120f36cb44e0b8faf95d5ef770ec";
 
@@ -29,6 +33,22 @@ export default function NavigationApp() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [navigationActive, setNavigationActive] = useState(false);
   const locationSubscription = useRef(null);
+
+useFocusEffect(
+  React.useCallback(() => {
+    // Screen is focused
+    return () => {
+      // Screen is unfocused (tab changed or user left)
+      console.log("Screen unfocused");
+
+      if (navigationActive) {
+        console.log("Stopping navigation due to tab change.");
+        stopNavigation();
+      }
+    };
+  }, [navigationActive])
+);
+
 
   // Compass heading logic
   useEffect(() => {
@@ -202,6 +222,7 @@ const targetLon = currentStep.coords.longitude;
       locationSubscription.current = null;
     }
     setNavigationActive(false);
+    setSteps([]); 
     Alert.alert("Navigation Stopped", "You have stopped navigation.");
   };
 
