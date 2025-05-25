@@ -1,5 +1,4 @@
-//OUTDOOR
-
+//OUTDOORrrr
 import React, { useEffect, useState, useRef } from "react";
 import { View, Text, Button, Alert, FlatList, TouchableOpacity } from "react-native";
 import * as Location from "expo-location";
@@ -8,9 +7,6 @@ import { Picker } from '@react-native-picker/picker';
 import haversine from "haversine";
 import { Magnetometer } from 'expo-sensors';
 import { useFocusEffect } from '@react-navigation/native';
-
-
-
 
 const OPENROUTESERVICE_API_KEY = "5b3ce3597851110001cf6248b834120f36cb44e0b8faf95d5ef770ec";
 
@@ -33,30 +29,61 @@ export default function NavigationApp() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [navigationActive, setNavigationActive] = useState(false);
   const locationSubscription = useRef(null);
+  const [currentInstruction, setCurrentInstruction] = useState("");
+  const [lastUpdateTime, setLastUpdateTime] = useState(Date.now());
+  const [lastLocation, setLastLocation] = useState(null);
+  const autoUpdateInterval = useRef(null);
 
-useFocusEffect(
-  React.useCallback(() => {
-    // Screen is focused
+  useFocusEffect(
+    React.useCallback(() => {
+      return () => {
+        if (navigationActive) {
+          console.log("Stopping navigation due to tab change.");
+          stopNavigation();
+        }
+      };
+    }, [navigationActive])
+  );
+
+  // Add automatic route update every 10 seconds
+  useEffect(() => {
+    if (navigationActive) {
+      autoUpdateInterval.current = setInterval(() => {
+        console.log("Auto-updating route...");
+        forceUpdateNavigation();
+      }, 30000); // 10 seconds
+    } else {
+      if (autoUpdateInterval.current) {
+        clearInterval(autoUpdateInterval.current);
+        autoUpdateInterval.current = null;
+      }
+    }
+
     return () => {
-      // Screen is unfocused (tab changed or user left)
-      console.log("Screen unfocused");
-
-      if (navigationActive) {
-        console.log("Stopping navigation due to tab change.");
-        stopNavigation();
+      if (autoUpdateInterval.current) {
+        clearInterval(autoUpdateInterval.current);
+        autoUpdateInterval.current = null;
       }
     };
-  }, [navigationActive])
-);
-
+  }, [navigationActive]);
+  
+  // useFocusEffect(
+  //   React.useCallback(() => {
+  //     return () => {
+  //       if (navigationActive) {
+  //         console.log("Stopping navigation due to tab change.");
+  //         stopNavigation();
+  //       }
+  //     };
+  //   }, [navigationActive])
+  // );
 
   // Compass heading logic
   useEffect(() => {
     const subscription = Magnetometer.addListener(data => {
-        let angle = Math.atan2(data.y, data.x) * (180 / Math.PI);
-        angle = angle - 90; // adjust for correct orientation
-        angle = angle < 0 ? angle + 360 : angle; // normalize to 0–360
-        
+      let angle = Math.atan2(data.y, data.x) * (180 / Math.PI);
+      angle = angle - 90;
+      angle = angle < 0 ? angle + 360 : angle;
       setHeading(Math.round(angle));
     });
     return () => subscription.remove();
@@ -131,88 +158,91 @@ useFocusEffect(
     setCurrentStepIndex(0);
     setNavigationActive(true);
     startNavigation(enrichedSteps);
+            // Check remaining steps and announce proximity
+        const remainingSteps = stepList.length - currentStepIndex;
+        if (remainingSteps <= 10) {
+          Speech.speak("You have reached your destination");
+          stopNavigation();
+        } else if (remainingSteps <= 15) {
+          Speech.speak(`You are very close to ${selectedDestination.label}`);
+        }
   };
 
-const startNavigation = async (stepList) => {
-  if (!stepList.length) return;
+  const startNavigation = async (stepList) => {
+    if (!stepList.length) return;
 
-  Speech.speak(stepList[0].instruction);
-  setSteps(stepList);
+    setCurrentInstruction(stepList[0].instruction.replace(/^\d+\.\s*/, ''));
+    Speech.speak(stepList[0].instruction.replace(/^\d+\.\s*/, ''));
+    setSteps(stepList);
 
-  let currentStepIndex = 0;
-  let lastSpoken = null;
+    locationSubscription.current = await Location.watchPositionAsync(
+      {
+        accuracy: Location.Accuracy.BestForNavigation,
+        distanceInterval: 1,
+        timeInterval: 1000,
+      },
+      (location) => {
+        const userCoords = location.coords;
+        setUserLocation(userCoords);
+        setLastLocation(userCoords);
+        setLastUpdateTime(Date.now());
 
-  locationSubscription.current = await Location.watchPositionAsync(
-    {
-      accuracy: Location.Accuracy.BestForNavigation, // Use highest accuracy
-      distanceInterval: 1, // Update every 1 meter
-      timeInterval: 1000, // Update every 1 second
-    },
-    (location) => {
-      const userCoords = location.coords;
-      setUserLocation(userCoords);
+        // Calculate distance to destination using haversine formula
+        if (selectedDestination && navigationActive) {
+          const distanceToDestination = haversine(
+            { latitude: userCoords.latitude, longitude: userCoords.longitude },
+            { latitude: selectedDestination.coordinates[1], longitude: selectedDestination.coordinates[0] },
+            { unit: 'meter' }
+          );
 
-      if (navigationActive && currentStepIndex < stepList.length) {
-        const currentStep = stepList[currentStepIndex];
-const targetLat = currentStep.coords.latitude;
-const targetLon = currentStep.coords.longitude;
+          console.log("Distance to destination:", distanceToDestination, "meters");
 
+          if (distanceToDestination <= 70) {
+            console.log("Reached destination!");
+            Speech.speak("You have reached your destination");
+            // stopNavigation();
+            // Speech.stop();
+            // if (locationSubscription.current) {
+            //   locationSubscription.current.remove();
+            //   locationSubscription.current = null;
+            // }
+            // setNavigationActive(false);
+            // setSteps([]);
+            // Alert.alert("Navigation Stopped", "You have stopped navigation.");
+              setTimeout(() => {
+    // Stop location updates
+            if (locationSubscription.current) {
+              locationSubscription.current.remove();
+              locationSubscription.current = null;
+            }
 
-        const distance = haversine(
-  { latitude: userCoords.latitude, longitude: userCoords.longitude },
-  { latitude: targetLat, longitude: targetLon },
-  { unit: "meter" }
-);
-
-        const stepsRemaining = Math.round(distance / 0.75);
-
-        // Speak remaining steps every 10 seconds (avoid spam)
-        const now = Date.now();
-        if (!lastSpoken || now - lastSpoken > 10000) {
-          Speech.speak(`Keep going, ${stepsRemaining} steps to ${currentStep.instruction}`);
-          lastSpoken = now;
-        }
-
-        // When user reaches the current step's end location
-        if (distance < 5) {
-          currentStepIndex++;
-          if (currentStepIndex < stepList.length) {
-            const nextStep = stepList[currentStepIndex];
-            Speech.speak(`Now ${nextStep.instruction}`);
-          } else {
-            Speech.speak("You have arrived at your destination.");
+            // Stop navigation state
             setNavigationActive(false);
-            locationSubscription.current?.remove();
+            setSteps([]);
+
+            // Show alert
+            Alert.alert("Navigation Stopped", "You have stopped navigation.");
+          }, 10000); 
+          } else if (distanceToDestination <= 75) {
+            console.log("Very close to destination!");
+            Speech.speak(`You are very close to ${selectedDestination.label}`);
           }
         }
       }
-    }
-  );
-};
+    );
+  };
 
-
-  const checkNextStep = (currentCoords, stepList) => {
-    if (currentStepIndex >= stepList.length) {
-      Speech.speak("You have arrived at your destination.");
-      setNavigationActive(false);
-      return;
+  const forceUpdateNavigation = () => {
+    // Stop current navigation components
+    Speech.stop();
+    if (locationSubscription.current) {
+      locationSubscription.current.remove();
+      locationSubscription.current = null;
     }
-  
-    const targetCoords = stepList[currentStepIndex].coords;
-    const distance = haversine(currentCoords, targetCoords, { unit: "meter" });
-    console.log(`Step ${currentStepIndex + 1}: Distance to target = ${distance.toFixed(2)} meters`);
-  
-    if (distance <= 15) { // Increased threshold to 15 meters
-      const nextIndex = currentStepIndex + 1;
-      setCurrentStepIndex(nextIndex);
-  
-      if (nextIndex < stepList.length) {
-        Speech.speak(stepList[nextIndex].instruction);
-      } else {
-        Speech.speak("You have arrived at your destination.");
-        setNavigationActive(false);
-      }
-    }
+    
+    // Immediately fetch new route
+    fetchRoute();
+    
   };
 
   const stopNavigation = () => {
@@ -222,63 +252,98 @@ const targetLon = currentStep.coords.longitude;
       locationSubscription.current = null;
     }
     setNavigationActive(false);
-    setSteps([]); 
+    setSteps([]);
     Alert.alert("Navigation Stopped", "You have stopped navigation.");
   };
 
-  return (
-    <View style={{ flex: 1, padding: 10, backgroundColor: "#ffffff" }}>
-      <Text className="text-black text-left text-sl" style={{ fontSize: 20 }}>
-        You're facing: {heading !== null ? getDirection(heading) : 'Loading...'}
-        {/* You're facing: {heading !== null ? `${getDirection(heading)} (${heading}°)` : 'Loading...'} */}
-      </Text>
+return (
+  <View style={{ flex: 1, padding: 10, backgroundColor: "#ffffff" }}>
+    <Text className="text-black text-left text-sl" style={{ fontSize: 20 }}>
+      You're facing: {heading !== null ? getDirection(heading) : 'Loading...'}
+    </Text>
 
-      <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Select Destination</Text>
-      <View style={{ borderWidth: 1, borderColor: "#ccc", borderRadius: 10, backgroundColor: "white" }}>
-        <Picker selectedValue={selectedDestination} onValueChange={setSelectedDestination}>
-          
-          {destinations.map((dest, index) => (
-            <Picker.Item key={index} label={dest.label} value={dest} />
-          ))}
-        </Picker>
-        
-      </View>
-
-      <TouchableOpacity className="p-4 mt-3 rounded-lg bg-blue-500" onPress={fetchRoute}>
-        <Text className="text-white text-center text-lg font-semibold">Get Directions</Text>
-      </TouchableOpacity>
-
-      {navigationActive && (
-      <TouchableOpacity className="p-4 mt-3 rounded-lg bg-red-500" onPress={stopNavigation}>
-        <Text className="text-white text-center text-lg font-semibold">Stop Navigation</Text>
-      </TouchableOpacity>
-        // <Button title="Stop Navigation" onPress={stopNavigation} color="red" />
-      )}
-
-      {steps.length > 0 && (
-        <View style={{ marginTop: 20, maxHeight: 250 }}>
-          <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Directions:</Text>
-          <FlatList
-            data={steps}
-            keyExtractor={(item, index) => index.toString()}
-            renderItem={({ item, index }) => (
-              <Text
-                style={{
-                  fontSize: 16,
-                  marginVertical: 4,
-                  color: index === currentStepIndex ? 'blue' : 'black',
-                  fontWeight: index === currentStepIndex ? 'bold' : 'normal',
-                  backgroundColor: index === currentStepIndex ? '#e0f7ff' : 'transparent',
-                  padding: 4,
-                  borderRadius: 5
-                }}
-              >
-                {item.instruction}
-              </Text>
-            )}
-          />
-        </View>
-      )}
+    <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Select Destination</Text>
+    <View style={{ borderWidth: 1, borderColor: "#ccc", borderRadius: 10, backgroundColor: "white" }}>
+      <Picker selectedValue={selectedDestination} onValueChange={setSelectedDestination}>
+        <Picker.Item label="-- Select a destination --" value={null} enabled={false} />
+        {destinations.map((dest, index) => (
+          <Picker.Item key={index} label={dest.label} value={dest} />
+        ))}
+      </Picker>
     </View>
-  );
+
+    <TouchableOpacity
+      className={`p-4 mt-3 rounded-lg ${selectedDestination ? (navigationActive ? 'bg-red-500' : 'bg-blue-500') : 'bg-gray-400'}`}
+      onPress={() => {
+        if (!selectedDestination) return;
+        if (navigationActive) {
+          stopNavigation();
+        } else {
+          fetchRoute();
+        }
+      }}
+      disabled={!selectedDestination}
+    >
+      <Text className="text-white text-center text-lg font-semibold">
+        {navigationActive ? 'Stop Navigation' : selectedDestination ? 'Get Directions' : 'Select a Destination First'}
+      </Text>
+    </TouchableOpacity>
+
+    {navigationActive && (
+      <>
+        <TouchableOpacity className="p-4 mt-3 rounded-lg bg-green-500" onPress={forceUpdateNavigation}>
+          <Text className="text-white text-center text-lg font-semibold">Update Route</Text>
+        </TouchableOpacity>
+
+        <View style={{ marginTop: 20 }}>
+          <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 10 }}>Current Instruction:</Text>
+          <View style={{
+            backgroundColor: '#e0f7ff',
+            padding: 15,
+            borderRadius: 10,
+            borderWidth: 1,
+            borderColor: '#b3e0ff'
+          }}>
+            <Text style={{ fontSize: 16, color: '#0066cc' }}>
+              {currentInstruction}
+            </Text>
+          </View>
+
+          <View style={{ marginTop: 15 }}>
+            <View>
+              {lastLocation && (
+                <Text style={{ fontSize: 12, color: '#999' }}>
+                  Lat: {lastLocation.latitude.toFixed(6)}, Lon: {lastLocation.longitude.toFixed(6)}
+                </Text>
+              )}
+            </View>
+
+            <View style={{ marginTop: 15 }}>
+              <Text style={{ fontSize: 16, fontWeight: 'bold', marginBottom: 10 }}>Upcoming Instructions:</Text>
+              <FlatList
+                data={steps.slice(currentStepIndex + 1)}
+                keyExtractor={(_, index) => index.toString()}
+                renderItem={({ item }) => (
+                  <View style={{
+                    backgroundColor: '#f0f0f0',
+                    padding: 10,
+                    marginVertical: 5,
+                    borderRadius: 8,
+                    borderWidth: 1,
+                    borderColor: '#ddd'
+                  }}>
+                    <Text style={{ fontSize: 14, color: '#333' }}>
+                      {item.instruction}
+                    </Text>
+                  </View>
+                )}
+                style={{ maxHeight: 200 }}
+              />
+            </View>
+          </View>
+        </View>
+      </>
+    )}
+  </View>
+);
 }
