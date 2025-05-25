@@ -456,7 +456,7 @@ const IndoorScreen = () => {
               <Text className="text-base font-medium mb-2">Navigation Active</Text>
               
               <ScrollView 
-                className="bg-white rounded p-2 max-h-48"
+                className="bg-white rounded p-2 max-h-64"
                 contentContainerStyle={{ paddingBottom: 8 }}
               >
                 {navigationSteps.map((step, index) => (

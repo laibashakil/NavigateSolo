@@ -1,27 +1,39 @@
 import { View, Text } from 'react-native';
-import * as Linking from 'expo-linking';
+import { WebView } from 'react-native-webview';
 import { useFocusEffect } from '@react-navigation/native';
-import { useCallback } from 'react';
+import { useCallback, useRef } from 'react';
 
 const SeatDetection = () => {
-  // Function to open the Streamlit app
-  const openSeatDetection = () => {
-    const url = 'https://live-seat-detection.streamlit.app'; // Your Streamlit Cloud URL
-    Linking.openURL(url).catch((err) => console.error('Failed to open URL:', err));
-  };
+  const webViewRef = useRef<WebView>(null);
 
-  // Use useFocusEffect to run the function every time the tab is focused
+  // Function to reload the WebView when the tab is focused
+  const reloadWebView = useCallback(() => {
+    if (webViewRef.current) {
+      webViewRef.current.reload();
+    }
+  }, []);
+
+  // Use useFocusEffect to reload the WebView every time the tab is focused
   useFocusEffect(
     useCallback(() => {
-      openSeatDetection();
-    }, []) // Empty dependency array for useCallback to prevent unnecessary re-renders
+      reloadWebView();
+    }, [reloadWebView])
   );
 
-  // Render a fallback UI while the URL is being opened
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Opening Streamlit app...</Text>
-    </View>
+    <WebView
+      ref={webViewRef}
+      source={{ uri: 'https://live-seat-detection.streamlit.app' }}
+      style={{ flex: 1 }}
+      allowsInlineMediaPlayback={true}
+      mediaPlaybackRequiresUserAction={false}
+      startInLoadingState={true}
+      renderLoading={() => (
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+          <Text>Loading Seat Detection...</Text>
+        </View>
+      )}
+    />
   );
 };
 
