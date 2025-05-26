@@ -100,6 +100,66 @@ export default function NavigationApp() {
     if (angle >= 292.5 && angle < 337.5) return 'North-West';
   };
 
+  const getDirectionAngle = (direction) => {
+    switch(direction.toLowerCase()) {
+      case 'north': return 0;
+      case 'north-east': return 45;
+      case 'east': return 90;
+      case 'south-east': return 135;
+      case 'south': return 180;
+      case 'south-west': return 225;
+      case 'west': return 270;
+      case 'north-west': return 315;
+      default: return 0;
+    }
+  };
+
+  const helpAlignDirection = () => {
+    if (!currentInstruction || heading === null) {
+      Alert.alert("Error", "No current instruction or heading available");
+      return;
+    }
+
+    // Extract direction from current instruction, including compound directions
+    const directionMatch = currentInstruction.match(/(north|south|east|west|north-east|south-east|north-west|south-west)/i);
+    if (!directionMatch) {
+      Alert.alert("Error", "No direction found in current instruction");
+      return;
+    }
+
+    // Get the exact direction from the instruction
+    const targetDirection = directionMatch[0].toLowerCase();
+    const currentDirection = getDirection(heading).toLowerCase();
+    
+    console.log("Instruction direction:", targetDirection);
+    console.log("Current direction:", currentDirection);
+    
+    // Get angles for both directions
+    const targetAngle = getDirectionAngle(targetDirection);
+    const currentAngle = heading;
+    
+    console.log("Target angle:", targetAngle);
+    console.log("Current angle:", currentAngle);
+    
+    // Calculate the shortest turn angle
+    let angleDiff = targetAngle - currentAngle;
+    
+    // Normalize the angle difference to be between -180 and 180 degrees
+    if (angleDiff > 180) {
+      angleDiff -= 360;
+    } else if (angleDiff < -180) {
+      angleDiff += 360;
+    }
+
+    // Determine turn direction and speak instruction
+    const turnDirection = angleDiff > 0 ? "right" : "left";
+    const turnAmount = Math.abs(Math.round(angleDiff));
+    
+    const message = `Turn ${turnDirection} ${turnAmount} degrees to face ${targetDirection}, then ${currentInstruction}`;
+    console.log(`Current: ${currentDirection} (${currentAngle}°), Target: ${targetDirection} (${targetAngle}°), Turn: ${turnDirection} ${turnAmount}°`);
+    Speech.speak(message);
+  };
+
   useEffect(() => {
     (async () => {
       let { status } = await Location.requestForegroundPermissionsAsync();
@@ -293,6 +353,10 @@ return (
       <>
         <TouchableOpacity className="p-4 mt-3 rounded-lg bg-green-500" onPress={forceUpdateNavigation}>
           <Text className="text-white text-center text-lg font-semibold">Update Route</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity className="p-4 mt-3 rounded-lg bg-purple-500" onPress={helpAlignDirection}>
+          <Text className="text-white text-center text-lg font-semibold">Help Align Direction</Text>
         </TouchableOpacity>
 
         <View style={{ marginTop: 20 }}>
