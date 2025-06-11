@@ -6,9 +6,7 @@ import { applyKalmanFilter } from "@/utils/kalmanFilter";
 import { findBestLocation } from "@/utils/locationFinder";
 import { useRouter, useFocusEffect } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { playTone } from "@/utils/audioFallback";
 import { findShortestPath, pathToDirections } from "@/constants/roomConnections";
-import * as Speech from 'expo-speech';
 
 interface WifiNetwork {
   ssid: string;
@@ -91,8 +89,8 @@ const IndoorScreen = () => {
     loadLocations();
   }, []);
 
-  // Sound effect for navigation with text-to-speech for instructions
-  async function playNavigationSound(isArrival = false, instructionText?: string) {
+  // Remove playNavigationSound function and replace with simple visual feedback
+  const showNavigationFeedback = (isArrival = false, instructionText?: string) => {
     try {
       // Show toast notification for feedback
       if (Platform.OS === 'android') {
@@ -104,21 +102,21 @@ const IndoorScreen = () => {
         );
       }
       
-      // Play tone and speak instruction
-      await playTone(isArrival, instructionText);
+      // Just vibrate for feedback
+      Vibration.vibrate(isArrival ? 500 : 200);
     } catch (error: any) {
       console.warn("Navigation feedback not available:", error);
       // Show error toast
       if (Platform.OS === 'android') {
         ToastAndroid.show(
-          'Speech failed: ' + (error.message || 'Unknown error'),
+          'Navigation feedback failed: ' + (error.message || 'Unknown error'),
           ToastAndroid.LONG
         );
       }
       // Fallback to basic vibration
       Vibration.vibrate(isArrival ? 500 : 200);
     }
-  }
+  };
 
   // Play an announcement with visual and haptic feedback when arriving at destination
   const announceArrival = () => {
@@ -129,8 +127,8 @@ const IndoorScreen = () => {
       [{ text: "OK", onPress: () => setNavigationActive(false) }]
     );
     
-    // Audio + haptic feedback with speech
-    playNavigationSound(true, `You have arrived at ${destinationLocation}`);
+    // Just vibrate for feedback
+    Vibration.vibrate(500);
     
     // Update state
     setHasArrived(true);
@@ -155,13 +153,23 @@ const IndoorScreen = () => {
     // Convert the path to human-readable directions
     const directions = pathToDirections(shortestPath);
     
+    // Split each direction into individual steps if it contains numbered steps
+    const splitDirections = directions.flatMap(direction => {
+      // Check if the direction contains numbered steps
+      if (direction.match(/^\d+\./)) {
+        // Split by newlines and filter out empty lines
+        return direction.split('\n').filter(step => step.trim());
+      }
+      return [direction];
+    });
+    
     // Calculate estimated arrival time (for display purposes)
-    if (directions.length > 0) {
-      let etaMinutes = Math.ceil(directions.length * 15 / 60); // Rough estimate
+    if (splitDirections.length > 0) {
+      let etaMinutes = Math.ceil(splitDirections.length * 15 / 60); // Rough estimate
       setEstimatedArrivalTime(`${etaMinutes} minute${etaMinutes > 1 ? 's' : ''}`);
     }
     
-    return directions;
+    return splitDirections;
   };
 
   // Handle cooldown timer
@@ -185,28 +193,13 @@ const IndoorScreen = () => {
     };
   }, [scanStatus, cooldownTimer]);
 
-  // Auto-navigation guidance with user waiting time - repeat current instruction
+  // Auto-navigation guidance with user waiting time
   useEffect(() => {
-    let navigationTimer: NodeJS.Timeout | undefined;
-    
     if (navigationActive && navigationSteps.length > 0 && currentStepIndex < navigationSteps.length) {
       // Initial instruction when starting navigation
       const currentInstruction = navigationSteps[currentStepIndex];
-      playNavigationSound(false, currentInstruction);
-      
-      // Set up timer to repeat the current instruction
-      navigationTimer = setInterval(() => {
-        // Always repeat the current instruction rather than advancing
-        if (currentStepIndex < navigationSteps.length) {
-          const currentInstruction = navigationSteps[currentStepIndex];
-          playNavigationSound(false, currentInstruction);
-        }
-      }, AUTO_NAVIGATION_INTERVAL);
+      showNavigationFeedback(false, currentInstruction);
     }
-    
-    return () => {
-      if (navigationTimer) clearInterval(navigationTimer);
-    };
   }, [navigationActive, navigationSteps, currentStepIndex]);
 
   // Update navigation when location changes
@@ -217,9 +210,9 @@ const IndoorScreen = () => {
       setNavigationSteps(newPath);
       setCurrentStepIndex(0);
       
-      // Announce the first instruction of the new path immediately
+      // Show the first instruction of the new path immediately
       if (newPath.length > 0) {
-        playNavigationSound(false, newPath[0]);
+        showNavigationFeedback(false, newPath[0]);
       }
     }
   }, [navigationActive, currentLocation, destinationLocation]);
@@ -318,7 +311,6 @@ const IndoorScreen = () => {
     setNavigationSteps(path);
     setCurrentStepIndex(0);
     setNavigationActive(true);
-    playNavigationSound();
     console.log(`🧭 Starting navigation from ${currentLocation} to ${destinationLocation}`);
     console.log(`🧭 Path: ${path.join(' -> ')}`);
   };
@@ -329,8 +321,6 @@ const IndoorScreen = () => {
     setCurrentStepIndex(0);
     setEstimatedArrivalTime(null);
     setHasArrived(false);
-    // Stop any ongoing speech
-    Speech.stop();
     console.log("🛑 Navigation stopped");
   };
 
@@ -341,8 +331,6 @@ const IndoorScreen = () => {
         // Cleanup when screen loses focus
         if (navigationActive) {
           stopNavigation();
-          // Stop any ongoing speech
-          Speech.stop();
           if (Platform.OS === 'android') {
             ToastAndroid.show('Navigation stopped', ToastAndroid.SHORT);
           }
@@ -420,14 +408,6 @@ const IndoorScreen = () => {
           <View className="bg-gray-50 rounded-lg p-3 mb-3">
             <View className="flex-row justify-between items-center">
               <Text className="text-base">Current Location</Text>
-              {/* Commenting out the Select button for current location
-              <TouchableOpacity 
-                onPress={() => setShowCurrentLocationModal(true)}
-                className="bg-blue-500 px-3 py-1 rounded"
-              >
-                <Text className="text-white">Select</Text>
-              </TouchableOpacity>
-              */}
             </View>
             <Text className="text-lg mt-1">
               {currentLocation || "Not detected yet"}
@@ -456,13 +436,13 @@ const IndoorScreen = () => {
               <Text className="text-base font-medium mb-2">Navigation Active</Text>
               
               <ScrollView 
-                className="bg-white rounded p-2 max-h-64"
+                className="bg-white rounded p-2 max-h-96"
                 contentContainerStyle={{ paddingBottom: 8 }}
               >
                 {navigationSteps.map((step, index) => (
                   <View 
                     key={index} 
-                    className={`p-2 mb-2 rounded ${
+                    className={`p-4 mb-3 rounded ${
                       index === currentStepIndex 
                         ? 'bg-blue-100 border border-blue-500' 
                         : 'bg-gray-50'
@@ -481,21 +461,6 @@ const IndoorScreen = () => {
                 ))}
               </ScrollView>
             </View>
-          )}
-
-          {/* Repeat Instruction Button */}
-          {navigationActive && navigationSteps.length > 0 && (
-            <TouchableOpacity
-              className="bg-purple-500 p-3 rounded-lg mb-3"
-              onPress={() => {
-                const currentInstruction = navigationSteps[currentStepIndex];
-                playNavigationSound(false, currentInstruction);
-              }}
-            >
-              <Text className="text-white text-center text-base font-medium">
-                Repeat Current Instruction
-              </Text>
-            </TouchableOpacity>
           )}
 
           {/* Action Buttons */}
@@ -587,52 +552,6 @@ const IndoorScreen = () => {
           </View>
         </View>
       </Modal>
-
-      {/* Commenting out Current Location Selection Modal
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={showCurrentLocationModal}
-        onRequestClose={() => setShowCurrentLocationModal(false)}
-      >
-        <View className="flex-1 justify-center items-center bg-black/50">
-          <View className="bg-white rounded-lg p-4 w-11/12 max-w-md">
-            <Text className="text-xl font-bold mb-3">Select Current Location</Text>
-            
-            <View className="bg-gray-50 rounded border border-gray-200 mb-3">
-              <Picker
-                selectedValue={currentLocation || ""}
-                onValueChange={(itemValue) => setCurrentLocation(itemValue)}
-              >
-                <Picker.Item label="Choose your current location" value="" />
-                {availableLocations.map((location) => (
-                  <Picker.Item key={location} label={location} value={location} />
-                ))}
-              </Picker>
-            </View>
-            
-            <View className="flex-row justify-between">
-              <TouchableOpacity 
-                className="bg-gray-300 px-6 py-2 rounded-lg w-5/12"
-                onPress={() => setShowCurrentLocationModal(false)}
-              >
-                <Text className="text-center">Cancel</Text>
-              </TouchableOpacity>
-              <TouchableOpacity 
-                className="bg-blue-500 px-6 py-2 rounded-lg w-5/12"
-                onPress={() => {
-                  if (currentLocation) {
-                    setShowCurrentLocationModal(false);
-                  }
-                }}
-              >
-                <Text className="text-white text-center">Confirm</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </View>
-      </Modal>
-      */}
     </SafeAreaView>
   );
 };
