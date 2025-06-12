@@ -14,133 +14,183 @@
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1 through either door and turn right. Enter Room 2 through its first door.
+1. 1. Exit Room 1 through either door.
+2. Turn left and walk straight.
+3. Enter Room 2 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1 through either door and turn right. Walk past both doors of Room 2 to reach Room 3's first door.
+1. 1. Exit Room 1 through either door.
+2. Turn left and walk past Room 2.
+3. Enter Room 3 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1 through either door and turn right. Walk past both doors of Room 2 and Room 3 to reach Room 4's first door.
+1. 1. Exit Room 1 through either door.
+2. Turn left and walk past Rooms 2 and 3.
+3. Enter Room 4 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the first door on your right is CSIT Room 5.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the third door on your right is CSIT Room 6.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the fifth door on your right is CSIT Room 7.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the seventh door on your right is CSIT Room 8.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit, then continue to CSIT Entrance.
+1. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 1
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 1, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2 through its first door and turn left. Enter Room 1 through either door.
+1. 1. Exit Room 2 through its first door.
+2. Turn right and walk straight.
+3. Enter Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Room 2
@@ -154,133 +204,179 @@
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2 through its second door and turn right. Enter Room 3 through its first door.
+1. 1. Exit Room 2 through its second door.
+2. Turn left.
+3. Enter Room 3 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2 through its second door and turn right. Walk past Room 3 to reach Room 4's first door.
+1. 1. Exit Room 2 through its second door.
+2. Turn left.
+3. Walk past Room 3 to reach Room 4's first door.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Room 2, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the first door on your right is CSIT Room 5.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Room 2, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the third door on your right is CSIT Room 6.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Room 2, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the fifth door on your right is CSIT Room 7.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Room 2, turn left.
+2. Walk straight and find the stairs on your left.
+3. Walk up the stairs to first floor then turn right into the corridor.
+4. Walk straight and the seventh door on your right is CSIT Room 8.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 2, turn right.
+2. Walk to CSIT Exit.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit Room 2 through its first door.
+2. Turn right and walk straight through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit Room 2 through its first door.
+2. Turn right and walk straight through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit Room 2 through its first door.
+2. Turn right and walk straight through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 2, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit, then continue to CSIT Entrance.
+1. 1. Exit CSIT Room 2, turn left and walk straight.
+2. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
+1. 1. Exit CSIT Room 2, turn right and walk straight.
+2. Continue walking through the main corridor until you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 2, turn right and walk straight.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 2
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 2, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 2, turn right and walk straight.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3 through its first door and turn left. Walk past Room 2 to reach Room 1.
+1. 1. Exit Room 3 through its first door.
+2. Turn right and walk past Room 2.
+3. Enter Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3 through its first door and turn left. Enter Room 2 through its second door.
+1. 1. Exit Room 3 through its first door.
+2. Turn right.
+3. Enter Room 2 through its second door.
 ================================================================================
 
 📍 From: CSIT Room 3
@@ -294,133 +390,188 @@
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3 through its second door and turn right. Enter Room 4 through its first door.
+1. 1. Exit Room 3 through its second door.
+2. Turn left.
+3. Enter Room 4 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 5.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 6.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 7.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 8.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+4. Take a right through the passageway.
+5. Take another right up the ramp.
+6. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 3, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 3, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 3, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 3, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit, then continue to CSIT Entrance.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn left and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 3
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 3, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 3 through its second door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4 through its first door and turn left. Walk past Room 3 and Room 2 to reach Room 1.
+1. 1. Exit Room 4 through its first door.
+2. Turn right and walk past Rooms 3 and 2.
+3. Enter Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4 through its first door and turn left. Walk past Room 3 to reach Room 2's second door.
+1. 1. Exit Room 4 through its first door.
+2. Turn right.
+3. Walk past Room 3 to reach Room 2's second door.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4 through its first door and turn left. Enter Room 3 through its second door.
+1. 1. Exit Room 4 through its first door.
+2. Turn right.
+3. Enter Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Room 4
@@ -434,133 +585,196 @@
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Room 4 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 5.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Room 4 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 6.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Room 4 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 7.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Room 4 through its second door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk up the stairs to first floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 8.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 4 through its first door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+4. Take a right through the passageway.
+5. Take another right up the ramp.
+6. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 4, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 4, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 4, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 4, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit, then continue to CSIT Entrance.
+1. 1. Exit CSIT Room 4 through its first door.
+2. Turn left and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
+1. 1. Exit CSIT Room 4 through its first door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 4 through its first door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 4
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 4, turn right and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 4 through its first door.
+2. Turn right and walk straight.
+3. Continue walking through the main corridor until you reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Room 5
@@ -574,134 +788,206 @@
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5 through either door and turn right. Enter Room 6 through its first door.
+1. 1. Exit Room 5 through either door.
+2. Turn right.
+3. Enter Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5 through either door and turn right. Walk past Room 6 to reach Room 7's first door.
+1. 1. Exit Room 5 through either door.
+2. Turn right.
+3. Walk past Room 6 to reach Room 7's first door.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5 through either door and turn right. Walk past Room 6 and Room 7 to reach Room 8's first door.
+1. 1. Exit Room 5 through either door.
+2. Turn right.
+3. Walk past Room 6 and Room 7 to reach Room 8's first door.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn left.
+5. Walk a few steps until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk through the corridor till you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp to reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 5
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 5, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.8. Walk straight until you reach the CSIT Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6 through its first door and turn left. Enter Room 5 through either door.
+1. 1. Exit Room 6 through its first door.
+2. Turn left.
+3. Enter Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Room 6
@@ -715,134 +1001,206 @@
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6 through its second door and turn right. Enter Room 7 through its first door.
+1. 1. Exit Room 6 through its second door.
+2. Turn right.
+3. Enter Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6 through its second door and turn right. Walk past Room 7 to reach Room 8's first door.
+1. 1. Exit Room 6 through its second door.
+2. Turn right.
+3. Walk past Room 7 to reach Room 8's first door.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn left.
+5. Walk a few steps until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk through the corridor till you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp to reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 6
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 6, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.8. Walk straight until you reach the CSIT Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7 through its first door and turn left. Walk past Room 6 to reach Room 5.
+1. 1. Exit Room 7 through its first door.
+2. Turn left.
+3. Walk past Room 6 to reach Room 5.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7 through its first door and turn left. Enter Room 6 through its second door.
+1. 1. Exit Room 7 through its first door.
+2. Turn left.
+3. Enter Room 6 through its second door.
 ================================================================================
 
 📍 From: CSIT Room 7
@@ -856,134 +1214,206 @@
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7 through its second door and turn right. Enter Room 8 through its first door.
+1. 1. Exit Room 7 through its second door.
+2. Turn right.
+3. Enter Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn left.
+5. Walk a few steps until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk through the corridor till you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp to reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 7
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 7, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 7 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.8. Walk straight until you reach the CSIT Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8 through its first door and turn left. Walk past Room 7 and Room 6 to reach Room 5.
+1. 1. Exit Room 8 through its first door.
+2. Turn left.
+3. Walk past Room 7 and Room 6 to reach Room 5.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8 through its first door and turn left. Walk past Room 7 to reach Room 6's second door.
+1. 1. Exit Room 8 through its first door.
+2. Turn left.
+3. Walk past Room 7 to reach Room 6's second door.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8 through its first door and turn left. Enter Room 7 through its second door.
+1. 1. Exit Room 8 through its first door.
+2. Turn left.
+3. Enter Room 7 through its second door.
 ================================================================================
 
 📍 From: CSIT Room 8
@@ -997,138 +1427,221 @@
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Wal down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.
+8. Walk straight until you reach the stairs on your left.
+9. Walk up the stairs to first floor. Then turn right to the corridor.
+10. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn left.
+5. Walk a few steps until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk through the corridor till you reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp to reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Room 8
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Room 8, turn left and walk to CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Room 8 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on your left.
+4. Walk down the stairs to ground floor then turn right.
+5. Walk straight and exit through the main corridor.
+6. Take a right through the passageway.
+7. Take another right up the ramp.8. Walk straight until you reach the CSIT Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit CSIT Lab 2.
+2. Walk to CSIT Exit.
+3. Go down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach CSIT Exit.
+6. Continue to CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight past CSIT Room 1 and CSIT Room 2.
+6. Enter CSIT Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight past CSIT Room 1, CSIT Room 2 and CSIT Room 3.
+6. Enter CSIT Room 4 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Turn right into the corridor leading to CSIT Rooms 5-8.
+6. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Turn right into the corridor leading to CSIT Rooms 5-8.
+6. Walk past CSIT Room 5 and enter CSIT Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Turn right into the corridor leading to CSIT Rooms 5-8.
+6. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, walk to CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Turn right into the corridor leading to CSIT Rooms 5-8.
+6. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 2
@@ -1142,133 +1655,191 @@
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 3.
+1. 1. Exit Lab 2 through the main door.
+2. Turn right and walk through the corridor.
+3. Enter Lab 3 through its main door.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 4.
+1. 1. Exit CSIT Lab 2, turn right.
+2. Walk to Lab Exit.
+3. Follow the path to CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 5.
+1. 1. Exit CSIT Lab 2, turn right.
+2. Walk to Lab Exit.
+3. Follow the path to CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Project Lab.
+1. 1. Exit CSIT Lab 2, turn right.
+2. Walk to Lab Exit.
+3. Follow the path to CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. Exit CSIT Lab 2 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
+1. 1. Exit CSIT Lab 2, turn left.
+2. Walk to Lab Exit.
 ================================================================================
 
 📍 From: CSIT Lab 2
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 2, turn right and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 3.
-3. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Lab 2, turn left.
+2. Walk to Lab Exit.
+3. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit Lab 3 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 2 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1 and CSIT Room 2.
+7. Enter CSIT Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1, CSIT Room 2 and CSIT Room 3.
+7. Enter CSIT Room 4 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and enter CSIT Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit Lab 3 through the main door.
+2. Turn left and walk through the corridor.
+3. Enter Lab 2 through its main door.
 ================================================================================
 
 📍 From: CSIT Lab 3
@@ -1282,127 +1853,194 @@
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3 through either door and turn right. Enter Lab 4 through either of its doors.
+1. 1. Exit Lab 3 through either door.
+2. Turn right and walk straight.
+3. Enter Lab 4 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3 through either door and turn right. Walk past Lab 4 to reach Lab 5.
+1. 1. Exit Lab 3 through either door.
+2. Turn right.
+3. Walk past Lab 4 to reach Lab 5.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3 through either door and turn right. Walk past Lab 4 and Lab 5 to reach Project Lab.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Turn left and walk through the corridor.
+3. Walk down the stairs.
+4. Turn right and enter the Project Lab.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. Exit CSIT Lab 3 through its main door.
+2. Walk past CSIT Lab 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit.
+1. 1. Exit CSIT Lab 3, turn left.
+2. Walk to Lab Exit.
 ================================================================================
 
 📍 From: CSIT Lab 3
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Lab 3, turn left.
+2. Walk to Lab Exit.
+3. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit Lab 4 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 2 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1 and CSIT Room 2.
+7. Enter CSIT Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1, CSIT Room 2 and CSIT Room 3.
+7. Enter CSIT Room 4 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 6.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and enter CSIT Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Lab 4, turn left.
+2. Walk to Lab Exit.
+3. Continue to CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4 through either door and turn left. Enter Lab 3 through either of its doors.
+1. 1. Exit Lab 4 through either door.
+2. Turn left and walk straight.
+3. Enter Lab 3 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 4
@@ -1416,127 +2054,190 @@
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4 through either door and turn right. Enter Lab 5 through either of its doors.
+1. 1. Exit Lab 4 through either door.
+2. Turn right and walk straight.
+3. Enter Lab 5 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4 through either door and turn right. Walk past Lab 5 to reach Project Lab.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Turn left and walk through the corridor.
+3. Walk down the stairs.
+4. Turn right and enter the Project Lab.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. Exit CSIT Lab 4 through either door.
+2. Walk past CSIT Labs 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit.
+1. 1. Exit CSIT Lab 4, turn left.
+2. Walk to Lab Exit.
 ================================================================================
 
 📍 From: CSIT Lab 4
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 4, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Lab 4, turn left.
+2. Walk to Lab Exit.
+3. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit Lab 5 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 2 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1 and CSIT Room 2.
+7. Enter CSIT Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1, CSIT Room 2 and CSIT Room 3.
+7. Enter CSIT Room 4 through its second door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
+1. 1. Exit Lab 5 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 5 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 6.
+1. 1. Exit Lab 5 through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Lab 5, turn left.
+2. Walk to Lab Exit.
+3. Continue to CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5 through either door and turn left. Walk past Lab 4 to reach Lab 3.
+1. 1. Exit Lab 5 through either door.
+2. Turn left.
+3. Walk past Lab 4 to reach Lab 3.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5 through either door and turn left. Enter Lab 4 through either of its doors.
+1. 1. Exit Lab 5 through either door.
+2. Turn left and walk straight.
+3. Enter Lab 4 through either door.
 ================================================================================
 
 📍 From: CSIT Lab 5
@@ -1550,127 +2251,192 @@
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5 through either door and turn right. Enter Project Lab through its first door.
+1. 1. Exit Lab 5 through either door.
+2. Turn right and walk straight.
+3. Enter Project Lab through its first door.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. Exit CSIT Lab 5 through either door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit.
+1. 1. Exit CSIT Lab 5, turn left.
+2. Walk to Lab Exit.
 ================================================================================
 
 📍 From: CSIT Lab 5
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Lab 5, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Lab 5, turn left.
+2. Walk to Lab Exit.
+3. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. Exit project lab, walk left then go down stairs.
+2. Turn right and walk through the corridor and down the ramp.
+3. Turn left to passageway then turn left again and walk straight.
+4. The second room to your left will be your room 2.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1 and CSIT Room 2.
+7. Enter CSIT Room 3 through its second door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight past CSIT Room 1, CSIT Room 2 and CSIT Room 3.
+7. Enter CSIT Room 4 through its second door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 6.
+1. 1. Exit Project Lab through the main door.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 7.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 8.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Turn right into the corridor leading to CSIT Rooms 5-8.
+7. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. Exit CSIT Project Lab, turn left.
+2. Walk to Lab Exit.
+3. Continue to CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab through either door and turn left. Walk past Lab 5 and Lab 4 to reach Lab 3.
+1. 1. Exit Project Lab through its first door.
+2. Turn left and walk up the stairs.
+3. Walk through the corridor.
+4. Enter CSIT Lab 3 through its main door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab through either door and turn left. Walk past Lab 5 to reach Lab 4.
+1. 1. Exit Project Lab through its first door.
+2. Turn left and walk up the stairs.
+3. Walk through the corridor.
+4. Enter CSIT Lab 4 through either door.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab through its first door and turn left. Enter Lab 5 through either door.
+1. 1. Exit Project Lab through its first door.
+2. Turn left and walk straight.
+3. Enter Lab 5 through either door.
 ================================================================================
 
 📍 From: CSIT Project Lab
@@ -1684,132 +2450,202 @@
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn left.
+2. Walk straight and exit through the main corridor.
+3. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. Exit CSIT Project Lab through its first door.
+2. Walk past CSIT Labs 5, 4, 3 and 2.
+3. Walk down the ramp.
+4. Take a left through the passageway.
+5. Take another left to reach the main corridor.
+6. Walk straight and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit.
+1. 1. Exit CSIT Project Lab, turn left.
+2. Walk to Lab Exit.
 ================================================================================
 
 📍 From: CSIT Project Lab
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. Exit Project Lab, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. Exit CSIT Project Lab, turn left.
+2. Walk to Lab Exit.
+3. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 1 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 2 through either door.
+1. 1. From CSIT Entrance, walk to CSIT Exit.
+2. Enter CSIT Room 2 through either door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 3 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and walk straight past Rooms 1 and 2.
+4. Enter CSIT Room 3 through its first door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 4 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and walk straight past Rooms 1, 2 and 3.
+4. Enter CSIT Room 4 through its first door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 5 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn right into the corridor leading to CSIT Rooms 5-8.
+4. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 6 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn right into the corridor leading to CSIT Rooms 5-8.
+4. Walk past CSIT Room 5 and enter CSIT Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 7 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn right into the corridor leading to CSIT Rooms 5-8.
+4. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk to CSIT Exit, then enter Room 8 through either door.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn right into the corridor leading to CSIT Rooms 5-8.
+4. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 2.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 4.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 5.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Project Lab.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Turn left and enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Entrance
@@ -1823,128 +2659,194 @@
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor.
+3. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor.
+3. You will reach CSIT Exit.
+2. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Entrance
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Entrance, walk straight to reach CSIT Exit.
-2. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-3. From Lab Exit, walk straight and enter Lab 3.
-4. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. From CSIT Entrance, walk straight ahead.
+2. Continue walking through the main corridor until you reach CSIT Exit.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 1 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 2 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 2 through its second door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 3 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Turn left and walk straight past Rooms 1 and 2.
+4. Enter CSIT Room 3 through its first door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 4 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Turn left and walk straight past Rooms 1, 2 and 3.
+4. Enter CSIT Room 4 through its first door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 5 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Turn right into the corridor leading to CSIT Rooms 5-8.
+3. Enter CSIT Room 5 through either door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 6 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Turn right into the corridor leading to CSIT Rooms 5-8.
+3. Walk past CSIT Room 5 and enter CSIT Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 7 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Turn right into the corridor leading to CSIT Rooms 5-8.
+3. Walk past CSIT Room 5 and CSIT Room 6 and enter CSIT Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight and enter Room 8 through either door.
+1. 1. From CSIT Exit, walk straight.
+2. Turn right into the corridor leading to CSIT Rooms 5-8.
+3. Walk past CSIT Rooms 5, 6 and 7 and enter CSIT Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight and the third door on your left is CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 3.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the first door on your right is CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 4.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the third door on your right is CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 5.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the sixth door on your right is CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Project Lab.
+1. 1. From CSIT Exit, walk straight.
+2. Continue walking through the main corridor.
+3. Enter CSIT Room 1 through either door.
+2. 1. Exit CSIT Room 1, turn right.
+2. Walk straight and exit through the main corridor.
+3. Take a right through the passageway.
+4. Take another right up the ramp.
+5. Walk straight until you reach stairs on your left.
+6. Walk up the stairs to first floor then turn right into the corridor.
+7. Walk straight and the fifth door on your right is CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. From CSIT Exit, walk straight ahead.
+2. Continue walking through the main corridor.
+3. You will reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Exit
@@ -1958,126 +2860,192 @@
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
+1. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. You will reach CSIT Lab Exit.
 ================================================================================
 
 📍 From: CSIT Exit
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From CSIT Exit, walk straight then take a right through the passageway, then another right up the ramp to reach CSIT Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 3.
-3. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. From CSIT Exit, walk straight.
+2. Take a right through the passageway.
+3. Take another right up the ramp.
+4. Continue to Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-2. From CSIT Exit, walk straight and enter Room 1 through either door.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-2. From CSIT Exit, walk straight and enter Room 2 through either door.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-2. From CSIT Exit, walk straight and enter Room 3 through either door.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-2. From CSIT Exit, walk straight and enter Room 4 through either door.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit, then continue to Room 5.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 5 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit, then continue to Room 6.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit, then continue to Room 7.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit, then continue to Room 8.
+1. 1. From CSIT Lab Exit, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Lab 2.
+1. 1. From Lab Exit, walk straight.
+2. Enter CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Lab 3.
+1. 1. From Lab Exit, walk straight.
+2. Enter CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Lab 4.
+1. 1. From Lab Exit, walk straight.
+2. Enter CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Lab 5.
+1. 1. From Lab Exit, walk straight.
+2. Enter CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Project Lab.
+1. 1. From Lab Exit, walk straight.
+2. Enter CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-2. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. From Lab Exit, walk straight ahead.
+2. Continue walking through the lab corridor.
+3. You will reach Lab Entrance.
+2. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab Exit
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. From Lab Exit, go down the ramp.
+2. Take a left through the passageway.
+3. Take another left.
+4. You will reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab Exit
@@ -2091,128 +3059,187 @@
 🎯 To: CSIT Lab Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Exit, walk straight and enter Lab 3.
-2. Exit Lab 3, turn left and walk to Lab Exit, then continue to Lab Entrance.
+1. 1. From Lab Exit, walk straight ahead.
+2. Continue walking through the lab corridor.
+3. You will reach Lab Entrance.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 1
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 1.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the seventh door on your right is CSIT Room 1.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 2.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the fifth door on your right is CSIT Room 2.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 3.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 5 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the third door on your right is CSIT Room 3.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
-2. Exit Room 5, walk to CSIT Exit, then continue to Room 4.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
+2. 1. Exit CSIT Room 6 through either door.
+2. Turn left and walk straight.
+3. Find the stairs on you left.
+4. Walk down the stairs to ground floor then turn right into the corridor.
+5. Walk straight and the first door on your right is CSIT Room 4.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 5.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 5 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 6
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 6.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 6 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 7
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 7.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 7 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Room 8
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit, then go down the ramp to reach CSIT Exit, then continue to Room 8.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Walk straight and enter Room 8 through its first door.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Lab 2
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit.
-2. From Lab Exit, walk straight and enter Lab 2.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Enter CSIT Lab 2.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Lab 3
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk to Lab Exit, then enter Lab 3.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Enter CSIT Lab 3.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Lab 4
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk to Lab Exit, then enter Lab 4.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Enter CSIT Lab 4.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Lab 5
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk to Lab Exit, then enter Lab 5.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Enter CSIT Lab 5.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Project Lab
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk to Lab Exit, then enter Project Lab.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Enter CSIT Project Lab.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Entrance
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
-3. From CSIT Exit, walk straight to reach CSIT Entrance.
+1. 1. From CSIT Lab Entrance, walk straight.
+2. Walk down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach the main corridor.
+5. Continue walking through the main corridor until you reach CSIT Entrance.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit.
-2. From Lab Exit, go down the ramp, take a left through the passageway then another left to reach CSIT Exit.
+1. 1. From Lab Entrance, walk to Lab Exit.
+2. Go down the ramp.
+3. Take a left through the passageway.
+4. Take another left to reach CSIT Exit.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
 🎯 To: CSIT Lab Exit
 --------------------------------------------------------------------------------
 📝 Directions:
-1. From Lab Entrance, walk straight to reach Lab Exit.
+1. 1. From Lab Entrance, walk straight ahead.
+2. Continue walking through the lab corridor.
+3. You will reach Lab Exit.
 ================================================================================
 
 📍 From: CSIT Lab Entrance
