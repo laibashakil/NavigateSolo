@@ -1,6 +1,6 @@
 //OUTDOORrrr
 import React, { useEffect, useState, useRef } from "react";
-import { View, Text, Button, Alert, FlatList, TouchableOpacity } from "react-native";
+import { View, Text, Button, Alert, FlatList, TouchableOpacity, Modal } from "react-native";
 import * as Location from "expo-location";
 import * as Speech from 'expo-speech';
 import { Picker } from '@react-native-picker/picker';
@@ -33,17 +33,20 @@ export default function NavigationApp() {
   const [lastUpdateTime, setLastUpdateTime] = useState(Date.now());
   const [lastLocation, setLastLocation] = useState(null);
   const autoUpdateInterval = useRef(null);
+  const [showDestinationModal, setShowDestinationModal] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
 
-  useFocusEffect(
-    React.useCallback(() => {
-      return () => {
-        if (navigationActive) {
-          console.log("Stopping navigation due to tab change.");
-          stopNavigation();
-        }
-      };
-    }, [navigationActive])
-  );
+  // useFocusEffect(
+  //   React.useCallback(() => {
+  //     return () => {
+  //       if (navigationActive) {
+  //         console.log("Stopping navigation due to tab change.");
+  //         stopNavigation();
+  //       }
+  //     };
+  //   }, [navigationActive])
+  // );
 
   // Add automatic route update every 10 seconds
   useEffect(() => {
@@ -222,7 +225,7 @@ export default function NavigationApp() {
         const remainingSteps = stepList.length - currentStepIndex;
         if (remainingSteps <= 10) {
           Speech.speak("You have reached your destination");
-          stopNavigation();
+          endNavigation();
         } else if (remainingSteps <= 15) {
           Speech.speak(`You are very close to ${selectedDestination.label}`);
         }
@@ -281,7 +284,7 @@ export default function NavigationApp() {
             setSteps([]);
 
             // Show alert
-            Alert.alert("Navigation Stopped", "You have stopped navigation.");
+            Alert.alert("Navigation Stopped", "You have reached your destination.");
           }, 10000); 
           } else if (distanceToDestination <= 75) {
             console.log("Very close to destination!");
@@ -316,13 +319,24 @@ export default function NavigationApp() {
     Alert.alert("Navigation Stopped", "You have stopped navigation.");
   };
 
+    const endNavigation = () => {
+    Speech.stop();
+    if (locationSubscription.current) {
+      locationSubscription.current.remove();
+      locationSubscription.current = null;
+    }
+    setNavigationActive(false);
+    setSteps([]);
+    Alert.alert("Navigation Stopped", "You have reached your destination.");
+  };
+
 return (
   <View style={{ flex: 1, padding: 10, backgroundColor: "#ffffff" }}>
     <Text className="text-black text-left text-sl" style={{ fontSize: 20 }}>
       You're facing: {heading !== null ? getDirection(heading) : 'Loading...'}
     </Text>
 
-    <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Select Destination</Text>
+    {/* <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10 }}>Select Destination</Text>
     <View style={{ borderWidth: 1, borderColor: "#ccc", borderRadius: 10, backgroundColor: "white" }}>
       <Picker selectedValue={selectedDestination} onValueChange={setSelectedDestination}>
         <Picker.Item label="-- Select a destination --" value={null} enabled={false} />
@@ -330,6 +344,22 @@ return (
           <Picker.Item key={index} label={dest.label} value={dest} />
         ))}
       </Picker>
+    </View> */}
+
+        {/* Destination Selection */}
+    <View className="bg-gray-50 rounded-lg p-3 mb-3">
+      <View className="flex-row justify-between items-center">
+        <Text className="text-base">Destination</Text>
+        <TouchableOpacity 
+          onPress={() => setShowDestinationModal(true)}
+          className="bg-blue-500 px-3 py-1 rounded"
+        >
+          <Text className="text-white">Select</Text>
+        </TouchableOpacity>
+      </View>
+      <Text className="text-lg mt-1">
+        {selectedDestination ? selectedDestination.label : "No destination selected"}
+      </Text>
     </View>
 
     <TouchableOpacity
@@ -408,6 +438,55 @@ return (
         </View>
       </>
     )}
+
+
+{/* Destination Selection Modal */}
+    <Modal
+      animationType="slide"
+      transparent={true}
+      visible={showDestinationModal}
+      onRequestClose={() => setShowDestinationModal(false)}
+    >
+      <View className="flex-1 justify-center items-center bg-black/50">
+        <View className="bg-white rounded-lg p-4 w-11/12 max-w-md">
+          <Text className="text-xl font-bold mb-3">Select Destination</Text>
+          
+          <View className="bg-gray-50 rounded border border-gray-200 mb-3">
+            <Picker
+              selectedValue={selectedDestination}
+              onValueChange={(itemValue) => setSelectedDestination(itemValue)}
+            >
+              <Picker.Item label="Choose your destination" value={null} />
+              {destinations.map((dest, index) => (
+                <Picker.Item key={index} label={dest.label} value={dest} />
+              ))}
+            </Picker>
+          </View>
+          
+          <View className="flex-row justify-between">
+            <TouchableOpacity 
+              className="bg-gray-300 px-6 py-2 rounded-lg w-5/12"
+              onPress={() => setShowDestinationModal(false)}
+            >
+              <Text className="text-center">Cancel</Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+              className="bg-blue-500 px-6 py-2 rounded-lg w-5/12"
+              onPress={() => {
+                if (selectedDestination) {
+                  setShowDestinationModal(false);
+                }
+              }}
+            >
+              <Text className="text-white text-center">Confirm</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+    </Modal>
+
+
+
   </View>
 );
 }
