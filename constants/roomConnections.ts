@@ -197,7 +197,51 @@ const roomConnections: RoomConnection[] = [
     "2. Continue walking through the lab corridor.\n" +
     "3. You will reach Lab Entrance.", 
     steps: 10 },
+    { from: "CSIT Lab Exit", to: "CSIT Room 1", direction: 
+      "1. From Lab Exit, walk down the ramp then turn left.\n" +
+      "2. Go through the passageway then take another left.\n" +
+      "3. Walk straight and enter through the first door on your left.", 
+      steps: 10 },
+      { from: "CSIT Lab Exit", to: "CSIT Room 2", direction: 
+        "1. From Lab Exit, walk down the ramp then turn left.\n" +
+        "2. Go through the passageway then take another left.\n" +
+        "3. Walk straight and enter through the third door on your left.", 
+        steps: 10 },
+        { from: "CSIT Lab Entrance", to: "CSIT Room 1", direction: 
+          "1. Walk straight till the end of the corridor.\n" +
+          "2. Walk down the ramp then turn left.\n" +
+          "3. Go through the passageway and take another left.\n"+
+          "4. Walk straight and enter through the first door on your left", 
+          steps: 10 },
+          { from: "CSIT Lab Entrance", to: "CSIT Room 2", direction: 
+            "1. Walk straight till the end of the corridor.\n" +
+            "2. Walk down the ramp then turn left.\n" +
+            "3. Go through the passageway and take another left.\n"+
+            "4. Walk straight and enter through the third door on your left", 
+            steps: 10 },
+            { from: "CSIT Lab Entrance", to: "CSIT Room 3", direction: 
+              "1. Walk straight till the end of the corridor.\n" +
+              "2. Walk down the ramp then turn left.\n" +
+              "3. Go through the passageway and take another left.\n"+
+              "4. Walk straight and enter through the fifth door on your left", 
+              steps: 10 },
+              { from: "CSIT Lab Entrance", to: "CSIT Room 4", direction: 
+                "1. Walk straight till the end of the corridor.\n" +
+                "2. Walk down the ramp then turn left.\n" +
+                "3. Go through the passageway and take another left.\n"+
+                "4. Walk straight and enter through the seventh door on your left", 
+                steps: 10 },
 
+        { from: "CSIT Lab Exit", to: "CSIT Room 3", direction: 
+          "1. From Lab Exit, walk down the ramp then turn left.\n" +
+          "2. Go through the passageway then take another left.\n" +
+          "3. Walk straight and enter through the fifth door on your left.", 
+          steps: 10 },
+          { from: "CSIT Lab Exit", to: "CSIT Room 4", direction: 
+            "1. From Lab Exit, walk down the ramp then turn left.\n" +
+            "2. Go through the passageway then take another left.\n" +
+            "3. Walk straight and enter through the seventh door on your left.", 
+            steps: 10 },
   // Cross-Campus Connections (Rooms, Labs, Entrances/Exits)
   // Room 1 to other sections
   { from: "CSIT Room 1", to: "CSIT Exit", direction: 
@@ -1022,11 +1066,11 @@ const roomConnections: RoomConnection[] = [
     "7. Take another right up the ramp to reach CSIT Lab Exit.", 
     steps: 50 },
   { from: "CSIT Lab Exit", to: "CSIT Room 6", direction: 
-    "1. From CSIT Lab Exit, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 6 through its first door.", 
+    "1. From Lab Exit, walk down the ramp then turn left.\n" +
+    "2. Go through the passageway then take another left.\n" +
+    "3. Walk through the entire corridor and find the stairs on your left.\n" +
+    "4. Walk up the stairs and turn right.\n" +
+    "5. Enter CSIT Room 6 through the third door on you right.", 
     steps: 50 },
   { from: "CSIT Room 6", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Room 6 through either door.\n" +
@@ -1039,11 +1083,12 @@ const roomConnections: RoomConnection[] = [
     "8. Walk straight until you reach the CSIT Lab Entrance.",
     steps: 50 },
   { from: "CSIT Lab Entrance", to: "CSIT Room 6", direction: 
-    "1. From CSIT Lab Entrance, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 6 through its first door.", 
+    "1. Walk straight till the end of the corridor.\n" +
+    "2. Walk down the ramp then turn left.\n" +
+    "3. Go through the passageway and take another left.\n"+
+    "4. Walk through the entire corridor and find the stairs on your left.\n" +
+    "5. Walk up the stairs and turn right.\n" +
+    "6. Enter CSIT Room 6 through the third door on your right.",
     steps: 50 },
 
   // Room 7 to other sections
@@ -1321,15 +1366,15 @@ const roomConnections: RoomConnection[] = [
     steps: 10 },
   { from: "CSIT Lab Exit", to: "CSIT Lab 2", direction: 
     "1. From Lab Exit, walk straight.\n" +
-    "2. Enter CSIT Lab 2.", 
+    "2. The third door on your left will be CSIT Lab 2.", 
     steps: 10 },
   { from: "CSIT Lab 2", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Lab 2, turn left.\n" +
     "2. Walk till the end of the corridor to reach there.\n",
     steps: 15 },
   { from: "CSIT Lab Entrance", to: "CSIT Lab 2", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Enter CSIT Lab 2.", 
+    "1. From Lab Entrance, walk straight through the corridor.\n" +
+    "2. The third door on your right will be CSIT Lab 2.",  
     steps: 15 },
   { from: "CSIT Lab 2", to: "CSIT Lab 4", direction: 
     "1. Exit Lab 2 through the main door.\n" +
@@ -1374,8 +1419,8 @@ const roomConnections: RoomConnection[] = [
     "3. Turn left and walk until you reach the end of the corridor.",
     steps: 10 },
   { from: "CSIT Lab Exit", to: "CSIT Lab 3", direction: 
-    "1. From Lab Exit, walk straight.\n" +
-    "2. Enter CSIT Lab 3.", 
+    "1. From Lab Exit, walk till the end of the corridor and find the stairs on your left.\n" +
+    "2. Walk upstairs then turn right, the first door on your right will be CSIT Lab 3.", 
     steps: 10 },
   { from: "CSIT Lab 3", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Lab 3 through its main door and turn left.\n" +
@@ -1383,8 +1428,8 @@ const roomConnections: RoomConnection[] = [
     "3. Turn right and walk till the end of the corridor until you reach the ramp.",
     steps: 15 },
   { from: "CSIT Lab Entrance", to: "CSIT Lab 3", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Enter CSIT Lab 3.", 
+    "1. Walk straight and find the stairs on your right. \n"+
+    "2. Walk upstairs then turn right, the first door on your right will be CSIT Lab 3", 
     steps: 15 },
   { from: "CSIT Lab 3", to: "CSIT Lab 5", direction: 
     "1. Exit Lab 3 through the main door.\n" +
@@ -1403,8 +1448,8 @@ const roomConnections: RoomConnection[] = [
     "3. Turn left and walk until you reach the end of the corridor.",
     steps: 10 },
   { from: "CSIT Lab Exit", to: "CSIT Lab 4", direction: 
-    "1. From Lab Exit, walk straight.\n" +
-    "2. Enter CSIT Lab 4.", 
+    "1. From Lab Exit, walk till the end of the corridor and find the stairs on your left.\n" +
+    "2. Walk upstairs then turn right, the third door on your right will be CSIT Lab 4.", 
     steps: 10 },
   { from: "CSIT Lab 4", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Lab 3 through its main door and turn left.\n" +
@@ -1412,18 +1457,17 @@ const roomConnections: RoomConnection[] = [
     "3. Turn right and walk till the end of the corridor until you reach the ramp.",
     steps: 15 },
   { from: "CSIT Lab Entrance", to: "CSIT Lab 4", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Enter CSIT Lab 4.", 
+    "1. Walk straight and find the stairs on your right. \n"+
+    "2. Walk upstairs then turn right, the third door on your right will be CSIT Lab 4",
     steps: 15 },
-
   { from: "CSIT Lab 5", to: "CSIT Lab Exit", direction: 
     "1. Exit CSIT Lab 5 through its main door and turn left.\n" +
     "2. Walk straight and take a left and go downstairs.\n" +
     "3. Turn left and walk until you reach the end of the corridor.",
     steps: 10 },
   { from: "CSIT Lab Exit", to: "CSIT Lab 5", direction: 
-    "1. From Lab Exit, walk straight.\n" +
-    "2. Enter CSIT Lab 5.", 
+    "1. From Lab Exit, walk till the end of the corridor and find the stairs on your left.\n" +
+    "2. Walk upstairs then turn right, the sixth door on your right will be CSIT Lab 5.", 
     steps: 10 },
   { from: "CSIT Lab 5", to: "CSIT Lab Entrance", direction: 
    "1. Exit CSIT Lab 5 through its main door and turn left.\n" +
@@ -1431,8 +1475,8 @@ const roomConnections: RoomConnection[] = [
     "3. Turn right and walk till the end of the corridor until you reach the ramp.",
     steps: 15 },
   { from: "CSIT Lab Entrance", to: "CSIT Lab 5", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Enter CSIT Lab 5.", 
+    "1. Walk straight and find the stairs on your right. \n"+
+    "2. Walk upstairs then turn right, the sixth door on your right will be CSIT Lab 5",
     steps: 15 },
 
   { from: "CSIT Project Lab", to: "CSIT Lab Exit", direction: 
@@ -1441,8 +1485,8 @@ const roomConnections: RoomConnection[] = [
     "3. Turn left and walk until you reach the end of the corridor.",
     steps: 10 },
   { from: "CSIT Lab Exit", to: "CSIT Project Lab", direction: 
-    "1. From Lab Exit, walk straight.\n" +
-    "2. Enter CSIT Project Lab.", 
+    "1. From Lab Exit, walk till the end of the corridor and find the stairs on your left.\n" +
+    "2. Walk upstairs then turn right, the fifth door on your right will be CSIT Project Lab.", 
     steps: 10 },
   { from: "CSIT Project Lab", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Project Lab through its main door and turn left.\n" +
@@ -1450,34 +1494,36 @@ const roomConnections: RoomConnection[] = [
     "3. Turn right and walk till the end of the corridor until you reach the ramp.",
     steps: 15 },
   { from: "CSIT Lab Entrance", to: "CSIT Project Lab", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Enter CSIT Project Lab.", 
+    "1. Walk straight and find the stairs on your right. \n"+
+    "2. Walk upstairs then turn right, the fifth door on your right will be CSIT Project Lab",
     steps: 15 },
 
   // Entrances/Exits to other sections (Cross-Campus)
   { from: "CSIT Exit", to: "CSIT Lab Exit", direction: 
     "1. From CSIT Exit, walk straight.\n" +
     "2. Take a right through the passageway.\n" +
-    "3. Take another right up the ramp.\n" +
-    "4. You will reach CSIT Lab Exit.", 
+    "3. Take another right up the ramp.\n" ,
     steps: 20 },
   { from: "CSIT Lab Exit", to: "CSIT Exit", direction: 
-    "1. From Lab Exit, go down the ramp.\n" +
-    "2. Take a left through the passageway.\n" +
-    "3. Take another left.\n" +
-    "4. You will reach CSIT Exit.", 
+    "1. From Lab Exit, walk down the ramp then turn left.\n" +
+      "2. Go through the passageway then take another left.\n" +
+      "3. Walk straight till the end of the corridor until the steps.", 
     steps: 20 },
+    { from: "CSIT Lab Exit", to: "CSIT Entrance", direction: 
+      "1. From Lab Exit, walk down the ramp then turn left.\n" +
+      "2. Go through the passageway then take another left.\n" +
+      "3. The CSIT Entrance will be in front of you.", 
+      steps: 20 },
   { from: "CSIT Exit", to: "CSIT Lab Entrance", direction: 
-    "1. From CSIT Exit, walk straight.\n" +
-    "2. Take a right through the passageway.\n" +
-    "3. Take another right up the ramp.\n" +
-    "4. Continue to Lab Entrance.", 
+    "1. Walk straight and take a right through the passageway.\n" +
+      "3. Take the first right up the ramp.\n"+
+    "4. Walk till the end of the corridor till you reach the steps outside.",
     steps: 25 },
   { from: "CSIT Lab Entrance", to: "CSIT Exit", direction: 
-    "1. From Lab Entrance, walk to Lab Exit.\n" +
-    "2. Go down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach CSIT Exit.", 
+    "1. Walk straight till the end of the corridor.\n" +
+    "2. Walk down the ramp then turn left.\n" +
+    "3. Go through the passageway and take another left.\n"+
+    "4. The CSIT Exit is in front of you",
     steps: 25 },
   { from: "CSIT Room 2", to: "CSIT Lab 2", direction: 
     "1. Exit Room 2 through its first door.\n" +
@@ -2159,11 +2205,11 @@ const roomConnections: RoomConnection[] = [
     "7. Take another right up the ramp to reach CSIT Lab Exit.", 
     steps: 45 },
   { from: "CSIT Lab Exit", to: "CSIT Room 5", direction: 
-    "1. From CSIT Lab Exit, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 5 through its first door.", 
+    "1. From Lab Exit, walk down the ramp then turn left.\n" +
+    "2. Go through the passageway then take another left.\n" +
+    "3. Walk through the entire corridor and find the stairs on your left.\n" +
+    "4. Walk up the stairs and turn right.\n" +
+    "5. Enter CSIT Room 5 through the first door on you right.", 
     steps: 45 },
   { from: "CSIT Room 5", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Room 5 through either door.\n" +
@@ -2176,11 +2222,12 @@ const roomConnections: RoomConnection[] = [
     "8. Walk straight until you reach the CSIT Lab Entrance.",
     steps: 45 },
   { from: "CSIT Lab Entrance", to: "CSIT Room 5", direction: 
-    "1. From CSIT Lab Entrance, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 5 through its first door.", 
+    "1. Walk straight till the end of the corridor.\n" +
+    "2. Walk down the ramp then turn left.\n" +
+    "3. Go through the passageway and take another left.\n"+
+    "4. Walk through the entire corridor and find the stairs on your left.\n" +
+    "5. Walk up the stairs and turn right.\n" +
+    "6. Enter CSIT Room 5 through the first door on your right.",
     steps: 45 },
   { from: "CSIT Room 7", to: "CSIT Lab Exit", direction: 
     "1. Exit CSIT Room 7 through either door.\n" +
@@ -2192,11 +2239,11 @@ const roomConnections: RoomConnection[] = [
     "7. Take another right up the ramp to reach CSIT Lab Exit.", 
     steps: 55 },
   { from: "CSIT Lab Exit", to: "CSIT Room 7", direction: 
-    "1. From CSIT Lab Exit, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 7 through its first door.", 
+    "1. From Lab Exit, walk down the ramp then turn left.\n" +
+    "2. Go through the passageway then take another left.\n" +
+    "3. Walk through the entire corridor and find the stairs on your left.\n" +
+    "4. Walk up the stairs and turn right.\n" +
+    "5. Enter CSIT Room 7 through the fifth door on you right.", 
     steps: 55 },
   { from: "CSIT Room 7", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Room 7 through either door.\n" +
@@ -2209,11 +2256,12 @@ const roomConnections: RoomConnection[] = [
     "8. Walk straight until you reach the CSIT Lab Entrance.",
     steps: 55 },
   { from: "CSIT Lab Entrance", to: "CSIT Room 7", direction: 
-    "1. From CSIT Lab Entrance, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 7 through its first door.", 
+    "1. Walk straight till the end of the corridor.\n" +
+    "2. Walk down the ramp then turn left.\n" +
+    "3. Go through the passageway and take another left.\n"+
+    "4. Walk through the entire corridor and find the stairs on your left.\n" +
+    "5. Walk up the stairs and turn right.\n" +
+    "6. Enter CSIT Room 7 through the fifth door on your right.",
     steps: 55 },
   { from: "CSIT Room 8", to: "CSIT Lab Exit", direction: 
     "1. Exit CSIT Room 8 through either door.\n" +
@@ -2225,11 +2273,11 @@ const roomConnections: RoomConnection[] = [
     "7. Take another right up the ramp to reach CSIT Lab Exit.", 
     steps: 60 },
   { from: "CSIT Lab Exit", to: "CSIT Room 8", direction: 
-    "1. From CSIT Lab Exit, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 8 through its first door.", 
+    "1. From Lab Exit, walk down the ramp then turn left.\n" +
+    "2. Go through the passageway then take another left.\n" +
+    "3. Walk through the entire corridor and find the stairs on your left.\n" +
+    "4. Walk up the stairs and turn right.\n" +
+    "5. Enter CSIT Room 8 through the seventh door on you right.",  
     steps: 60 },
   { from: "CSIT Room 8", to: "CSIT Lab Entrance", direction: 
     "1. Exit CSIT Room 8 through either door.\n" +
@@ -2242,11 +2290,12 @@ const roomConnections: RoomConnection[] = [
     "8. Walk straight until you reach the CSIT Lab Entrance.",
     steps: 60 },
   { from: "CSIT Lab Entrance", to: "CSIT Room 8", direction: 
-    "1. From CSIT Lab Entrance, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Walk straight and enter Room 8 through its first door.", 
+    "1. Walk straight till the end of the corridor.\n" +
+    "2. Walk down the ramp then turn left.\n" +
+    "3. Go through the passageway and take another left.\n"+
+    "4. Walk through the entire corridor and find the stairs on your left.\n" +
+    "5. Walk up the stairs and turn right.\n" +
+    "6. Enter CSIT Room 8 through the seventh door on your right.",
     steps: 60 },
   { from: "CSIT Lab 3", to: "CSIT Project Lab", direction: 
     "1. Exit Lab 3 through the main door.\n" +
@@ -2271,8 +2320,8 @@ const roomConnections: RoomConnection[] = [
     { from: "CSIT Entrance", to: "CSIT Lab Entrance", direction: 
       "1. Walk straight till the end of the corridor.\n" +
       "2. Take a right through the passageway.\n" +
-      "3. Take the first right up the ramp and you're there!.\n"+
-    "4. Walk till the end of the corridor till you reach the steps outside.",
+      "3. Take the first right up the ramp.\n"+
+      "4. Walk till the end of the corridor till you reach the steps outside.",
       steps: 65 },
     { from: "CSIT Entrance", to: "CSIT Lab 2", direction: 
       "1. Walk straight till the end of the corridor.\n" +
@@ -2343,11 +2392,10 @@ const roomConnections: RoomConnection[] = [
                 "4. Walk upstairs then turn right, the fifth door on your right will be CSIT Project Lab.", 
                 steps: 65 },
   { from: "CSIT Lab Entrance", to: "CSIT Entrance", direction: 
-    "1. From CSIT Lab Entrance, walk straight.\n" +
-    "2. Walk down the ramp.\n" +
-    "3. Take a left through the passageway.\n" +
-    "4. Take another left to reach the main corridor.\n" +
-    "5. Continue walking through the main corridor until you reach CSIT Entrance.", 
+    "1. Walk straight till the end of the corridor.\n" +
+          "2. Walk down the ramp then turn left.\n" +
+          "3. Go through the passageway and take another left.\n"+
+          "4. Walk straight till the end of the corridor until the steps",
     steps: 15 },
     { from: "CSIT Lab 2", to: "CSIT Entrance", direction: 
       "1. Exit CSIT Lab 2 through the main door.\n" +
