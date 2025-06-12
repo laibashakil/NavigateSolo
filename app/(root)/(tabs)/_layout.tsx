@@ -14,7 +14,7 @@ const TabIcon = ({
   <View className="flex-1 mt-1 flex flex-col items-center">
     <MaterialIcons
       name={iconName}
-      size={29} // Consistent size for all icons
+      size={27} // Consistent size for all icons
       color={focused ? "#0061FF" : "#666876"}
       style={{ marginBottom: -4}} // Add margin to prevent cutoff
     />
@@ -25,7 +25,7 @@ const TabIcon = ({
           : "text-black-200 font-rubik"
       } text-xs text-center mt-2`} // Remove w-full to prevent wrapping issues
       numberOfLines={1} // Prevent wrapping for consistency
-      style={{ width: 75 }}     >
+      style={{ width: 95 }}     >
       {title}
     </Text>
   </View>
